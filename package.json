@@ -18,7 +18,11 @@
     "@dojo/framework": "5.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
     "@fortawesome/free-solid-svg-icons": "^5.7.1",
-    "tslib": "1.9.3"
+    "isomorphic-fetch": "^2.2.1",
+    "remark-html": "^9.0.0",
+    "tslib": "1.9.3",
+    "unist-util-find": "^1.0.1",
+    "unist-util-select": "^2.0.0"
   },
   "devDependencies": {
     "@dojo/cli": "5.0.0",

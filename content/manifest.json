@@ -51,5 +51,19 @@
 			"name": "Dojo Roadmap",
 			"path": "./roadmap/dojo-5-roadmap.md"
 		}
+	],
+	"examples": [
+		{
+			"name": "Basic",
+			"pages": [
+				{
+					"name": "Sample Reference Guide",
+					"path": "./reference-guides/sample.md",
+					"icon": "apple-alt",
+					"topic": "getting-started",
+					"description": "A sample reference guide"
+				}
+			]
+		}
 	]
 }
