@@ -1,3 +1,5 @@
+@import '../variables.css';
+
 .root {
 	padding: var(--content-top-padding);
 }
@@ -8,4 +10,14 @@
 
 .title {
 	margin-bottom: 0.5rem;
+}
+
+.header {
+	background-position: center;
+	background-size: cover;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+	min-height: 204px;
+	background-color: var(--color-off-white);
 }
