@@ -1,24 +1,41 @@
 {
-  "name": "sitepen-site",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "dojo build --mode dev --watch --serve",
-    "build": "dojo build --mode dist",
-    "build:dev": "dojo build --mode dev",
-    "test": "dojo test",
-    "test:unit": "dojo build --mode unit && dojo test --unit --config local",
-    "test:functional": "dojo build --mode functional && dojo test --functional --config local",
-    "test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local"
-  },
-  "dependencies": {
-    "@dojo/framework": "next",
-    "tslib": "~1.9.1"
-  },
-  "devDependencies": {
-    "@dojo/cli": "next",
-    "@dojo/cli-build-app": "next",
-    "@dojo/cli-test-intern": "next",
-    "@types/node": "~9.6.5",
-    "typescript": "~3.4.5"
-  }
+	"name": "sitepen-site",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "dojo build --mode dev --watch --serve",
+		"build": "dojo build --mode dist",
+		"build:dev": "dojo build --mode dev",
+		"prettier": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+		"test": "dojo test",
+		"test:unit": "dojo build --mode unit && dojo test --unit --config local",
+		"test:functional": "dojo build --mode functional && dojo test --functional --config local",
+		"test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local"
+	},
+	"dependencies": {
+		"@dojo/framework": "next",
+		"tslib": "~1.9.1"
+	},
+	"devDependencies": {
+		"@dojo/cli": "next",
+		"@dojo/cli-build-app": "next",
+		"@dojo/cli-test-intern": "next",
+		"@types/node": "~9.6.5",
+		"husky": "^4.2.5",
+		"prettier": "^2.0.5",
+		"pretty-quick": "^2.0.1",
+		"typescript": "~3.4.5"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+	"prettier": {
+		"singleQuote": true,
+		"tabWidth": 4,
+		"useTabs": true,
+		"printWidth": 100,
+		"arrowParens": "always",
+		"trailingComma": "none"
+	}
 }
