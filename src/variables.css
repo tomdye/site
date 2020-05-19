@@ -1,0 +1,22 @@
+:root {
+	/* colors */
+	--color-dark: #09131f;
+	--color-medium: #0a2944;
+	--color-text-on-dark: #fff;
+	--color-text: #335878;
+	--color-primary: #5cdbdd;
+
+	/* layout */
+	--grid-size: 8px;
+	--max-width: 1140px;
+
+	/* typography */
+	--base-font-family: 'OpenSans', sans-serif;
+	--heading-font-family: 'Montserrat', sans-serif;
+
+	--heading-font-weight: 800;
+	--subheading-font-weight: 600;
+
+	--base-font-size: 14px;
+	--base-font-weight: 400;
+}

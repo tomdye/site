@@ -1,4 +1,10 @@
 {
-	"create-app": {},
-	"create-widget": {}
+	"build-app": {
+		"build-time-render": {
+			"root": "app",
+			"static": true,
+			"renderer": "jsdom"
+		}
+	},
+	"create-app": {}
 }
