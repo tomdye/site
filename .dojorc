@@ -1,8 +1,10 @@
 {
-	"build-time-render": {
-		"root": "app",
-		"static": true,
-		"renderer": "jsdom"
+	"build-app": {
+		"build-time-render": {
+			"root": "app",
+			"static": true,
+			"renderer": "jsdom"
+		}
 	},
 	"create-app": {}
 }
