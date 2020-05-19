@@ -10,8 +10,11 @@
 	--max-width: 1140px;
 
 	/* typography */
-	--base-font-family: 'OpenSans, sans-serif';
-	--heading-font-family: 'MontSerrat, sans-serif';
+	--base-font-family: 'OpenSans', sans-serif;
+	--heading-font-family: 'Montserrat', sans-serif;
+
+	--heading-font-weight: 800;
+	--subheading-font-weight: 600;
 
 	--base-font-size: 14px;
 	--base-font-weight: 400;
