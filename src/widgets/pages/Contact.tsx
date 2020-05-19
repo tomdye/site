@@ -4,7 +4,7 @@ export interface ContactProperties {}
 
 const factory = create().properties<ContactProperties>();
 
-export const Contact = factory(function Contact({}) {
+export const Contact = factory(function Contact() {
 	return <div classes={css.root}>Contact</div>;
 });
 

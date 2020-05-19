@@ -4,7 +4,7 @@ export interface ServicesProperties {}
 
 const factory = create().properties<ServicesProperties>();
 
-export const Services = factory(function Services({}) {
+export const Services = factory(function Services() {
 	return <div classes={css.root}>Services</div>;
 });
 

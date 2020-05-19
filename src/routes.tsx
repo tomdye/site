@@ -26,6 +26,26 @@ const routes: RouteConfig[] = [
 		id: 'services',
 		path: 'services',
 		outlet: 'main'
+	},
+	{
+		id: 'privacy',
+		path: 'privacy-policy',
+		outlet: 'main'
+	},
+	{
+		id: 'opensource',
+		path: 'open-source',
+		outlet: 'main'
+	},
+	{
+		id: 'about',
+		path: 'about-us',
+		outlet: 'main'
+	},
+	{
+		id: 'careers',
+		path: 'careers',
+		outlet: 'main'
 	}
 ];
 

@@ -5,7 +5,7 @@ export interface HeroProperties {}
 
 const factory = create().properties<HeroProperties>();
 
-export const Hero = factory(function Hero({}) {
+export const Hero = factory(function Hero() {
 	return <div classes={css.root}>Hero</div>;
 });
 

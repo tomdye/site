@@ -2,18 +2,17 @@ import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './Header.m.css';
 import { ActiveLink } from '@dojo/framework/routing/ActiveLink';
 import { Link } from '@dojo/framework/routing/Link';
-const spLogo = require('../assets/images/SitePenLogo_Light.svg');
 
 export interface HeaderProperties {}
 
 const factory = create().properties<HeaderProperties>();
 
-export const Header = factory(function Header({}) {
+export const Header = factory(function Header() {
 	return (
 		<header classes={css.root}>
 			<div classes={css.wrapper}>
 				<Link to="home">
-					<img src={spLogo} />
+					<img src="/assets/images/SitePenLogo_Light.svg" />
 				</Link>
 				<nav>
 					<ul classes={css.links}>

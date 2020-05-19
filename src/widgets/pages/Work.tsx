@@ -4,7 +4,7 @@ export interface WorkProperties {}
 
 const factory = create().properties<WorkProperties>();
 
-export const Work = factory(function Work({}) {
+export const Work = factory(function Work() {
 	return <div classes={css.root}>Work</div>;
 });
 

@@ -4,7 +4,7 @@ export interface ExpertiseProperties {}
 
 const factory = create().properties<ExpertiseProperties>();
 
-export const Expertise = factory(function Expertise({}) {
+export const Expertise = factory(function Expertise() {
 	return <div classes={css.root}>Expertise</div>;
 });
 
