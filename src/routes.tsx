@@ -3,7 +3,7 @@ import { RouteConfig } from '@dojo/framework/routing/interfaces';
 const routes: RouteConfig[] = [
 	{
 		id: 'home',
-		path: 'home',
+		path: '/',
 		outlet: 'main',
 		defaultRoute: true
 	},
