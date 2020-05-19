@@ -1,5 +1,6 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './Expertise.m.css';
+
 export interface ExpertiseProperties {}
 
 const factory = create().properties<ExpertiseProperties>();

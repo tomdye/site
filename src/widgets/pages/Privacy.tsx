@@ -1,5 +1,6 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './Privacy.m.css';
+
 export interface ContactProperties {}
 
 const factory = create().properties<ContactProperties>();

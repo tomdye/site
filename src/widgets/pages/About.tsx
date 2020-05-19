@@ -1,5 +1,6 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './About.m.css';
+
 export interface AboutProperties {}
 
 const factory = create().properties<AboutProperties>();

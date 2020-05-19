@@ -5,47 +5,56 @@ const routes: RouteConfig[] = [
 		id: 'home',
 		path: '/',
 		outlet: 'main',
-		defaultRoute: true
+		defaultRoute: true,
+		title: 'Custom Web App Development for Enterprises | SitePen'
 	},
 	{
 		id: 'contact',
 		path: 'contact',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'Contact | SitePen'
 	},
 	{
 		id: 'expertise',
 		path: 'expertise',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'Expertise | SitePen'
 	},
 	{
 		id: 'work',
 		path: 'our-work',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'Our Work | SitePen'
 	},
 	{
 		id: 'services',
 		path: 'services',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'Services | SitePen'
 	},
 	{
 		id: 'privacy',
 		path: 'privacy-policy',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'Privacy Policy | SitePen'
 	},
 	{
 		id: 'opensource',
 		path: 'open-source',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'Open Source | SitePen'
 	},
 	{
 		id: 'about',
 		path: 'about-us',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'About Us | SitePen'
 	},
 	{
 		id: 'careers',
 		path: 'careers',
-		outlet: 'main'
+		outlet: 'main',
+		title: 'Careers | SitePen'
 	}
 ];
 
