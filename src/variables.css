@@ -5,6 +5,7 @@
 	--color-text-on-dark: #fff;
 	--color-text: #335878;
 	--color-primary: #5cdbdd;
+	--color-primary-subtle: #33babc;
 	--color-subheading: #1f3d56;
 
 	/* layout */
@@ -15,8 +16,11 @@
 	--base-font-family: 'OpenSans', sans-serif;
 	--heading-font-family: 'Montserrat', sans-serif;
 
-	--heading-font-weight: 800;
-	--heading-font-size: 96px;
+	--heading-font-weight: 600;
+	--heading-font-size: 32px;
+
+	--heading-xl-font-weight: 800;
+	--heading-xl-font-size: 96px;
 
 	--subheading-font-weight: 600;
 	--subheading-font-size: 40px;

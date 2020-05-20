@@ -21,7 +21,7 @@ export const App = factory(function App() {
 	return (
 		<div classes={css.root}>
 			<Header />
-			<main classes={css.wrapper}>
+			<main>
 				<Outlet id="main">
 					{{
 						about: <About />,

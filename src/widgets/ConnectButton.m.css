@@ -1,0 +1,24 @@
+.root {
+	color: var(--color-primary);
+	text-transform: uppercase;
+	background-color: var(--color-text-on-dark);
+	transition: background-color 0.3 ease, color 0.3s ease;
+	padding: calc(var(--grid-size) * 2) calc(var(--grid-size) * 4);
+	border-radius: 100px;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.root:hover {
+	background-color: var(--color-medium);
+	color: var(--color-text-on-dark);
+}
+
+.root.inverse {
+	background-color: var(--color-primary-subtle);
+	color: var(--color-subheading);
+}
+
+.root.inverse:hover {
+	background-color: var(--color-primary);
+}
