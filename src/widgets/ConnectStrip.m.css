@@ -1,0 +1,32 @@
+.root {
+	padding: calc(var(--grid-size) * 12) 0;
+	background-color: var(--color-primary-subtle);
+	background-position-y: 50%;
+	background-size: cover;
+	background-image: url('../assets/images/connect-background.png');
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.blurb {
+	font-weight: 400;
+	font-size: 22.5px;
+	line-height: 30px;
+}
+
+.title,
+.blurb {
+	margin-bottom: calc(var(--grid-size) * 2);
+	color: var(--color-text-on-dark);
+	max-width: calc(var(--grid-size) * 98);
+}

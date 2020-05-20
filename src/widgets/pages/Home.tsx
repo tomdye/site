@@ -1,7 +1,9 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './Home.m.css';
+import * as commonCss from '../../Common.m.css';
 import { Hero } from '../Hero';
-import Summary from '../Summary';
+import { Summary } from '../Summary';
+import { ConnectStrip } from '../ConnectStrip';
 const advisementImg = require('../../assets/images/home/advisement.svg');
 const challengingImg = require('../../assets/images/home/challenging.svg');
 const confidenceImg = require('../../assets/images/home/confidence.svg');
@@ -15,7 +17,7 @@ export const Home = factory(function Home() {
 	return (
 		<div classes={css.root}>
 			<div classes={css.heroWrapper}>
-				<div classes={css.contentWrapper}>
+				<div classes={commonCss.contentWrapper}>
 					<Hero connect>
 						{{
 							title: 'ENTERPRISE WEB APPS',
@@ -25,7 +27,7 @@ export const Home = factory(function Home() {
 					</Hero>
 				</div>
 			</div>
-			<div classes={css.contentWrapper}>
+			<div classes={commonCss.contentWrapper}>
 				<Summary>
 					{{
 						title: 'Solve your most challenging problems',
@@ -55,6 +57,7 @@ export const Home = factory(function Home() {
 					}}
 				</Summary>
 			</div>
+			<ConnectStrip />
 		</div>
 	);
 });

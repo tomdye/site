@@ -1,11 +1,6 @@
 .root {
 }
 
-.contentWrapper {
-	max-width: var(--max-width);
-	margin: 0 auto;
-}
-
 .heroWrapper {
 	background-image: url('../../assets/images/hero/home.jpg');
 	background-size: cover;
