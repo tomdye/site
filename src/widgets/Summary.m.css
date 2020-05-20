@@ -1,0 +1,28 @@
+.root {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.image {
+}
+
+.leading {
+	flex: 50%;
+}
+
+.trailing {
+	flex: 50%;
+}
+
+.title {
+	margin-bottom: calc(var(--grid-size) * 2);
+}
+
+.blurb {
+}

@@ -5,6 +5,7 @@
 	--color-text-on-dark: #fff;
 	--color-text: #335878;
 	--color-primary: #5cdbdd;
+	--color-subheading: #1f3d56;
 
 	/* layout */
 	--grid-size: 8px;
@@ -15,8 +16,13 @@
 	--heading-font-family: 'Montserrat', sans-serif;
 
 	--heading-font-weight: 800;
-	--subheading-font-weight: 600;
+	--heading-font-size: 96px;
 
-	--base-font-size: 14px;
+	--subheading-font-weight: 600;
+	--subheading-font-size: 40px;
+	--subheading-line-height: 52px;
+
+	--base-font-size: 16px;
 	--base-font-weight: 400;
+	--base-line-height: 28px;
 }

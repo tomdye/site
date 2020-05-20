@@ -1,8 +1,4 @@
 .root {
-	font-family: var(--base-font-family);
-	font-weight: var(--base-font-weight);
-	font-size: var(--base-font-size);
-	color: var(--color-text);
 }
 
 .wrapper {

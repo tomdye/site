@@ -2,7 +2,31 @@
 @import './variables.css';
 @import './fonts.css';
 
+body {
+	font-family: var(--base-font-family);
+	font-size: var(--base-font-size);
+	font-weight: var(--base-font-weight);
+	color: var(--color-text);
+	line-height: var(--base-line-height);
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+h1 {
+	font-weight: var(--heading-font-weight);
+	font-family: var(--heading-font-family);
+	color: var(--color-text-on-dark);
+	font-size: var(--heading-font-size);
+	line-height: var(--heading-font-size);
+}
+
+h2 {
+	font-weight: var(--subheading-font-weight);
+	font-family: var(--heading-font-family);
+	color: var(--color-subheading);
+	font-size: var(--subheading-font-size);
+	line-height: var(--subheading-line-height);
 }
