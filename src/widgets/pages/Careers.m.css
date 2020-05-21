@@ -1,2 +1,9 @@
 .root {
 }
+
+.heroWrapper {
+	background-image: url('../../assets/images/hero/careers.jpg');
+	background-size: cover;
+	background-position: 50%;
+	background-color: var(--color-dark);
+}
