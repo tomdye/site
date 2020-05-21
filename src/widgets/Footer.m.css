@@ -40,12 +40,15 @@
 
 .links .item {
 	padding-right: calc(var(--grid-size) * 5);
-	color: var(--color-text-on-dark);
 	text-transform: uppercase;
-	font-weight: var(--subheading-font-weight);
+	font-weight: var(--heading2-font-weight);
 	font-family: var(--heading-font-family);
 	font-size: 14.4px;
 	transition: color 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
+}
+
+.item a {
+	color: var(--color-text-on-dark);
 }
 
 .links .item:last-of-type {
