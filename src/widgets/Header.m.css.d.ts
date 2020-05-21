@@ -1,5 +1,4 @@
 export const root: string;
-export const scrolled: string;
 export const homeLink: string;
 export const wrapper: string;
 export const links: string;

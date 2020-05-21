@@ -13,7 +13,6 @@
 	},
 	"dependencies": {
 		"@dojo/framework": "next",
-		"@dojo/widgets": "^7.0.0-rc.1",
 		"tslib": "~1.9.1"
 	},
 	"devDependencies": {
