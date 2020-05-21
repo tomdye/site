@@ -47,7 +47,8 @@
 	transition: color 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
 }
 
-.item a {
+.top a,
+.bottom a {
 	color: var(--color-text-on-dark);
 }
 
