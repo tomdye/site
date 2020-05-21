@@ -8,6 +8,8 @@
 	font-weight: 600;
 	font-size: 15px;
 	display: inline-block;
+	font-family: var(--heading-font-family);
+	letter-spacing: 2px;
 }
 
 .root:hover {

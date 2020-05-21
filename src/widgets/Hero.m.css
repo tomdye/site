@@ -10,6 +10,7 @@
 
 .title {
 	color: var(--color-primary);
+	letter-spacing: 4px;
 }
 
 .xlTitle {
@@ -27,6 +28,10 @@
 
 .blurb {
 	color: var(--color-text-on-dark);
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 400;
+	max-width: calc(var(--grid-size) * 115);
 }
 
 .buttonWrapper {
