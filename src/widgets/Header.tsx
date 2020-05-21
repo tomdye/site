@@ -2,6 +2,7 @@ import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './Header.m.css';
 import { ActiveLink } from '@dojo/framework/routing/ActiveLink';
 import { Link } from '@dojo/framework/routing/Link';
+const sitepenLogo = require('../assets/images/SitePenLogo_Light.svg');
 
 export interface HeaderProperties {}
 
@@ -11,8 +12,8 @@ export const Header = factory(function Header() {
 	return (
 		<header classes={css.root}>
 			<div classes={css.wrapper}>
-				<Link to="home">
-					<img src="/assets/images/SitePenLogo_Light.svg" />
+				<Link to="home" classes={css.homeLink}>
+					<img src={sitepenLogo} />
 				</Link>
 				<nav>
 					<ul classes={css.links}>

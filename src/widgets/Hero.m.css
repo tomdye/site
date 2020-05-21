@@ -1,2 +1,39 @@
 .root {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: calc(var(--grid-size) * 21) 0;
+}
+
+.title {
+	color: var(--color-primary);
+	letter-spacing: 4px;
+}
+
+.xlTitle {
+	font-weight: var(--heading-xl-font-weight);
+	color: var(--color-text-on-dark);
+	font-size: var(--heading-xl-font-size);
+}
+
+.title,
+.xlTitle {
+	margin-bottom: calc(var(--grid-size) * 2);
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.blurb {
+	color: var(--color-text-on-dark);
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 400;
+	max-width: calc(var(--grid-size) * 115);
+}
+
+.buttonWrapper {
+	margin-top: calc(var(--grid-size) * 4);
 }
