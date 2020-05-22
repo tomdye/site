@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'fa-sp';
+	src: url('fa-sp.eot?36938951');
+	src: url('fa-sp.woff2?36938951') format('woff2'), url('fa-sp.woff?36938951') format('woff'),
+		url('fa-sp.ttf?36938951') format('truetype'), url('fa-sp.svg?36938951#fa-sp') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	font-family: 'fa-sp';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: inline-block;
+	text-decoration: inherit;
+	line-height: 1;
+	text-align: center;
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-route:before {
+	content: '\e800';
+} /* '' */
+.icon-rss:before {
+	content: '\eaca';
+} /* '' */
+.icon-facebook:before {
+	content: '\ec67';
+} /* '' */
+.icon-linkedin:before {
+	content: '\ecce';
+} /* '' */
+.icon-twitter:before {
+	content: '\ed67';
+} /* '' */

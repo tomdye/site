@@ -40,19 +40,34 @@
 
 .links .item {
 	padding-right: calc(var(--grid-size) * 5);
-	color: var(--color-text-on-dark);
 	text-transform: uppercase;
-	font-weight: var(--subheading-font-weight);
+	font-weight: var(--heading2-font-weight);
 	font-family: var(--heading-font-family);
 	font-size: 14.4px;
 	transition: color 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
+}
+
+.top a,
+.bottom a {
+	color: var(--color-text-on-dark);
 }
 
 .links .item:last-of-type {
 	padding-right: 0;
 }
 
-.social .item {
-	padding-right: calc(var(--grid-size) * 2);
-	color: var(--color-text-on-dark);
+.social .item a {
+	margin-right: calc(var(--grid-size) * 2);
+	background-color: #083859;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social .item a:hover {
+	background-color: var(--color-primary);
+	color: var(--color-medium);
 }

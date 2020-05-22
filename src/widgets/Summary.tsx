@@ -25,7 +25,7 @@ export const Summary = factory(function Summary({ children, properties }) {
 			</div>
 			<div classes={css.trailing}>
 				<h2 classes={css.title}>{title}</h2>
-				<p>{blurb}</p>
+				<p classes={css.blurb}>{blurb}</p>
 			</div>
 		</div>
 	);

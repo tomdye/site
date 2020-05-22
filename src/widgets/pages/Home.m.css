@@ -7,3 +7,25 @@
 	background-position: 50%;
 	background-color: var(--color-dark);
 }
+
+.dependSummary {
+	margin-top: calc(var(--grid-size) * 8);
+}
+
+.dependList dt {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: var(--color-subheading);
+}
+
+.dependList dd {
+	padding-left: calc(var(--grid-size) * 6);
+	margin-bottom: calc(var(--grid-size) * 7);
+}
+
+.dependIcon {
+	margin-right: calc(var(--grid-size) * 2);
+	width: calc(var(--grid-size) * 4);
+	font-size: 32px;
+}

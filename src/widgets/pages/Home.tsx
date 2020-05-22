@@ -4,10 +4,15 @@ import * as commonCss from '../../Common.m.css';
 import { Hero } from '../Hero';
 import { Summary } from '../Summary';
 import { ConnectStrip } from '../ConnectStrip';
+import { Link } from '@dojo/framework/routing/Link';
 const advisementImg = require('../../assets/images/home/advisement.svg');
 const challengingImg = require('../../assets/images/home/challenging.svg');
 const confidenceImg = require('../../assets/images/home/confidence.svg');
 const dependImg = require('../../assets/images/home/depend.svg');
+const targetIcon = require('../../assets/images/icons/target.svg');
+const flagIcon = require('../../assets/images/icons/flag.svg');
+const rosetteIcon = require('../../assets/images/icons/rosette.svg');
+const partnershipIcon = require('../../assets/images/icons/partnership.svg');
 
 export interface HomeProperties {}
 
@@ -49,13 +54,61 @@ export const Home = factory(function Home() {
 						image: confidenceImg
 					}}
 				</Summary>
-				<Summary reverse>
-					{{
-						title: 'You can depend on us',
-						blurb: `Imagine leading a dedicated development team with unwavering confidence in its ability to tackle challenging problems, meet business objectives and deliver on a shared vision. With us as your partner, you’ll always have a technically validated project plan with an expert, cross-functional team producing high-quality results with care and predictability.`,
-						image: dependImg
-					}}
-				</Summary>
+				<div classes={css.dependSummary}>
+					<Summary reverse>
+						{{
+							title: 'You can depend on us',
+							blurb: (
+								<dl classes={css.dependList}>
+									<dt>
+										<img classes={css.dependIcon} src={targetIcon} />
+										<h3>ENTERPRISE EXPERTISE</h3>
+									</dt>
+									<dd>
+										Align with people who provide a rare combination of
+										enterprise experience,{' '}
+										<Link to="expertise">software development expertise</Link>,
+										and the skills to get it done.
+									</dd>
+									<dt>
+										<img classes={css.dependIcon} src={flagIcon} />
+										<h3>INDUSTRY LEADERSHIP</h3>
+									</dt>
+									<dd>
+										Be in sync with leaders in Enterprise JavaScript and{' '}
+										<Link to="about">work with a team</Link> that actively
+										shapes the open web.
+									</dd>
+									<dt>
+										<i classes={[css.dependIcon, 'icon-route']} />
+										<h3>PREDICTABILITY</h3>
+									</dt>
+									<dd>
+										Rely on timely delivery with predictably dependable results
+										from a complete team that can do it all, end-to-end.
+									</dd>
+									<dt>
+										<img classes={css.dependIcon} src={rosetteIcon} />
+										<h3>GREAT CUSTOMER EXPERIENCE</h3>
+									</dt>
+									<dd>
+										Reach your goals with a company that develops applications
+										and partner relationships with user experience in mind.
+									</dd>
+									<dt>
+										<img classes={css.dependIcon} src={partnershipIcon} />
+										<h3>DEDICATED PARTNERSHIP</h3>
+									</dt>
+									<dd>
+										Benefit from ongoing communication and a partnership based
+										on shared goals, knowledge transfer, and trust.
+									</dd>
+								</dl>
+							),
+							image: dependImg
+						}}
+					</Summary>
+				</div>
 			</div>
 			<ConnectStrip />
 		</div>

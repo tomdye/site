@@ -1,5 +1,6 @@
 @import './reset.css';
 @import './variables.css';
+@import './assets/fonts/fa-sp.css';
 
 body {
 	font-family: var(--base-font-family);
@@ -11,21 +12,33 @@ body {
 
 a {
 	text-decoration: none;
-	color: inherit;
+	color: var(--color-primary-subtle);
+}
+
+a:hover {
+	color: var(--color-primary);
 }
 
 h1 {
-	font-weight: var(--heading-font-weight);
+	font-weight: var(--heading1-font-weight);
 	font-family: var(--heading-font-family);
 	color: var(--color-text-on-dark);
-	font-size: var(--heading-font-size);
-	line-height: var(--heading-font-size);
+	font-size: var(--heading1-font-size);
+	line-height: var(--heading1-font-size);
 }
 
 h2 {
-	font-weight: var(--subheading-font-weight);
+	font-weight: var(--heading2-font-weight);
 	font-family: var(--heading-font-family);
 	color: var(--color-subheading);
-	font-size: var(--subheading-font-size);
-	line-height: var(--subheading-line-height);
+	font-size: var(--heading2-font-size);
+	line-height: var(--heading2-line-height);
+}
+
+h3 {
+	font-weight: var(--heading3-font-weight);
+	font-family: var(--heading-font-family);
+	font-size: var(--heading3-font-size);
+	margin-bottom: var(--grid-size);
+	letter-spacing: 2px;
 }
