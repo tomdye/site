@@ -1,5 +1,6 @@
 @import './reset.css';
 @import './variables.css';
+@import './assets/fonts/fa-sp.css';
 
 body {
 	font-family: var(--base-font-family);

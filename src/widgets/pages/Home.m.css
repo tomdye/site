@@ -27,4 +27,5 @@
 .dependIcon {
 	margin-right: calc(var(--grid-size) * 2);
 	width: calc(var(--grid-size) * 4);
+	font-size: 32px;
 }

@@ -38,16 +38,24 @@ export const Footer = factory(function Footer() {
 					</nav>
 					<ul classes={css.social}>
 						<li classes={css.item}>
-							<a>F</a>
+							<a href="https://www.facebook.com/SitePen" target="_blank">
+								<i title="facebook" classes="icon-facebook"></i>
+							</a>
 						</li>
 						<li classes={css.item}>
-							<a>T</a>
+							<a href="https://twitter.com/sitepen" target="_blank">
+								<i title="twitter" classes="icon-twitter"></i>
+							</a>
 						</li>
 						<li classes={css.item}>
-							<a>in</a>
+							<a href="https://www.linkedin.com/company/sitepen-inc-" target="_blank">
+								<i title="linkedin" classes="icon-linkedin"></i>
+							</a>
 						</li>
 						<li classes={css.item}>
-							<a>feed</a>
+							<a href="https://www.sitepen.com/feed/" target="_blank">
+								<i title="rss" classes="icon-rss"></i>
+							</a>
 						</li>
 					</ul>
 				</div>

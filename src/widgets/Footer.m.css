@@ -56,7 +56,18 @@
 	padding-right: 0;
 }
 
-.social .item {
-	padding-right: calc(var(--grid-size) * 2);
-	color: var(--color-text-on-dark);
+.social .item a {
+	margin-right: calc(var(--grid-size) * 2);
+	background-color: #083859;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social .item a:hover {
+	background-color: var(--color-primary);
+	color: var(--color-medium);
 }

@@ -80,7 +80,7 @@ export const Home = factory(function Home() {
 										shapes the open web.
 									</dd>
 									<dt>
-										<img classes={css.dependIcon} src={targetIcon} />
+										<i classes={[css.dependIcon, 'icon-route']} />
 										<h3>PREDICTABILITY</h3>
 									</dt>
 									<dd>
