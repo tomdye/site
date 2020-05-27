@@ -50,21 +50,21 @@ export const Home = factory(function Home() {
 					{{
 						title: 'Solve your most challenging problems',
 						blurb: `High engineering costs and stalled projects are common complaints for many companies. Our approach to creating healthy development organizations will quickly help you identify the “why” of these problems and our team will work to get you back to the business of moving efficiently toward your goals.`,
-						image: challengingImg
+						image: <img src={challengingImg} classes={css.summaryImage} />
 					}}
 				</Summary>
 				<Summary reverse>
 					{{
 						title: 'Get continuous advisement throughout the SDLC',
 						blurb: `You need a cross-functional team to understand your business and partner with you to define and incorporate strategy, design, and technology into all aspects of your product. Allowing for big-picture thinking to inform decisions in even the smallest details of a project creates and nurtures smart, engaged teams who care about delivering high-quality user experiences, as your web app continues to grow and evolve.`,
-						image: advisementImg
+						image: <img src={advisementImg} classes={css.summaryImage} />
 					}}
 				</Summary>
 				<Summary>
 					{{
 						title: 'Envision the future with confidence',
 						blurb: `Imagine leading a dedicated development team with unwavering confidence in its ability to tackle challenging problems, meet business objectives and deliver on a shared vision. With us as your partner, you’ll always have a technically validated project plan with an expert, cross-functional team producing high-quality results with care and predictability.`,
-						image: confidenceImg
+						image: <img src={confidenceImg} classes={css.summaryImage} />
 					}}
 				</Summary>
 				<div classes={css.dependSummary}>
@@ -118,7 +118,7 @@ export const Home = factory(function Home() {
 									</dd>
 								</dl>
 							),
-							image: dependImg
+							image: <img src={dependImg} />
 						}}
 					</Summary>
 				</div>

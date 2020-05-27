@@ -8,3 +8,4 @@ export const reference: string;
 export const referenceBlurb: string;
 export const referenceTitle: string;
 export const clientSlide: string;
+export const summaryImage: string;

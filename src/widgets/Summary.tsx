@@ -7,7 +7,7 @@ export interface SummaryProperties {
 }
 
 export interface SummaryChildren {
-	image: string;
+	image: RenderResult;
 	blurb: RenderResult;
 	title: RenderResult;
 }
@@ -20,9 +20,7 @@ export const Summary = factory(function Summary({ children, properties }) {
 
 	return (
 		<div classes={[css.root, reverse && css.reverse]}>
-			<div classes={css.leading}>
-				<img src={image} />
-			</div>
+			<div classes={css.leading}>{image}</div>
 			<div classes={css.trailing}>
 				<h2 classes={css.title}>{title}</h2>
 				<p classes={css.blurb}>{blurb}</p>
