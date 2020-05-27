@@ -3,3 +3,8 @@ export const heroWrapper: string;
 export const dependSummary: string;
 export const dependList: string;
 export const dependIcon: string;
+export const carouselWrapper: string;
+export const reference: string;
+export const referenceBlurb: string;
+export const referenceTitle: string;
+export const clientSlide: string;
