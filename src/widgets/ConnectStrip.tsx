@@ -3,17 +3,28 @@ import * as css from './ConnectStrip.m.css';
 import * as commonCss from '../Common.m.css';
 import { ConnectButton } from './ConnectButton';
 
-const factory = create();
+export interface ConnectStripProperties {
+	variant?: 'expertise';
+}
 
-export const ConnectStrip = factory(function ConnectStrip() {
+const factory = create().properties<ConnectStripProperties>();
+
+export const ConnectStrip = factory(function ConnectStrip({ properties }) {
+	const { variant } = properties();
+	let title = `WE'D LOVE TO HEAR FROM YOU`;
+	let blurb = `Whether you need help with a current or upcoming project, initial advice and
+	consultation, or just want to introduce yourself.`;
+
+	if (variant === 'expertise') {
+		title = 'OUR EXPERTISE PROPELS YOUR SUCCESS';
+		blurb = `Accelerate progress toward your goals by leveraging an entire enterprise web development team, instantly.`;
+	}
+
 	return (
-		<div classes={css.root}>
+		<div classes={[css.root, variant === 'expertise' && css.expertise]}>
 			<div classes={commonCss.contentWrapper}>
-				<h2 classes={css.title}>WE'D LOVE TO HEAR FROM YOU</h2>
-				<h3 classes={css.blurb}>
-					Whether you need help with a current or upcoming project, initial advice and
-					consultation, or just want to introduce yourself.
-				</h3>
+				<h2 classes={css.title}>{title}</h2>
+				<h3 classes={css.blurb}>{blurb}</h3>
 				<ConnectButton />
 			</div>
 		</div>
