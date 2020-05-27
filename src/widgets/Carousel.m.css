@@ -133,8 +133,3 @@
 		animation-name: none;
 	}
 }
-
-.root:hover .snapper,
-.root:focus-within .snapper {
-	animation-name: none;
-}
