@@ -7,3 +7,26 @@
 	background-position: 50%;
 	background-color: var(--color-dark);
 }
+
+.topSection {
+	margin: calc(var(--grid-size) * 8) 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.leading {
+	flex: 50%;
+}
+
+.trailing {
+	flex: 50%;
+}
+
+.servicesList {
+}
+
+.servicesItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
