@@ -5,6 +5,7 @@ import * as commonCss from '../../Common.m.css';
 import { ConnectStrip } from '../ConnectStrip';
 import { Summary } from '../Summary';
 import { Link } from '@dojo/framework/routing/Link';
+import { OSSLinks } from '../OSSLinks';
 
 const fannieImage = require('../../assets/images/ourwork/fannie.png');
 const marriottImage = require('../../assets/images/ourwork/marriott.png');
@@ -147,6 +148,7 @@ export const Work = factory(function Work() {
 						)
 					}}
 				</Summary>
+				<OSSLinks />
 			</div>
 			<ConnectStrip />
 		</div>
