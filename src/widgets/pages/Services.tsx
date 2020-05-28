@@ -9,6 +9,17 @@ const elevateIcon = require('../../assets/images/icons/elevate.svg');
 const guideIcon = require('../../assets/images/icons/guide.svg');
 const communicationIcon = require('../../assets/images/icons/communication.svg');
 const knowledgeIcon = require('../../assets/images/icons/knowledge.svg');
+const agileIcon = require('../../assets/images/icons/agile.svg');
+const prototypeIcon = require('../../assets/images/icons/prototype.svg');
+const enterpriseIcon = require('../../assets/images/icons/enterprise.svg');
+const fullstackIcon = require('../../assets/images/icons/fullstack.svg');
+const performanceIcon = require('../../assets/images/icons/performance.svg');
+const qualityIcon = require('../../assets/images/icons/quality.svg');
+const devopsIcon = require('../../assets/images/icons/devops.svg');
+const approachIcon = require('../../assets/images/icons/approach.svg');
+const technologyIcon = require('../../assets/images/icons/technology.svg');
+const legacyIcon = require('../../assets/images/icons/legacy.svg');
+const deliveryIcon = require('../../assets/images/icons/delivery.svg');
 const fannieLogo = require('../../assets/images/logos/fannie.svg');
 const marriottLogo = require('../../assets/images/logos/marriott.svg');
 const builtLogo = require('../../assets/images/logos/built.png');
@@ -18,6 +29,8 @@ const reactLogo = require('../../assets/images/logos/react.svg');
 const completeImg = require('../../assets/images/services/complete.svg');
 const holisticImg = require('../../assets/images/services/holistic.svg');
 const agileImg = require('../../assets/images/services/agile.svg');
+const devImg = require('../../assets/images/services/dev.svg');
+const consultingImg = require('../../assets/images/services/consulting.svg');
 
 export interface ServicesProperties {}
 
@@ -45,9 +58,9 @@ export const Services = factory(function Services() {
 								office-full of developers waiting for instructions.
 							</h2>
 						</div>
-						<div classes={css.trailing}>
+						<div classes={[css.trailing, css.listSummary]}>
 							<p>You need an agile team who is constantly moving forward to:</p>
-							<ul>
+							<ul classes={css.iconList}>
 								<li>
 									<img src={elevateIcon} /> Elevate your technical capabilities
 								</li>
@@ -164,6 +177,91 @@ export const Services = factory(function Services() {
 				</section>
 			</div>
 			<ConnectStrip variant="expertise" />
+			<div classes={commonCss.contentWrapper}>
+				<section>
+					<h2 classes={css.heading}>Services We Offer</h2>
+					<Summary smaller>
+						{{
+							title: 'Modern Enterprise Web Development',
+							blurb: (
+								<div classes={css.listSummary}>
+									<p>
+										Build and evolve your application the right way. Whether we
+										partner with your product team or take full ownership with
+										our team, we’ll bring the experience and expertise to
+										rapidly develop your application.
+									</p>
+									<p>Build the right application with:</p>
+									<ul classes={css.iconList}>
+										<li>
+											<img src={agileIcon} /> Agile discover, analysis, and
+											planning
+										</li>
+										<li>
+											<img src={prototypeIcon} /> Rapid prototyping and design
+											cycles
+										</li>
+										<li>
+											<img src={enterpriseIcon} /> Enterprise UI and UX design
+										</li>
+										<li>
+											<img src={fullstackIcon} /> Full-stack Enterprise
+											JavaScript
+										</li>
+										<li>
+											<img src={performanceIcon} /> Performance audits and
+											improvements
+										</li>
+										<li>
+											<img src={qualityIcon} /> Quality assurance testing
+										</li>
+										<li>
+											<img src={devopsIcon} /> DevOps implementation
+										</li>
+									</ul>
+								</div>
+							),
+							image: <img src={devImg} alt="Illustration for App Development" />
+						}}
+					</Summary>
+					<Summary smaller reverse>
+						{{
+							title: 'Strategic & Technical Consulting',
+							blurb: (
+								<div classes={css.listSummary}>
+									<p>
+										Keep up with the evolving web engineering landscape and
+										quickly adapt to shifting business priorities. We help you
+										become strategically positioned by defining, structuring,
+										and building the organizational and technical capabilities
+										you need for lean, rapid web application deployment.
+									</p>
+									<p>Achieve your strategic goals with:</p>
+									<ul classes={css.iconList}>
+										<li>
+											<img src={approachIcon} /> Development approach,
+											planning, and implementation
+										</li>
+										<li>
+											<img src={technologyIcon} /> Architecture, UX, open
+											source software, and technology expertise
+										</li>
+										<li>
+											<img src={legacyIcon} /> Legacy application
+											maintainability and re-engineering
+										</li>
+										<li>
+											<img src={deliveryIcon} /> Engineering culture, healthy
+											teams, and continuous value delivery
+										</li>
+									</ul>
+								</div>
+							),
+							image: <img src={consultingImg} alt="Illustration for Consulting" />
+						}}
+					</Summary>
+				</section>
+			</div>
 			<ConnectStrip />
 		</div>
 	);

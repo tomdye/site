@@ -34,23 +34,23 @@
 	font-family: var(--base-font-family);
 }
 
-.topSection p,
-.topSection li {
+.listSummary p {
 	margin-bottom: calc(var(--grid-size) * 2);
 }
 
-.topSection li {
+.iconList li {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	line-height: 24px;
+	margin-bottom: calc(var(--grid-size) * 2);
 }
 
-.topSection ul {
+.iconList {
 	padding: var(--grid-size) 0;
 }
 
-.topSection li img {
+.iconList li img {
 	margin-right: calc(var(--grid-size) * 2);
 }
 
@@ -107,7 +107,7 @@
 .successSection {
 }
 
-.successSection .heading {
+.heading {
 	font-family: var(--base-font-family);
 	font-size: 32px;
 	font-weight: 600;

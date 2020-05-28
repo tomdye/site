@@ -4,6 +4,8 @@ export const topSection: string;
 export const shadow: string;
 export const leading: string;
 export const trailing: string;
+export const listSummary: string;
+export const iconList: string;
 export const resultsSection: string;
 export const clientLogoWrapper: string;
 export const builtWith: string;
