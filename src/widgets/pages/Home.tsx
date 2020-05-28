@@ -70,7 +70,7 @@ export const Home = factory(function Home() {
 				<div classes={css.dependSummary}>
 					<Summary reverse>
 						{{
-							title: 'You can depend on us',
+							title: <span id="dependable">You can depend on us'</span>,
 							blurb: (
 								<dl classes={css.dependList}>
 									<dt>

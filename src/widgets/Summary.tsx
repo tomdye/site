@@ -4,6 +4,7 @@ import { RenderResult } from '@dojo/framework/core/interfaces';
 
 export interface SummaryProperties {
 	reverse?: boolean;
+	smaller?: boolean;
 }
 
 export interface SummaryChildren {
@@ -16,13 +17,18 @@ const factory = create().properties<SummaryProperties>().children<SummaryChildre
 
 export const Summary = factory(function Summary({ children, properties }) {
 	const [{ title, image, blurb }] = children();
-	const { reverse } = properties();
+	const { reverse, smaller } = properties();
+	const titleNode = smaller ? (
+		<h3 classes={css.title}>{title}</h3>
+	) : (
+		<h2 classes={css.title}>{title}</h2>
+	);
 
 	return (
 		<div classes={[css.root, reverse && css.reverse]}>
 			<div classes={css.leading}>{image}</div>
 			<div classes={css.trailing}>
-				<h2 classes={css.title}>{title}</h2>
+				{titleNode}
 				<p classes={css.blurb}>{blurb}</p>
 			</div>
 		</div>

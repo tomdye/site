@@ -3,6 +3,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+	margin-bottom: calc(var(--grid-size) * 8);
 }
 
 .reverse {
@@ -18,8 +19,20 @@
 	flex: 50%;
 }
 
-.title {
+h2.title {
 	margin-bottom: calc(var(--grid-size) * 2);
+	font-size: 40px;
+	font-weight: 500;
+	font-family: var(--base-font-family);
+	line-height: 52px;
+}
+
+h3.title {
+	margin-bottom: calc(var(--grid-size) * 2);
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 28px;
+	font-family: var(--base-font-family);
 }
 
 .blurb {
