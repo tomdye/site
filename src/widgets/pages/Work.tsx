@@ -7,10 +7,10 @@ import { Summary } from '../Summary';
 import { Link } from '@dojo/framework/routing/Link';
 import { OSSLinks } from '../OSSLinks';
 
-const fannieImage = require('../../assets/images/ourwork/fannie.png');
-const marriottImage = require('../../assets/images/ourwork/marriott.png');
-const builtImage = require('../../assets/images/ourwork/built.png');
-const socialKnowledgeImage = require('../../assets/images/ourwork/socialKnowledge.png');
+const fannieImage = require('../../assets/images/ourwork/fannie.jpg');
+const marriottImage = require('../../assets/images/ourwork/marriott.jpg');
+const builtImage = require('../../assets/images/ourwork/built.jpg');
+const socialKnowledgeImage = require('../../assets/images/ourwork/socialKnowledge.jpg');
 
 export interface WorkProperties {}
 
