@@ -19,6 +19,10 @@
 	flex: 50%;
 }
 
+.leading * {
+	max-width: 100%;
+}
+
 h2.title {
 	margin-bottom: calc(var(--grid-size) * 2);
 	font-size: 40px;
