@@ -55,6 +55,30 @@ const routes: RouteConfig[] = [
 		path: 'careers',
 		outlet: 'main',
 		title: 'Careers | SitePen'
+	},
+	{
+		id: 'casestudyFannie',
+		path: 'case-study/fannie-mae',
+		outlet: 'main',
+		title: 'Modernizing & Automating Technology for Fannie Mae | SitePen'
+	},
+	{
+		id: 'casestudyMarriott',
+		path: 'case-study/marriott',
+		outlet: 'main',
+		title: 'Modernizing Apps &amp; Improving Usability for Marriott | SitePen'
+	},
+	{
+		id: 'casestudyBuilt',
+		path: 'case-study/built-technologies',
+		outlet: 'main',
+		title: 'Custom Web Application: Built Technologies | SitePen'
+	},
+	{
+		id: 'casestudySocial',
+		path: 'case-study/social-knowledge',
+		outlet: 'main',
+		title: 'Using React to Update Social Knowledge Platforms | SitePen'
 	}
 ];
 

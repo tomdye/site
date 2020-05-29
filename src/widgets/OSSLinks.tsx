@@ -10,7 +10,7 @@ const dgridLogo = require('../assets/images/oss/dgrid.svg');
 
 const factory = create();
 
-export const OSSLinks = factory(function OSSLinks({ children, properties }) {
+export const OSSLinks = factory(function OSSLinks() {
 	return (
 		<div classes={css.root}>
 			<h2 classes={css.heading}>Open Source Software Development</h2>

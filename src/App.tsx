@@ -12,6 +12,10 @@ import { Privacy } from './widgets/pages/Privacy';
 import { Services } from './widgets/pages/Services';
 import { Work } from './widgets/pages/Work';
 import * as css from './App.m.css';
+import { CaseStudyFannie } from './widgets/pages/CaseStudyFannie';
+import { CaseStudyMarriott } from './widgets/pages/CaseStudyMarriott';
+import CaseStudyBuilt from './widgets/pages/CaseStudyBuilt';
+import CaseStudySocial from './widgets/pages/CaseStudySocial';
 
 export interface AppProperties {}
 
@@ -33,7 +37,11 @@ export const App = factory(function App() {
 						opensource: <OpenSource />,
 						privacy: <Privacy />,
 						services: <Services />,
-						work: <Work />
+						work: <Work />,
+						casestudyFannie: <CaseStudyFannie />,
+						casestudyMarriott: <CaseStudyMarriott />,
+						casestudyBuilt: <CaseStudyBuilt />,
+						casestudySocial: <CaseStudySocial />
 					}}
 				</Outlet>
 			</main>
