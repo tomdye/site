@@ -15,7 +15,7 @@ const factory = create();
 export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 	return (
 		<div classes={css.root}>
-			<div classes={css.heroWrapper}>
+			<div classes={[css.heroWrapper, css.marriottHero]}>
 				<div classes={commonCss.contentWrapper}>
 					<Hero>
 						{{

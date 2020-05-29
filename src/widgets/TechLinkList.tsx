@@ -12,7 +12,14 @@ const links = {
 	dojoToolkit: 'https://dojotoolkit.org/',
 	dgrid: 'https://dgrid.io/',
 	dstore: 'https://dstorejs.io/',
-	intern: 'https://theintern.io/'
+	intern: 'https://theintern.io/',
+	react: 'https://reactjs.org/',
+	canjs: 'https://canjs.com/',
+	php: 'https://www.php.net/',
+	jest: 'https://jestjs.io/',
+	reactNative: 'https://facebook.github.io/',
+	redux: 'https://redux.js.org/',
+	mobx: 'https://mobx.js.org/'
 };
 
 export type TechLinkType = keyof typeof links;

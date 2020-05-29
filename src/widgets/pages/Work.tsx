@@ -107,7 +107,7 @@ export const Work = factory(function Work() {
 									SitePen to increase its skill and team size to overcome the
 									welcome challenges of success and rapid growth.
 								</p>
-								<Link to="casestudy/built" classes={css.linkButton}>
+								<Link to="casestudyBuilt" classes={css.linkButton}>
 									view case study
 								</Link>
 							</virtual>
@@ -134,7 +134,7 @@ export const Work = factory(function Work() {
 									architecture, tools and technologies for the future of its
 									product.
 								</p>
-								<Link to="casestudy/socialKnowledge" classes={css.linkButton}>
+								<Link to="casestudySocial" classes={css.linkButton}>
 									view case study
 								</Link>
 							</virtual>
