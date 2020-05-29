@@ -6,4 +6,16 @@
 	background-size: cover;
 	background-position: 50%;
 	background-color: var(--color-dark);
+	margin-bottom: calc(var(--grid-size) * 8);
+}
+
+.bullets {
+	list-style: disc;
+	padding-left: calc(var(--grid-size) * 4);
+}
+
+h3 .outroTitle {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
 }

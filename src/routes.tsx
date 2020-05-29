@@ -55,6 +55,12 @@ const routes: RouteConfig[] = [
 		path: 'careers',
 		outlet: 'main',
 		title: 'Careers | SitePen'
+	},
+	{
+		id: 'casestudyFannie',
+		path: 'case-study/fannie-mae',
+		outlet: 'main',
+		title: 'Modernizing & Automating Technology for Fannie Mae | SitePen'
 	}
 ];
 

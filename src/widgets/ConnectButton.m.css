@@ -26,3 +26,13 @@
 .root.inverse:hover {
 	background-color: var(--color-primary);
 }
+
+.root.cta {
+	background-color: var(--color-primary);
+	color: var(--color-text-on-dark);
+}
+
+.root.cta:hover {
+	background-color: var(--color-medium);
+	color: var(--color-text-on-dark);
+}

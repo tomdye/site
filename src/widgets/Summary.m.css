@@ -13,10 +13,12 @@
 .leading {
 	flex: 50%;
 	text-align: center;
+	padding: var(--grid-size);
 }
 
 .trailing {
 	flex: 50%;
+	padding: var(--grid-size);
 }
 
 .leading * {
@@ -39,6 +41,14 @@ h3.title {
 	font-family: var(--base-font-family);
 }
 
+.title {
+	color: var(--color-medium);
+}
+
 .blurb {
 	line-height: 28.8px;
+}
+
+.root p {
+	margin-bottom: calc(var(--grid-size) * 2);
 }

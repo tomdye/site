@@ -1,0 +1,27 @@
+.root {
+}
+
+.root ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.root li {
+	padding: calc(var(--grid-size) * 2);
+}
+
+.root h3 {
+	font-size: 16px;
+	font-weight: 700;
+	font-family: var(--base-font-family);
+	line-height: 20px;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	margin-bottom: var(--grid-size);
+	color: var(--color-medium);
+}
+
+.root img {
+	width: 40px;
+}

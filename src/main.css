@@ -40,5 +40,4 @@ h3 {
 	font-family: var(--heading-font-family);
 	font-size: var(--heading3-font-size);
 	margin-bottom: var(--grid-size);
-	letter-spacing: 2px;
 }

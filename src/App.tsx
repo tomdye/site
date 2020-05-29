@@ -12,6 +12,7 @@ import { Privacy } from './widgets/pages/Privacy';
 import { Services } from './widgets/pages/Services';
 import { Work } from './widgets/pages/Work';
 import * as css from './App.m.css';
+import { CaseStudyFannie } from './widgets/pages/CaseStudyFannie';
 
 export interface AppProperties {}
 
@@ -33,7 +34,8 @@ export const App = factory(function App() {
 						opensource: <OpenSource />,
 						privacy: <Privacy />,
 						services: <Services />,
-						work: <Work />
+						work: <Work />,
+						casestudyFannie: <CaseStudyFannie />
 					}}
 				</Outlet>
 			</main>

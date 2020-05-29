@@ -55,7 +55,7 @@ export const Work = factory(function Work() {
 									will support the needs of their Fintech operations for years to
 									come.
 								</p>
-								<Link to="casestudy/fannie" classes={css.linkButton}>
+								<Link to="casestudyFannie" classes={css.linkButton}>
 									view case study
 								</Link>
 							</virtual>
