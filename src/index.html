@@ -25,16 +25,18 @@
 		<div id="app"></div>
 	</body>
 	<script>
-		var observer = new IntersectionObserver(
-			function (entries) {
-				if (entries[0].intersectionRatio === 0)
-					document.querySelector('#site-header').classList.add('sticky');
-				else if (entries[0].intersectionRatio === 1)
-					document.querySelector('#site-header').classList.remove('sticky');
-			},
-			{ threshold: [0, 1] }
-		);
+		if (window.IntersectionObserver) {
+			const observer = new IntersectionObserver(
+				function (entries) {
+					if (entries[0].intersectionRatio === 0)
+						document.querySelector('#site-header').classList.add('sticky');
+					else if (entries[0].intersectionRatio === 1)
+						document.querySelector('#site-header').classList.remove('sticky');
+				},
+				{ threshold: [0, 1] }
+			);
 
-		observer.observe(document.querySelector('#sentinel'));
+			observer.observe(document.querySelector('#sentinel'));
+		}
 	</script>
 </html>
