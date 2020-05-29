@@ -10,7 +10,7 @@ const factory = create().properties<HeaderProperties>();
 
 export const Header = factory(function Header() {
 	return (
-		<header classes={css.root}>
+		<header id="site-header" classes={css.root}>
 			<div classes={css.wrapper}>
 				<Link to="home" classes={css.homeLink}>
 					<img src={sitepenLogo} />

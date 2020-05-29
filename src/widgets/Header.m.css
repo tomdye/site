@@ -1,5 +1,4 @@
 .root {
-	background-color: rgba(9, 19, 31, 0.7);
 	height: calc(var(--grid-size) * 8);
 	display: flex;
 	align-items: center;
@@ -9,6 +8,9 @@
 	left: 0;
 	right: 0;
 	top: 0;
+	background: transparent;
+	transition: background 0.3s, padding 0.3s;
+	z-index: 99;
 }
 
 .homeLink {

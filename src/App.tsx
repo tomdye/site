@@ -22,6 +22,7 @@ export const App = factory(function App() {
 		<div classes={css.root}>
 			<Header />
 			<main>
+				<div id="sentinel"></div>
 				<Outlet id="main">
 					{{
 						about: <About />,
