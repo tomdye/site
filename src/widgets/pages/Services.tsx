@@ -62,18 +62,20 @@ export const Services = factory(function Services() {
 							<p>You need an agile team who is constantly moving forward to:</p>
 							<ul classes={css.iconList}>
 								<li>
-									<img src={elevateIcon} /> Elevate your technical capabilities
+									<img src={elevateIcon} alt="elevate icon" /> Elevate your
+									technical capabilities
 								</li>
 								<li>
-									<img src={guideIcon} /> Guide significant decisions
+									<img src={guideIcon} alt="guide icon" /> Guide significant
+									decisions
 								</li>
 								<li>
-									<img src={communicationIcon} /> Keep communication frequent and
-									open
+									<img src={communicationIcon} alt="communication icon" /> Keep
+									communication frequent and open
 								</li>
 								<li>
-									<img src={knowledgeIcon} /> Share knowledge about the right
-									tech, tools, and standards
+									<img src={knowledgeIcon} alt="knowledge icon" /> Share knowledge
+									about the right tech, tools, and standards
 								</li>
 							</ul>
 							<p>

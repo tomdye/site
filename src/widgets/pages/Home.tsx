@@ -39,9 +39,21 @@ export const Home = factory(function Home() {
 						}}
 					</Hero>
 					<Carousel>
-						<img classes={css.clientSlide} src={clientsSlide1} />
-						<img classes={css.clientSlide} src={clientsSlide2} />
-						<img classes={css.clientSlide} src={clientsSlide3} />
+						<img
+							classes={css.clientSlide}
+							src={clientsSlide1}
+							alt="Logos for TD Ameritrade, Ellie Mae, Fannie Mae, and HSBC"
+						/>
+						<img
+							classes={css.clientSlide}
+							src={clientsSlide2}
+							alt="Logos for Intuit, JP Morgan Chase, Liberty Mutual, and Marriott"
+						/>
+						<img
+							classes={css.clientSlide}
+							src={clientsSlide3}
+							alt="Logos for BMO, Pearson, Bristol-Myers Squibb and Pershing"
+						/>
 					</Carousel>
 				</div>
 			</div>
@@ -50,21 +62,39 @@ export const Home = factory(function Home() {
 					{{
 						title: 'Solve your most challenging problems',
 						blurb: `High engineering costs and stalled projects are common complaints for many companies. Our approach to creating healthy development organizations will quickly help you identify the “why” of these problems and our team will work to get you back to the business of moving efficiently toward your goals.`,
-						image: <img src={challengingImg} classes={css.summaryImage} />
+						image: (
+							<img
+								src={challengingImg}
+								classes={css.summaryImage}
+								alt="illustration of challenging"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary reverse>
 					{{
 						title: 'Get continuous advisement throughout the SDLC',
 						blurb: `You need a cross-functional team to understand your business and partner with you to define and incorporate strategy, design, and technology into all aspects of your product. Allowing for big-picture thinking to inform decisions in even the smallest details of a project creates and nurtures smart, engaged teams who care about delivering high-quality user experiences, as your web app continues to grow and evolve.`,
-						image: <img src={advisementImg} classes={css.summaryImage} />
+						image: (
+							<img
+								src={advisementImg}
+								classes={css.summaryImage}
+								alt="illustration of advisement"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary>
 					{{
 						title: 'Envision the future with confidence',
 						blurb: `Imagine leading a dedicated development team with unwavering confidence in its ability to tackle challenging problems, meet business objectives and deliver on a shared vision. With us as your partner, you’ll always have a technically validated project plan with an expert, cross-functional team producing high-quality results with care and predictability.`,
-						image: <img src={confidenceImg} classes={css.summaryImage} />
+						image: (
+							<img
+								src={confidenceImg}
+								classes={css.summaryImage}
+								alt="illustration of confidence"
+							/>
+						)
 					}}
 				</Summary>
 				<div classes={css.dependSummary}>
@@ -74,7 +104,11 @@ export const Home = factory(function Home() {
 							blurb: (
 								<dl classes={css.dependList}>
 									<dt>
-										<img classes={css.dependIcon} src={targetIcon} />
+										<img
+											classes={css.dependIcon}
+											src={targetIcon}
+											alt="target icon"
+										/>
 										<h3>ENTERPRISE EXPERTISE</h3>
 									</dt>
 									<dd>
@@ -84,7 +118,11 @@ export const Home = factory(function Home() {
 										and the skills to get it done.
 									</dd>
 									<dt>
-										<img classes={css.dependIcon} src={flagIcon} />
+										<img
+											classes={css.dependIcon}
+											src={flagIcon}
+											alt="flag icon"
+										/>
 										<h3>INDUSTRY LEADERSHIP</h3>
 									</dt>
 									<dd>
@@ -101,7 +139,11 @@ export const Home = factory(function Home() {
 										from a complete team that can do it all, end-to-end.
 									</dd>
 									<dt>
-										<img classes={css.dependIcon} src={rosetteIcon} />
+										<img
+											classes={css.dependIcon}
+											src={rosetteIcon}
+											alt="rosette icon"
+										/>
 										<h3>GREAT CUSTOMER EXPERIENCE</h3>
 									</dt>
 									<dd>
@@ -109,7 +151,11 @@ export const Home = factory(function Home() {
 										and partner relationships with user experience in mind.
 									</dd>
 									<dt>
-										<img classes={css.dependIcon} src={partnershipIcon} />
+										<img
+											classes={css.dependIcon}
+											src={partnershipIcon}
+											alt="partnership icon"
+										/>
 										<h3>DEDICATED PARTNERSHIP</h3>
 									</dt>
 									<dd>
@@ -118,7 +164,7 @@ export const Home = factory(function Home() {
 									</dd>
 								</dl>
 							),
-							image: <img src={dependImg} />
+							image: <img src={dependImg} alt="illustration of dependability" />
 						}}
 					</Summary>
 				</div>
