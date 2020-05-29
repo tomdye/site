@@ -61,6 +61,12 @@ const routes: RouteConfig[] = [
 		path: 'case-study/fannie-mae',
 		outlet: 'main',
 		title: 'Modernizing & Automating Technology for Fannie Mae | SitePen'
+	},
+	{
+		id: 'casestudyMarriott',
+		path: 'case-study/marriott',
+		outlet: 'main',
+		title: 'Modernizing Apps &amp; Improving Usability for Marriott | SitePen'
 	}
 ];
 

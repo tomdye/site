@@ -81,7 +81,7 @@ export const Work = factory(function Work() {
 									help keep apps modern and useful for companies whose bottomline
 									depends on the optimal performance of its applications.
 								</p>
-								<Link to="casestudy/marriot" classes={css.linkButton}>
+								<Link to="casestudyMarriott" classes={css.linkButton}>
 									view case study
 								</Link>
 							</virtual>

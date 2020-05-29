@@ -8,7 +8,11 @@ const links = {
 	ngrx: 'https://ngrx.io/',
 	protractor: 'https://www.protractortest.org/',
 	spring: 'https://spring.io/',
-	typescript: 'http://www.typescriptlang.org/'
+	typescript: 'http://www.typescriptlang.org/',
+	dojoToolkit: 'https://dojotoolkit.org/',
+	dgrid: 'https://dgrid.io/',
+	dstore: 'https://dstorejs.io/',
+	intern: 'https://theintern.io/'
 };
 
 export type TechLinkType = keyof typeof links;

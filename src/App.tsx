@@ -13,6 +13,7 @@ import { Services } from './widgets/pages/Services';
 import { Work } from './widgets/pages/Work';
 import * as css from './App.m.css';
 import { CaseStudyFannie } from './widgets/pages/CaseStudyFannie';
+import { CaseStudyMarriott } from './widgets/pages/CaseStudyMarriott';
 
 export interface AppProperties {}
 
@@ -35,7 +36,8 @@ export const App = factory(function App() {
 						privacy: <Privacy />,
 						services: <Services />,
 						work: <Work />,
-						casestudyFannie: <CaseStudyFannie />
+						casestudyFannie: <CaseStudyFannie />,
+						casestudyMarriott: <CaseStudyMarriott />
 					}}
 				</Outlet>
 			</main>

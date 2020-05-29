@@ -23,5 +23,5 @@
 }
 
 .root img {
-	width: 40px;
+	height: calc(var(--grid-size) * 5);
 }
