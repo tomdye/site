@@ -13,8 +13,28 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<style>
+			.sticky {
+				background-color: rgb(9, 19, 31) !important;
+				padding-top: 2px !important;
+				padding-bottom: 2px !important;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="app"></div>
 	</body>
+	<script>
+		var observer = new IntersectionObserver(
+			function (entries) {
+				if (entries[0].intersectionRatio === 0)
+					document.querySelector('#site-header').classList.add('sticky');
+				else if (entries[0].intersectionRatio === 1)
+					document.querySelector('#site-header').classList.remove('sticky');
+			},
+			{ threshold: [0, 1] }
+		);
+
+		observer.observe(document.querySelector('#sentinel'));
+	</script>
 </html>
