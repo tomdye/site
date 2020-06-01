@@ -12,8 +12,8 @@ export const Header = factory(function Header() {
 	return (
 		<header id="site-header" classes={css.root}>
 			<div classes={css.wrapper}>
-				<Link to="home" classes={css.homeLink}>
-					<img src={sitepenLogo} />
+				<Link to="home" classes={css.homeLink} title="Home">
+					<img src={sitepenLogo} alt="Sitepen Logo" />
 				</Link>
 				<nav>
 					<ul classes={css.links}>
