@@ -104,7 +104,7 @@ export const Expertise = factory(function Expertise() {
 							<img src={nodeLogo} alt="logo for node" />
 						</li>
 						<li>
-							<img src={tsLogo} alt="logo for ts" />
+							<img src={tsLogo} alt="logo for typescript" />
 						</li>
 						<li>
 							<img src={dojoLogo} alt="logo for dojo" />
