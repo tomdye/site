@@ -7,3 +7,14 @@
 	background-position: 50%;
 	background-color: var(--color-dark);
 }
+
+.wrapper {
+	max-width: 840px;
+	margin: calc(var(--grid-size) * 8) auto;
+}
+
+.intro {
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 400;
+}
