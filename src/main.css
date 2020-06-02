@@ -37,9 +37,10 @@ h2 {
 
 h3 {
 	font-weight: var(--heading3-font-weight);
-	font-family: var(--heading-font-family);
+	font-family: var(--base-font-family);
 	font-size: var(--heading3-font-size);
 	margin-bottom: var(--grid-size);
+	color: var(--color-subheading);
 }
 
 p {
