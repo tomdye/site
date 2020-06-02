@@ -29,7 +29,7 @@
 	padding-left: calc(var(--grid-size) * 4);
 }
 
-h3 .outroTitle {
+.root .outroTitle {
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 600;

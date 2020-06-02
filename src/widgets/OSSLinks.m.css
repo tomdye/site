@@ -24,12 +24,12 @@
 	flex-direction: row;
 }
 
-.list li {
+.list .item {
 	flex-grow: 1;
 	overflow: hidden;
 	padding: var(--grid-size);
 }
 
-.list li img {
+.list .img {
 	max-width: 100%;
 }

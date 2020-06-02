@@ -103,7 +103,7 @@ export const Home = factory(function Home() {
 							title: <span id="dependable">You can depend on us</span>,
 							blurb: (
 								<dl classes={css.dependList}>
-									<dt>
+									<dt classes={css.title}>
 										<img
 											classes={css.dependIcon}
 											src={targetIcon}
@@ -111,13 +111,13 @@ export const Home = factory(function Home() {
 										/>
 										<h3>ENTERPRISE EXPERTISE</h3>
 									</dt>
-									<dd>
+									<dd classes={css.definition}>
 										Align with people who provide a rare combination of
 										enterprise experience,{' '}
 										<Link to="expertise">software development expertise</Link>,
 										and the skills to get it done.
 									</dd>
-									<dt>
+									<dt classes={css.title}>
 										<img
 											classes={css.dependIcon}
 											src={flagIcon}
@@ -125,20 +125,20 @@ export const Home = factory(function Home() {
 										/>
 										<h3>INDUSTRY LEADERSHIP</h3>
 									</dt>
-									<dd>
+									<dd classes={css.definition}>
 										Be in sync with leaders in Enterprise JavaScript and{' '}
 										<Link to="about">work with a team</Link> that actively
 										shapes the open web.
 									</dd>
-									<dt>
+									<dt classes={css.title}>
 										<i classes={[css.dependIcon, 'icon-route']} />
 										<h3>PREDICTABILITY</h3>
 									</dt>
-									<dd>
+									<dd classes={css.definition}>
 										Rely on timely delivery with predictably dependable results
 										from a complete team that can do it all, end-to-end.
 									</dd>
-									<dt>
+									<dt classes={css.title}>
 										<img
 											classes={css.dependIcon}
 											src={rosetteIcon}
@@ -146,11 +146,11 @@ export const Home = factory(function Home() {
 										/>
 										<h3>GREAT CUSTOMER EXPERIENCE</h3>
 									</dt>
-									<dd>
+									<dd classes={css.definition}>
 										Reach your goals with a company that develops applications
 										and partner relationships with user experience in mind.
 									</dd>
-									<dt>
+									<dt classes={css.title}>
 										<img
 											classes={css.dependIcon}
 											src={partnershipIcon}
@@ -158,13 +158,19 @@ export const Home = factory(function Home() {
 										/>
 										<h3>DEDICATED PARTNERSHIP</h3>
 									</dt>
-									<dd>
+									<dd classes={css.definition}>
 										Benefit from ongoing communication and a partnership based
 										on shared goals, knowledge transfer, and trust.
 									</dd>
 								</dl>
 							),
-							image: <img src={dependImg} alt="illustration of dependability" />
+							image: (
+								<img
+									loading="lazy"
+									src={dependImg}
+									alt="illustration of dependability"
+								/>
+							)
 						}}
 					</Summary>
 				</div>
@@ -176,7 +182,7 @@ export const Home = factory(function Home() {
 								vendors we’ve used.”
 							</div>
 							<div classes={css.referenceTitle}>- Sr. Software Engineer</div>
-							<img src={marriottLogo} alt="Marriott" />
+							<img loading="lazy" src={marriottLogo} alt="Marriott" />
 						</div>
 						<div classes={css.reference}>
 							<div classes={css.referenceBlurb}>
@@ -185,7 +191,7 @@ export const Home = factory(function Home() {
 								go-to for full products.”
 							</div>
 							<div classes={css.referenceTitle}>- Head of Digital Products</div>
-							<img src={fannieLogo} alt="Fannie Mae" />
+							<img loading="lazy" src={fannieLogo} alt="Fannie Mae" />
 						</div>
 						<div classes={css.reference}>
 							<div classes={css.referenceBlurb}>
@@ -194,7 +200,7 @@ export const Home = factory(function Home() {
 								transfer of knowledge to our teams for scalability is huge.”
 							</div>
 							<div classes={css.referenceTitle}>- Director</div>
-							<img src={pershingLogo} alt="Pershing" />
+							<img loading="lazy" src={pershingLogo} alt="Pershing" />
 						</div>
 						<div classes={css.reference}>
 							<div classes={css.referenceBlurb}>
@@ -204,7 +210,7 @@ export const Home = factory(function Home() {
 								can’t say enough about the quality of their work.”
 							</div>
 							<div classes={css.referenceTitle}>- Engineering Manager</div>
-							<img src={intuitLogo} alt="Intuit" />
+							<img loading="lazy" src={intuitLogo} alt="Intuit" />
 						</div>
 					</Carousel>
 				</div>

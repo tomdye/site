@@ -86,7 +86,13 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 								</p>
 							</virtual>
 						),
-						image: <img src={marriottBubbleImage} alt="quote from marriott" />
+						image: (
+							<img
+								loading="lazy"
+								src={marriottBubbleImage}
+								alt="quote from marriott"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary smaller reverse>
@@ -107,7 +113,13 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 								<ConnectButton cta />
 							</virtual>
 						),
-						image: <img src={holisticImg} alt="Illustration for Holistic Approach" />
+						image: (
+							<img
+								loading="lazy"
+								src={holisticImg}
+								alt="Illustration for Holistic Approach"
+							/>
+						)
 					}}
 				</Summary>
 			</div>

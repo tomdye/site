@@ -21,9 +21,9 @@ export const Summary = factory(function Summary({ children, properties }) {
 	const { reverse, smaller, trailingBias } = properties();
 
 	const titleNode = smaller ? (
-		<h3 classes={css.title}>{title}</h3>
+		<h3 classes={css.title3}>{title}</h3>
 	) : (
-		<h2 classes={css.title}>{title}</h2>
+		<h2 classes={css.title2}>{title}</h2>
 	);
 
 	return (

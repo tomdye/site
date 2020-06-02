@@ -29,11 +29,7 @@
 	padding: var(--grid-size);
 }
 
-.leading * {
-	max-width: 100%;
-}
-
-h2.title {
+.title2 {
 	margin-bottom: calc(var(--grid-size) * 2);
 	font-size: 40px;
 	font-weight: 500;
@@ -41,7 +37,7 @@ h2.title {
 	line-height: 52px;
 }
 
-h3.title {
+.title3 {
 	margin-bottom: calc(var(--grid-size) * 2);
 	font-size: 28px;
 	font-weight: 600;
@@ -55,8 +51,4 @@ h3.title {
 
 .blurb {
 	line-height: 28.8px;
-}
-
-.root p {
-	margin-bottom: calc(var(--grid-size) * 2);
 }

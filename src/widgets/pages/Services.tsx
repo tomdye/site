@@ -53,29 +53,49 @@ export const Services = factory(function Services() {
 				<div classes={commonCss.contentWrapper}>
 					<section classes={css.topSection}>
 						<div classes={css.leading}>
-							<h2>
+							<h2 classes={css.topTitle}>
 								Developing enterprise web applications requires a lot more than an
 								office-full of developers waiting for instructions.
 							</h2>
 						</div>
-						<div classes={[css.trailing, css.listSummary]}>
+						<div classes={css.trailing}>
 							<p>You need an agile team who is constantly moving forward to:</p>
 							<ul classes={css.iconList}>
-								<li>
-									<img src={elevateIcon} alt="elevate icon" /> Elevate your
-									technical capabilities
+								<li classes={css.item}>
+									<img
+										classes={css.img}
+										loading="lazy"
+										src={elevateIcon}
+										alt="elevate icon"
+									/>{' '}
+									Elevate your technical capabilities
 								</li>
-								<li>
-									<img src={guideIcon} alt="guide icon" /> Guide significant
-									decisions
+								<li classes={css.item}>
+									<img
+										classes={css.img}
+										loading="lazy"
+										src={guideIcon}
+										alt="guide icon"
+									/>{' '}
+									Guide significant decisions
 								</li>
-								<li>
-									<img src={communicationIcon} alt="communication icon" /> Keep
-									communication frequent and open
+								<li classes={css.item}>
+									<img
+										classes={css.img}
+										loading="lazy"
+										src={communicationIcon}
+										alt="communication icon"
+									/>{' '}
+									Keep communication frequent and open
 								</li>
-								<li>
-									<img src={knowledgeIcon} alt="knowledge icon" /> Share knowledge
-									about the right tech, tools, and standards
+								<li classes={css.item}>
+									<img
+										classes={css.img}
+										loading="lazy"
+										src={knowledgeIcon}
+										alt="knowledge icon"
+									/>{' '}
+									Share knowledge about the right tech, tools, and standards
 								</li>
 							</ul>
 							<p>
@@ -93,11 +113,16 @@ export const Services = factory(function Services() {
 						</div>
 					</section>
 					<section classes={css.resultsSection}>
-						<h3>YOU CAN EXPECT RESULTS</h3>
-						<ul>
-							<li>
+						<h3 classes={css.title}>YOU CAN EXPECT RESULTS</h3>
+						<ul classes={css.list}>
+							<li classes={css.item}>
 								<div classes={css.clientLogoWrapper}>
-									<img src={fannieLogo} alt="FannieMae Logo" />
+									<img
+										classes={css.clientImg}
+										loading="lazy"
+										src={fannieLogo}
+										alt="FannieMae Logo"
+									/>
 								</div>
 								<p>
 									When Fannie Mae needed to launch a mission-critical trading
@@ -105,11 +130,21 @@ export const Services = factory(function Services() {
 									leadership, design, development, and DevOps improvements.
 								</p>
 								<p classes={css.builtWith}>built with</p>
-								<img classes={css.techLogo} src={angularLogo} alt="Angular Logo" />
+								<img
+									loading="lazy"
+									classes={css.techLogo}
+									src={angularLogo}
+									alt="Angular Logo"
+								/>
 							</li>
-							<li>
+							<li classes={css.item}>
 								<div classes={css.clientLogoWrapper}>
-									<img src={marriottLogo} alt="Marriott Logo" />
+									<img
+										classes={css.clientImg}
+										loading="lazy"
+										src={marriottLogo}
+										alt="Marriott Logo"
+									/>
 								</div>
 								<p>
 									When Marriott found themselves underperforming and bogged down
@@ -117,11 +152,21 @@ export const Services = factory(function Services() {
 									development, and mentoring to optimize application performance.
 								</p>
 								<p classes={css.builtWith}>built with</p>
-								<img classes={css.techLogo} src={dojoLogo} alt="Dojo Logo" />
+								<img
+									loading="lazy"
+									classes={css.techLogo}
+									src={dojoLogo}
+									alt="Dojo Logo"
+								/>
 							</li>
-							<li>
+							<li classes={css.item}>
 								<div classes={css.clientLogoWrapper}>
-									<img src={builtLogo} alt="Built Logo" />
+									<img
+										classes={css.clientImg}
+										loading="lazy"
+										src={builtLogo}
+										alt="Built Logo"
+									/>
 								</div>
 								<p>
 									When Built lost their patience with an unstable legacy app, they
@@ -129,7 +174,12 @@ export const Services = factory(function Services() {
 									and develop a next-gen application at the same time.
 								</p>
 								<p classes={css.builtWith}>built with</p>
-								<img classes={css.techLogo} src={reactLogo} alt="React Logo" />
+								<img
+									loading="lazy"
+									classes={css.techLogo}
+									src={reactLogo}
+									alt="React Logo"
+								/>
 							</li>
 						</ul>
 					</section>
@@ -149,7 +199,13 @@ export const Services = factory(function Services() {
 									analysis, architecture, design, and development.
 								</span>
 							),
-							image: <img src={completeImg} alt="Illustration for Complete Team" />
+							image: (
+								<img
+									loading="lazy"
+									src={completeImg}
+									alt="Illustration for Complete Team"
+								/>
+							)
 						}}
 					</Summary>
 					<Summary smaller reverse>
@@ -164,7 +220,11 @@ export const Services = factory(function Services() {
 								</span>
 							),
 							image: (
-								<img src={holisticImg} alt="Illustration for Holistic Approach" />
+								<img
+									loading="lazy"
+									src={holisticImg}
+									alt="Illustration for Holistic Approach"
+								/>
 							)
 						}}
 					</Summary>
@@ -173,7 +233,13 @@ export const Services = factory(function Services() {
 							title: 'Agile Methodologies',
 							blurb:
 								'Conquer the complexities of building and scaling enterprise-level applications with a lean, agile process that effectively delivers on all of your requirements.',
-							image: <img src={agileImg} alt="Illustration for Agile Methodologies" />
+							image: (
+								<img
+									loading="lazy"
+									src={agileImg}
+									alt="Illustration for Agile Methodologies"
+								/>
+							)
 						}}
 					</Summary>
 				</section>
@@ -186,7 +252,7 @@ export const Services = factory(function Services() {
 						{{
 							title: 'Modern Enterprise Web Development',
 							blurb: (
-								<div classes={css.listSummary}>
+								<virtual>
 									<p>
 										Build and evolve your application the right way. Whether we
 										partner with your product team or take full ownership with
@@ -195,42 +261,75 @@ export const Services = factory(function Services() {
 									</p>
 									<p>Build the right application with:</p>
 									<ul classes={css.iconList}>
-										<li>
-											<img src={agileIcon} /> Agile discover, analysis, and
-											planning
+										<li classes={css.item}>
+											<img classes={css.img} loading="lazy" src={agileIcon} />{' '}
+											Agile discover, analysis, and planning
 										</li>
-										<li>
-											<img src={prototypeIcon} /> Rapid prototyping and design
-											cycles
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={prototypeIcon}
+											/>{' '}
+											Rapid prototyping and design cycles
 										</li>
-										<li>
-											<img src={enterpriseIcon} /> Enterprise UI and UX design
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={enterpriseIcon}
+											/>{' '}
+											Enterprise UI and UX design
 										</li>
-										<li>
-											<img src={fullstackIcon} /> Full-stack Enterprise
-											JavaScript
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={fullstackIcon}
+											/>{' '}
+											Full-stack Enterprise JavaScript
 										</li>
-										<li>
-											<img src={performanceIcon} /> Performance audits and
-											improvements
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={performanceIcon}
+											/>{' '}
+											Performance audits and improvements
 										</li>
-										<li>
-											<img src={qualityIcon} /> Quality assurance testing
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={qualityIcon}
+											/>{' '}
+											Quality assurance testing
 										</li>
-										<li>
-											<img src={devopsIcon} /> DevOps implementation
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={devopsIcon}
+											/>{' '}
+											DevOps implementation
 										</li>
 									</ul>
-								</div>
+								</virtual>
 							),
-							image: <img src={devImg} alt="Illustration for App Development" />
+							image: (
+								<img
+									loading="lazy"
+									src={devImg}
+									alt="Illustration for App Development"
+								/>
+							)
 						}}
 					</Summary>
 					<Summary smaller reverse>
 						{{
 							title: 'Strategic & Technical Consulting',
 							blurb: (
-								<div classes={css.listSummary}>
+								<virtual>
 									<p>
 										Keep up with the evolving web engineering landscape and
 										quickly adapt to shifting business priorities. We help you
@@ -240,26 +339,50 @@ export const Services = factory(function Services() {
 									</p>
 									<p>Achieve your strategic goals with:</p>
 									<ul classes={css.iconList}>
-										<li>
-											<img src={approachIcon} /> Development approach,
-											planning, and implementation
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={approachIcon}
+											/>{' '}
+											Development approach, planning, and implementation
 										</li>
-										<li>
-											<img src={technologyIcon} /> Architecture, UX, open
-											source software, and technology expertise
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={technologyIcon}
+											/>{' '}
+											Architecture, UX, open source software, and technology
+											expertise
 										</li>
-										<li>
-											<img src={legacyIcon} /> Legacy application
-											maintainability and re-engineering
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={legacyIcon}
+											/>{' '}
+											Legacy application maintainability and re-engineering
 										</li>
-										<li>
-											<img src={deliveryIcon} /> Engineering culture, healthy
-											teams, and continuous value delivery
+										<li classes={css.item}>
+											<img
+												classes={css.img}
+												loading="lazy"
+												src={deliveryIcon}
+											/>{' '}
+											Engineering culture, healthy teams, and continuous value
+											delivery
 										</li>
 									</ul>
-								</div>
+								</virtual>
 							),
-							image: <img src={consultingImg} alt="Illustration for Consulting" />
+							image: (
+								<img
+									loading="lazy"
+									src={consultingImg}
+									alt="Illustration for Consulting"
+								/>
+							)
 						}}
 					</Summary>
 				</section>

@@ -20,29 +20,34 @@ export const OSSLinks = factory(function OSSLinks() {
 				needs of enterprises and developers alike.
 			</p>
 			<ul classes={css.list}>
-				<li>
+				<li classes={css.item}>
 					<Link to="opensource/dojo">
-						<img src={dojoLogo} alt="Dojo" />
+						<img classes={css.img} loading="lazy" src={dojoLogo} alt="Dojo" />
 					</Link>
 				</li>
-				<li>
+				<li classes={css.item}>
 					<Link to="opensource/intern">
-						<img src={internLogo} alt="intern" />
+						<img classes={css.img} loading="lazy" src={internLogo} alt="intern" />
 					</Link>
 				</li>
-				<li>
+				<li classes={css.item}>
 					<Link to="opensource/ts">
-						<img src={tsLogo} alt="typescript" />
+						<img classes={css.img} loading="lazy" src={tsLogo} alt="typescript" />
 					</Link>
 				</li>
-				<li>
+				<li classes={css.item}>
 					<Link to="opensource/dojoToolkit">
-						<img src={dojoToolkitLogo} alt="dojoToolkit" />
+						<img
+							classes={css.img}
+							loading="lazy"
+							src={dojoToolkitLogo}
+							alt="dojoToolkit"
+						/>
 					</Link>
 				</li>
-				<li>
+				<li classes={css.item}>
 					<Link to="opensource/dgrid">
-						<img src={dgridLogo} alt="dgrid" />
+						<img classes={css.img} loading="lazy" src={dgridLogo} alt="dgrid" />
 					</Link>
 				</li>
 			</ul>

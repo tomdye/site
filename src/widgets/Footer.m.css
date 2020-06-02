@@ -47,8 +47,8 @@
 	transition: color 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
 }
 
-.top a,
-.bottom a {
+.top .link,
+.bottom .link {
 	color: var(--color-text-on-dark);
 }
 
@@ -56,7 +56,7 @@
 	padding-right: 0;
 }
 
-.social .item a {
+.social .item .link {
 	margin-right: calc(var(--grid-size) * 2);
 	background-color: #083859;
 	border-radius: 50%;
@@ -67,7 +67,7 @@
 	justify-content: center;
 }
 
-.social .item a:hover {
+.social .item .link:hover {
 	background-color: var(--color-primary);
 	color: var(--color-medium);
 }
