@@ -7,3 +7,23 @@
 	background-position: 50%;
 	background-color: var(--color-dark);
 }
+
+.heading {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38px;
+	text-align: center;
+	font-family: var(--base-font-family);
+}
+
+.intro {
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 34px;
+	text-align: center;
+}
+
+.logo {
+	height: 300px;
+	max-width: 90%;
+}

@@ -33,13 +33,14 @@ h2 {
 	color: var(--color-subheading);
 	font-size: var(--heading2-font-size);
 	line-height: var(--heading2-line-height);
+	margin-bottom: calc(var(--grid-size) * 2);
 }
 
 h3 {
 	font-weight: var(--heading3-font-weight);
 	font-family: var(--base-font-family);
 	font-size: var(--heading3-font-size);
-	margin-bottom: var(--grid-size);
+	margin-bottom: calc(var(--grid-size) * 2);
 	color: var(--color-subheading);
 }
 
