@@ -39,7 +39,7 @@
 	transition: color 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
 }
 
-.item a {
+.item .link {
 	color: var(--color-text-on-dark);
 }
 
@@ -47,7 +47,7 @@
 	padding-right: 0;
 }
 
-a.active,
-.item a:hover {
+.link.active,
+.item .link:hover {
 	color: var(--color-primary);
 }

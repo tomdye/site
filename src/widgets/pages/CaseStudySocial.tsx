@@ -114,7 +114,13 @@ export const CaseStudySocial = factory(function CaseStudySocial() {
 								<ConnectButton cta />
 							</virtual>
 						),
-						image: <img src={engineeringImg} alt="Illustration for Holistic Approach" />
+						image: (
+							<img
+								loading="lazy"
+								src={engineeringImg}
+								alt="Illustration for Holistic Approach"
+							/>
+						)
 					}}
 				</Summary>
 			</div>

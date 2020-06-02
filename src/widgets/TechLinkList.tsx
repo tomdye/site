@@ -41,7 +41,7 @@ const TechLink = techLinkFactory(function TechLink({ properties }) {
 
 	return (
 		<a href={href} target="_blank" rel="noopener" title={type}>
-			<img src={icon} alt={`Logo for ${type}`} />
+			<img classes={css.img} loading="lazy" src={icon} alt={`Logo for ${type}`} />
 		</a>
 	);
 });
@@ -52,10 +52,10 @@ export const TechLinkList = techLinkListFactory(function TechLinkList({ properti
 	const { types } = properties();
 	return (
 		<div classes={css.root}>
-			<h3>TECHNOLOGIES</h3>
-			<ul>
+			<h3 classes={css.heading}>TECHNOLOGIES</h3>
+			<ul classes={css.list}>
 				{types.map((type) => (
-					<li>
+					<li classes={css.item}>
 						<TechLink type={type} />
 					</li>
 				))}

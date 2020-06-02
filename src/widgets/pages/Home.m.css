@@ -12,14 +12,14 @@
 	margin-top: calc(var(--grid-size) * 8);
 }
 
-.dependList dt {
+.dependList .title {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	color: var(--color-subheading);
 }
 
-.dependList dd {
+.dependList .definition {
 	padding-left: calc(var(--grid-size) * 6);
 	margin-bottom: calc(var(--grid-size) * 7);
 }

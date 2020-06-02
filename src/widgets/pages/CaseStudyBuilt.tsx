@@ -55,7 +55,11 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 				<Summary smaller>
 					{{
 						image: (
-							<img src={builtImage} alt="built application technology case study" />
+							<img
+								loading="lazy"
+								src={builtImage}
+								alt="built application technology case study"
+							/>
 						),
 						title: 'The Solution',
 						blurb: (
@@ -89,7 +93,7 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 						title: 'The Result',
 						blurb:
 							'Built Technologies could more quickly add critical features to meet customer needs while maintaining a stable code base. Built now has a clear path to transition from aging technologies to a more modern, nimble architecture.',
-						image: <img src={builtBubbleImage} alt="quote from built" />
+						image: <img loading="lazy" src={builtBubbleImage} alt="quote from built" />
 					}}
 				</Summary>
 				<Summary smaller reverse>
@@ -109,7 +113,13 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 								<ConnectButton cta />
 							</virtual>
 						),
-						image: <img src={completeImg} alt="Illustration for Complete Team" />
+						image: (
+							<img
+								loading="lazy"
+								src={completeImg}
+								alt="Illustration for Complete Team"
+							/>
+						)
 					}}
 				</Summary>
 			</div>

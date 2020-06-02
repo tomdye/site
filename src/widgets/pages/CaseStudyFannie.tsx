@@ -101,7 +101,13 @@ export const CaseStudyFannie = factory(function CaseStudyFannie() {
 						title: 'The Result',
 						blurb:
 							'SitePen collaborated with Fannie Mae teams with multiple applications and development groups for major functionality releases, application rearchitectures and redesigns, and major technology and architecture upgrades. With SitePen’s guidance and support, Fannie Mae has made significant strides in improving automated testing and other DevOps refinements. They also received coaching and mentoring to improve and sustain engineering best practices.',
-						image: <img src={fannieBubbleImage} alt="quote from fannie mae" />
+						image: (
+							<img
+								loading="lazy"
+								src={fannieBubbleImage}
+								alt="quote from fannie mae"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary smaller reverse>
@@ -121,7 +127,13 @@ export const CaseStudyFannie = factory(function CaseStudyFannie() {
 								<ConnectButton cta />
 							</virtual>
 						),
-						image: <img src={completeImg} alt="Illustration for Complete Team" />
+						image: (
+							<img
+								loading="lazy"
+								src={completeImg}
+								alt="Illustration for Complete Team"
+							/>
+						)
 					}}
 				</Summary>
 			</div>

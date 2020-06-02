@@ -36,3 +36,12 @@
 	background-color: var(--color-medium);
 	color: var(--color-text-on-dark);
 }
+
+.root.expertise {
+	color: var(--color-medium);
+}
+
+.root.expertise:hover {
+	color: var(--color-text-on-dark);
+	background-color: var(--color-primary-subtle);
+}

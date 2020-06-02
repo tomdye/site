@@ -41,3 +41,11 @@ h3 {
 	font-size: var(--heading3-font-size);
 	margin-bottom: var(--grid-size);
 }
+
+p {
+	margin-bottom: calc(var(--grid-size) * 2);
+}
+
+img {
+	max-width: 100%;
+}

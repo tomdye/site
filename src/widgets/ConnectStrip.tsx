@@ -28,7 +28,7 @@ export const ConnectStrip = factory(function ConnectStrip({ properties }) {
 			<div classes={commonCss.contentWrapper}>
 				<h2 classes={css.title}>{title}</h2>
 				<h3 classes={css.blurb}>{blurb}</h3>
-				<ConnectButton />
+				<ConnectButton expertise={variant === 'expertise'} />
 			</div>
 		</div>
 	);

@@ -20,15 +20,11 @@
 	padding: calc(var(--grid-size) * 2);
 }
 
-.root h2 {
+.root .topHeading {
 	font-weight: 600;
 	font-size: 38px;
 	line-height: 48px;
 	font-family: var(--base-font-family);
-}
-
-.topSection p {
-	margin-bottom: calc(var(--grid-size) * 2);
 }
 
 .summaryWrapper {
@@ -40,11 +36,11 @@
 	margin-bottom: calc(var(--grid-size) * 8);
 }
 
-.javascript h2 {
+.jsHeading {
 	text-align: center;
 }
 
-.javascript ul {
+.jsList {
 	display: flex;
 	flex-direction: row;
 	margin: calc(var(--grid-size) * 6) 0;
@@ -52,6 +48,6 @@
 	justify-content: space-around;
 }
 
-.javascript li img {
+.jsImg {
 	max-width: 58px;
 }

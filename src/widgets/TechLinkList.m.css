@@ -1,17 +1,17 @@
 .root {
 }
 
-.root ul {
+.list {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
-.root li {
+.item {
 	padding: calc(var(--grid-size) * 2);
 }
 
-.root h3 {
+.heading {
 	font-size: 16px;
 	font-weight: 700;
 	font-family: var(--base-font-family);
@@ -22,6 +22,6 @@
 	color: var(--color-medium);
 }
 
-.root img {
+.img {
 	height: calc(var(--grid-size) * 5);
 }

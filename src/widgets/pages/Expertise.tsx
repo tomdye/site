@@ -38,7 +38,7 @@ export const Expertise = factory(function Expertise() {
 			<div classes={commonCss.contentWrapper}>
 				<section classes={css.topSection}>
 					<div classes={css.leading}>
-						<h2>
+						<h2 classes={css.topHeading}>
 							Building open source tools and sustainable web applications is
 							challenging. Real experience is required.
 						</h2>
@@ -64,7 +64,13 @@ export const Expertise = factory(function Expertise() {
 						title: 'Web Engineering',
 						blurb:
 							'Engineering considerations for the enterprise are vast. With an agnostic approach to full-stack JavaScript development, our engineers are adept at quickly understanding challenging business and technical requirements to advise on the right architecture, technical stack, and approach for each customer’s unique business objectives and constraints.',
-						image: <img src={engineeringImg} alt="Illustration of Engineering" />
+						image: (
+							<img
+								loading="lazy"
+								src={engineeringImg}
+								alt="Illustration of Engineering"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary smaller trailingBias reverse>
@@ -72,7 +78,13 @@ export const Expertise = factory(function Expertise() {
 						title: 'UI | UX Design',
 						blurb:
 							'Investment in the UI and UX design for enterprise applications goes beyond the user’s experience. Having an enterprise UX designer on your team increases user performance and satisfaction, but it also reduces time spent to deploy a software solution and minimizes the amount of rework on applications.',
-						image: <img src={designImg} alt="Illustration for UI and UX Design" />
+						image: (
+							<img
+								loading="lazy"
+								src={designImg}
+								alt="Illustration for UI and UX Design"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary smaller trailingBias>
@@ -80,7 +92,13 @@ export const Expertise = factory(function Expertise() {
 						title: 'Business Analysis',
 						blurb:
 							'Requirements elicitation, prioritization, documentation and validation are essential for efficiency gains everywhere. Our lean approach to business analysis keeps our project teams focused without setbacks from costly assumptions and uncertainty.',
-						image: <img src={analysisImg} alt="Illustration of Business Analysis" />
+						image: (
+							<img
+								loading="lazy"
+								src={analysisImg}
+								alt="Illustration of Business Analysis"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary smaller trailingBias reverse>
@@ -88,35 +106,81 @@ export const Expertise = factory(function Expertise() {
 						title: 'Project Management',
 						blurb:
 							'Communication. Transparency. Organization. Our technical project management organizes and aligns resources using agile methodologies to execute your vision, strategy, and objectives, propelling your project through to production and beyond.',
-						image: <img src={managementImg} alt="Illustration of Project Management" />
+						image: (
+							<img
+								loading="lazy"
+								src={managementImg}
+								alt="Illustration of Project Management"
+							/>
+						)
 					}}
 				</Summary>
 				<section classes={css.javascript}>
-					<h2>Expertise with the JavaScript Ecosystem</h2>
-					<ul>
+					<h2 classes={css.jsHeading}>Expertise with the JavaScript Ecosystem</h2>
+					<ul classes={css.jsList}>
 						<li>
-							<img src={jsLogo} alt="logo for js" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={jsLogo}
+								alt="logo for js"
+							/>
 						</li>
 						<li>
-							<img src={vueLogo} alt="logo for vue" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={vueLogo}
+								alt="logo for vue"
+							/>
 						</li>
 						<li>
-							<img src={nodeLogo} alt="logo for node" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={nodeLogo}
+								alt="logo for node"
+							/>
 						</li>
 						<li>
-							<img src={tsLogo} alt="logo for typescript" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={tsLogo}
+								alt="logo for typescript"
+							/>
 						</li>
 						<li>
-							<img src={dojoLogo} alt="logo for dojo" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={dojoLogo}
+								alt="logo for dojo"
+							/>
 						</li>
 						<li>
-							<img src={reactLogo} alt="logo for react" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={reactLogo}
+								alt="logo for react"
+							/>
 						</li>
 						<li>
-							<img src={reduxLogo} alt="logo for redux" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={reduxLogo}
+								alt="logo for redux"
+							/>
 						</li>
 						<li>
-							<img src={angularLogo} alt="logo for angular" />
+							<img
+								classes={css.jsImg}
+								loading="lazy"
+								src={angularLogo}
+								alt="logo for angular"
+							/>
 						</li>
 					</ul>
 					<p>
