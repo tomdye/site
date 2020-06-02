@@ -1,6 +1,6 @@
 .root {
 	padding: calc(var(--grid-size) * 12) 0;
-	background-color: #33babc;
+	background-color: var(--color-primary-medium);
 	background-position-y: 50%;
 	background-size: cover;
 	background-image: url('../assets/images/connect-background.svg');
