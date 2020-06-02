@@ -4,7 +4,7 @@ import * as commonCss from '../Common.m.css';
 import { ConnectButton } from './ConnectButton';
 
 export interface ConnectStripProperties {
-	variant?: 'expertise';
+	variant?: 'expertise' | 'leverage';
 }
 
 const factory = create().properties<ConnectStripProperties>();
@@ -18,6 +18,9 @@ export const ConnectStrip = factory(function ConnectStrip({ properties }) {
 	if (variant === 'expertise') {
 		title = 'OUR EXPERTISE PROPELS YOUR SUCCESS';
 		blurb = `Accelerate progress toward your goals by leveraging an entire enterprise web development team, instantly.`;
+	} else if (variant === 'leverage') {
+		title = 'LEVERAGE OUR EXPERTISE';
+		blurb = `Fill in the gaps and ensure you meet your business objectives on time, every time.`;
 	}
 
 	return (

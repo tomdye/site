@@ -10,6 +10,14 @@
 	flex-direction: row-reverse;
 }
 
+.trailingBias .leading {
+	flex: 33.3%;
+}
+
+.trailingBias .trailing {
+	flex: 66.6%;
+}
+
 .leading {
 	flex: 50%;
 	text-align: center;
