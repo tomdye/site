@@ -4,7 +4,6 @@ export const topSection: string;
 export const leading: string;
 export const trailing: string;
 export const topHeading: string;
-export const summaryWrapper: string;
 export const javascript: string;
 export const jsHeading: string;
 export const jsList: string;

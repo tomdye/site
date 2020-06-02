@@ -2,3 +2,8 @@
 	max-width: var(--max-width);
 	margin: 0 auto;
 }
+
+.smallerContentWrapper {
+	max-width: var(--max-width-smaller);
+	margin: calc(var(--grid-size) * 8) auto;
+}

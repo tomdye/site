@@ -130,12 +130,7 @@ export const Services = factory(function Services() {
 									leadership, design, development, and DevOps improvements.
 								</p>
 								<p classes={css.builtWith}>built with</p>
-								<img
-									loading="lazy"
-									classes={css.techLogo}
-									src={angularLogo}
-									alt="Angular Logo"
-								/>
+								<img loading="lazy" src={angularLogo} alt="Angular Logo" />
 							</li>
 							<li classes={css.item}>
 								<div classes={css.clientLogoWrapper}>
@@ -152,12 +147,7 @@ export const Services = factory(function Services() {
 									development, and mentoring to optimize application performance.
 								</p>
 								<p classes={css.builtWith}>built with</p>
-								<img
-									loading="lazy"
-									classes={css.techLogo}
-									src={dojoLogo}
-									alt="Dojo Logo"
-								/>
+								<img loading="lazy" src={dojoLogo} alt="Dojo Logo" />
 							</li>
 							<li classes={css.item}>
 								<div classes={css.clientLogoWrapper}>
@@ -174,19 +164,14 @@ export const Services = factory(function Services() {
 									and develop a next-gen application at the same time.
 								</p>
 								<p classes={css.builtWith}>built with</p>
-								<img
-									loading="lazy"
-									classes={css.techLogo}
-									src={reactLogo}
-									alt="React Logo"
-								/>
+								<img loading="lazy" src={reactLogo} alt="React Logo" />
 							</li>
 						</ul>
 					</section>
 				</div>
 			</div>
-			<div classes={css.successWrapper}>
-				<section classes={css.successSection}>
+			<div classes={commonCss.smallerContentWrapper}>
+				<section>
 					<h2 classes={css.heading}>We Will Drive Your Success</h2>
 					<Summary smaller>
 						{{

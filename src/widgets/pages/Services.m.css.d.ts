@@ -14,7 +14,4 @@ export const list: string;
 export const clientLogoWrapper: string;
 export const clientImg: string;
 export const builtWith: string;
-export const techLogo: string;
-export const successWrapper: string;
-export const successSection: string;
 export const heading: string;

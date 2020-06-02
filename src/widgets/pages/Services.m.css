@@ -92,17 +92,6 @@
 	margin: calc(var(--grid-size) * 2) 0;
 }
 
-.techLogo {
-}
-
-.successWrapper {
-	max-width: 840px;
-	margin: 0 auto;
-}
-
-.successSection {
-}
-
 .heading {
 	font-family: var(--base-font-family);
 	font-size: 32px;
