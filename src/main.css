@@ -51,3 +51,7 @@ p {
 img {
 	max-width: 100%;
 }
+
+b {
+	font-weight: bolder;
+}

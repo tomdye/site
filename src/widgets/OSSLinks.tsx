@@ -21,22 +21,22 @@ export const OSSLinks = factory(function OSSLinks() {
 			</p>
 			<ul classes={css.list}>
 				<li classes={css.item}>
-					<Link to="opensource/dojo">
+					<Link to="opensourceDojo">
 						<img classes={css.img} loading="lazy" src={dojoLogo} alt="Dojo" />
 					</Link>
 				</li>
 				<li classes={css.item}>
-					<Link to="opensource/intern">
+					<Link to="opensourceIntern">
 						<img classes={css.img} loading="lazy" src={internLogo} alt="intern" />
 					</Link>
 				</li>
 				<li classes={css.item}>
-					<Link to="opensource/ts">
+					<Link to="opensourceTypescript">
 						<img classes={css.img} loading="lazy" src={tsLogo} alt="typescript" />
 					</Link>
 				</li>
 				<li classes={css.item}>
-					<Link to="opensource/dojoToolkit">
+					<Link to="opensourceDojoToolkit">
 						<img
 							classes={css.img}
 							loading="lazy"
@@ -46,7 +46,7 @@ export const OSSLinks = factory(function OSSLinks() {
 					</Link>
 				</li>
 				<li classes={css.item}>
-					<Link to="opensource/dgrid">
+					<Link to="opensourceDgrid">
 						<img classes={css.img} loading="lazy" src={dgridLogo} alt="dgrid" />
 					</Link>
 				</li>

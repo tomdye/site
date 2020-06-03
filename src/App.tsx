@@ -14,8 +14,13 @@ import { Work } from './widgets/pages/Work';
 import * as css from './App.m.css';
 import { CaseStudyFannie } from './widgets/pages/CaseStudyFannie';
 import { CaseStudyMarriott } from './widgets/pages/CaseStudyMarriott';
-import CaseStudyBuilt from './widgets/pages/CaseStudyBuilt';
-import CaseStudySocial from './widgets/pages/CaseStudySocial';
+import { CaseStudyBuilt } from './widgets/pages/CaseStudyBuilt';
+import { CaseStudySocial } from './widgets/pages/CaseStudySocial';
+import { OpenSourceDojo } from './widgets/pages/OpenSourceDojo';
+import { OpenSourceIntern } from './widgets/pages/OpenSourceIntern';
+import { OpenSourceTypescript } from './widgets/pages/OpenSourceTypescript';
+import { OpenSourceDojoToolkit } from './widgets/pages/OpenSourceDojoToolkit';
+import { OpenSourceDgrid } from './widgets/pages/OpenSourceDgrid';
 
 export interface AppProperties {}
 
@@ -35,6 +40,11 @@ export const App = factory(function App() {
 						expertise: <Expertise />,
 						home: <Home />,
 						opensource: <OpenSource />,
+						opensourceDojo: <OpenSourceDojo />,
+						opensourceIntern: <OpenSourceIntern />,
+						opensourceTypescript: <OpenSourceTypescript />,
+						opensourceDojoToolkit: <OpenSourceDojoToolkit />,
+						opensourceDgrid: <OpenSourceDgrid />,
 						privacy: <Privacy />,
 						services: <Services />,
 						work: <Work />,

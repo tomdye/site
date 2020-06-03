@@ -51,7 +51,7 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 						title: 'The Solution',
 						blurb: (
 							<p>
-								SitePen provided senior technical{' '}
+								SitePen provided senior technical
 								<Link to="expertise">expertise</Link> and leadership to help
 								Marriott forge a new path in developing its mission-critical
 								applications. SitePen migrated several applications to new
