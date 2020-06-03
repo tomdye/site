@@ -19,6 +19,7 @@
 		"@dojo/cli": "next",
 		"@dojo/cli-build-app": "next",
 		"@dojo/cli-test-intern": "next",
+		"@dojo/webpack-contrib": "file:tar/dojo-webpack-contrib-7.0.1.tgz",
 		"@types/node": "~9.6.5",
 		"husky": "4.2.5",
 		"prettier": "2.0.5",
