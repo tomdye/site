@@ -58,7 +58,7 @@ export const Expertise = factory(function Expertise() {
 					</div>
 				</section>
 			</div>
-			<div classes={css.summaryWrapper}>
+			<div classes={commonCss.smallerContentWrapper}>
 				<Summary smaller trailingBias>
 					{{
 						title: 'Web Engineering',

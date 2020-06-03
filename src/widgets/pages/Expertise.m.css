@@ -27,11 +27,6 @@
 	font-family: var(--base-font-family);
 }
 
-.summaryWrapper {
-	max-width: 840px;
-	margin: 0 auto;
-}
-
 .javascript {
 	margin-bottom: calc(var(--grid-size) * 8);
 }

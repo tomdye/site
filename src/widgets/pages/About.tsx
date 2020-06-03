@@ -25,7 +25,7 @@ export const About = factory(function About() {
 					</Hero>
 				</div>
 			</div>
-			<div classes={css.wrapper}>
+			<div classes={commonCss.smallerContentWrapper}>
 				<p classes={css.intro}>
 					SitePen is a leading strategic consultancy based in the USA. Our company is
 					committed to achieving technical objectives, solving critical business problems,
@@ -40,7 +40,7 @@ export const About = factory(function About() {
 					realize its potential and achieve desired and predictable results.
 				</p>
 			</div>
-			<div classes={css.wrapper}>
+			<div classes={commonCss.smallerContentWrapper}>
 				<h2 classes={css.heading}>Our Philosophy</h2>
 				<p>
 					Our people are our success. We bring together the expertise and experience of
