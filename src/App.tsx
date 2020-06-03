@@ -16,6 +16,7 @@ import { CaseStudyFannie } from './widgets/pages/CaseStudyFannie';
 import { CaseStudyMarriott } from './widgets/pages/CaseStudyMarriott';
 import CaseStudyBuilt from './widgets/pages/CaseStudyBuilt';
 import CaseStudySocial from './widgets/pages/CaseStudySocial';
+import OpenSourceDojo from './widgets/pages/OpenSourceDojo';
 
 export interface AppProperties {}
 
@@ -35,6 +36,7 @@ export const App = factory(function App() {
 						expertise: <Expertise />,
 						home: <Home />,
 						opensource: <OpenSource />,
+						opensourceDojo: <OpenSourceDojo />,
 						privacy: <Privacy />,
 						services: <Services />,
 						work: <Work />,

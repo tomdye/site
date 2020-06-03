@@ -2,10 +2,55 @@
 }
 
 .heroWrapper {
-	background-image: url('../../assets/images/hero/work.jpg');
 	background-size: cover;
 	background-position: 50%;
 	background-color: var(--color-dark);
+}
+
+.indexHeroWrapper {
+	background-image: url('../../assets/images/hero/work.jpg');
+}
+
+.dojoHeroWrapper {
+	position: relative;
+	background-color: #082640;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 35% auto;
+	background-image: url('../../assets/images/hero/dojo.svg');
+	z-index: 9;
+}
+
+.dojoHeroOverlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #082640;
+	opacity: 0.6;
+	z-index: 10;
+}
+
+.dojoHeroContentWrapper {
+	position: relative;
+	z-index: 99;
+}
+
+.dgridHeroWrapper {
+	background-image: url('../../assets/images/hero/dgrid.jpg');
+}
+
+.internHeroWrapper {
+	background-image: url('../../assets/images/hero/intern.jpg');
+}
+
+.typescriptHeroWrapper {
+	background-image: url('../../assets/images/hero/typescript.jpg');
+}
+
+.dojoToolkitHeroWrapper {
+	background-image: url('../../assets/images/hero/dojoToolkit.jpg');
 }
 
 .heading {
@@ -26,4 +71,15 @@
 .logo {
 	height: 300px;
 	max-width: 90%;
+}
+
+.list {
+	list-style: disc;
+	margin: calc(var(--grid-size) * 2) 0;
+	padding-left: calc(var(--grid-size) * 4);
+}
+
+.item {
+	margin-bottom: var(--grid-size);
+	line-height: 28px;
 }

@@ -18,7 +18,7 @@ const factory = create().properties<OpenSourceProperties>();
 export const OpenSource = factory(function OpenSource() {
 	return (
 		<div classes={css.root}>
-			<div classes={css.heroWrapper}>
+			<div classes={[css.heroWrapper, css.indexHeroWrapper]}>
 				<div classes={commonCss.contentWrapper}>
 					<Hero>
 						{{

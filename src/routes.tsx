@@ -45,6 +45,36 @@ const routes: RouteConfig[] = [
 		title: 'Open Source | SitePen'
 	},
 	{
+		id: 'opensourceDojo',
+		path: 'open-source/dojo-framework',
+		outlet: 'main',
+		title: 'Dojo Framework | Sitepen'
+	},
+	{
+		id: 'opensourceDgrid',
+		path: 'open-source/dgrid',
+		outlet: 'main',
+		title: 'dgrid | Sitepen'
+	},
+	{
+		id: 'opensourceIntern',
+		path: 'open-source/intern',
+		outlet: 'main',
+		title: 'Intern | Sitepen'
+	},
+	{
+		id: 'opensourceTypescript',
+		path: 'open-source/typescript',
+		outlet: 'main',
+		title: 'TypeScript | Sitepen'
+	},
+	{
+		id: 'opensourceDojoToolkit',
+		path: 'open-source/dojo-toolkit',
+		outlet: 'main',
+		title: 'Dojo Toolkit | Sitepen'
+	},
+	{
 		id: 'about',
 		path: 'about-us',
 		outlet: 'main',
