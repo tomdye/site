@@ -38,7 +38,7 @@ export const Privacy = factory(function Privacy() {
 				(including advertising) that may link to or be accessible from or on the Platform.
 				See our contact page to contact us. To ask questions about this Privacy Policy or
 				our privacy practices, please contact us at{' '}
-				<a href="mailto:hello@sitepen.com">hello@sitepen.com.</a>
+				<a href="mailto:hello@sitepen.com">hello@sitepen.com</a>.
 				<h2 classes={css.heading}>Collection of Personal Information</h2>
 				<h3 classes={css.subheading}>
 					Information We Collect About You and How We Collect It
