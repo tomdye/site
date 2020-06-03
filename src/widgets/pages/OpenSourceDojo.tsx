@@ -26,7 +26,7 @@ export const OpenSourceDojo = factory(function OpenSourceDojo() {
 					SitePen’s answer to modern web engineering is Dojo Framework, a reactive
 					TypeScript first framework that approaches application development with a
 					continuing focus on the requirements of the Enterprise and the engineers who
-					support it.{' '}
+					support it.
 				</p>
 				<p>
 					Modern Dojo builds on many of the lessons learned from our experience building
@@ -72,7 +72,7 @@ export const OpenSourceDojo = factory(function OpenSourceDojo() {
 						excellent architecture, efficient ergonomics, and alignment with modern
 						standards. The result is applications that get engineered more efficiently,
 						have incredible performance, and lower total cost of ownership due to ease
-						of testing and maintenance.{' '}
+						of testing and maintenance.
 					</li>
 				</ul>
 				<p>

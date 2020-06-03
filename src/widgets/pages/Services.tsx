@@ -67,7 +67,7 @@ export const Services = factory(function Services() {
 										loading="lazy"
 										src={elevateIcon}
 										alt="elevate icon"
-									/>{' '}
+									/>
 									Elevate your technical capabilities
 								</li>
 								<li classes={css.item}>
@@ -76,7 +76,7 @@ export const Services = factory(function Services() {
 										loading="lazy"
 										src={guideIcon}
 										alt="guide icon"
-									/>{' '}
+									/>
 									Guide significant decisions
 								</li>
 								<li classes={css.item}>
@@ -85,7 +85,7 @@ export const Services = factory(function Services() {
 										loading="lazy"
 										src={communicationIcon}
 										alt="communication icon"
-									/>{' '}
+									/>
 									Keep communication frequent and open
 								</li>
 								<li classes={css.item}>
@@ -94,7 +94,7 @@ export const Services = factory(function Services() {
 										loading="lazy"
 										src={knowledgeIcon}
 										alt="knowledge icon"
-									/>{' '}
+									/>
 									Share knowledge about the right tech, tools, and standards
 								</li>
 							</ul>
@@ -247,7 +247,7 @@ export const Services = factory(function Services() {
 									<p>Build the right application with:</p>
 									<ul classes={css.iconList}>
 										<li classes={css.item}>
-											<img classes={css.img} loading="lazy" src={agileIcon} />{' '}
+											<img classes={css.img} loading="lazy" src={agileIcon} />
 											Agile discover, analysis, and planning
 										</li>
 										<li classes={css.item}>
@@ -255,7 +255,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={prototypeIcon}
-											/>{' '}
+											/>
 											Rapid prototyping and design cycles
 										</li>
 										<li classes={css.item}>
@@ -263,7 +263,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={enterpriseIcon}
-											/>{' '}
+											/>
 											Enterprise UI and UX design
 										</li>
 										<li classes={css.item}>
@@ -271,7 +271,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={fullstackIcon}
-											/>{' '}
+											/>
 											Full-stack Enterprise JavaScript
 										</li>
 										<li classes={css.item}>
@@ -279,7 +279,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={performanceIcon}
-											/>{' '}
+											/>
 											Performance audits and improvements
 										</li>
 										<li classes={css.item}>
@@ -287,7 +287,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={qualityIcon}
-											/>{' '}
+											/>
 											Quality assurance testing
 										</li>
 										<li classes={css.item}>
@@ -295,7 +295,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={devopsIcon}
-											/>{' '}
+											/>
 											DevOps implementation
 										</li>
 									</ul>
@@ -329,7 +329,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={approachIcon}
-											/>{' '}
+											/>
 											Development approach, planning, and implementation
 										</li>
 										<li classes={css.item}>
@@ -337,7 +337,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={technologyIcon}
-											/>{' '}
+											/>
 											Architecture, UX, open source software, and technology
 											expertise
 										</li>
@@ -346,7 +346,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={legacyIcon}
-											/>{' '}
+											/>
 											Legacy application maintainability and re-engineering
 										</li>
 										<li classes={css.item}>
@@ -354,7 +354,7 @@ export const Services = factory(function Services() {
 												classes={css.img}
 												loading="lazy"
 												src={deliveryIcon}
-											/>{' '}
+											/>
 											Engineering culture, healthy teams, and continuous value
 											delivery
 										</li>
