@@ -41,6 +41,11 @@ export const Header = factory(function Header() {
 							</ActiveLink>
 						</li>
 						<li classes={css.item}>
+							<a classes={css.link} href="https://blog.sitepen.com/">
+								Blog
+							</a>
+						</li>
+						<li classes={css.item}>
 							<ActiveLink
 								classes={css.link}
 								to="contact"

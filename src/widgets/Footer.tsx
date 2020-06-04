@@ -29,13 +29,22 @@ export const Footer = factory(function Footer() {
 								</Link>
 							</li>
 							<li classes={css.item}>
-								<a classes={css.link}>TS Conf</a>
+								<a
+									classes={css.link}
+									href="https://blog.sitepen.com/learn-typescript-best-practices-at-tsconf/"
+								>
+									TS Conf
+								</a>
 							</li>
 							<li classes={css.item}>
-								<a classes={css.link}>Talkscript.fm</a>
+								<a classes={css.link} href="https://talkscript.sitepen.com/">
+									Talkscript.fm
+								</a>
 							</li>
 							<li classes={css.item}>
-								<a classes={css.link}>Milestone Mayhem</a>
+								<a classes={css.link} href="https://milestonemayhem.com/">
+									Milestone Mayhem
+								</a>
 							</li>
 							<li classes={css.item}>
 								<Link classes={css.link} to="contact">
@@ -78,7 +87,7 @@ export const Footer = factory(function Footer() {
 						<li classes={css.item}>
 							<a
 								classes={css.link}
-								href="https://www.sitepen.com/feed/"
+								href="https://blog.sitepen.com/feed/"
 								target="_blank"
 								rel="noopener"
 							>
