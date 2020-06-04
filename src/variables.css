@@ -10,6 +10,10 @@
 	--color-subheading: #1f3d56;
 	--dojo-hero-background: #082640;
 
+	/* inputs */
+	--input-border-color: #d9dadb;
+	--input-border-radius: 3px;
+
 	/* layout */
 	--grid-size: 8px;
 	--max-width: 1140px;

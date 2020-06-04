@@ -7,3 +7,87 @@
 	background-position: 50%;
 	background-color: var(--color-dark);
 }
+
+.content {
+	display: flex;
+	flex-direction: row;
+	margin: calc(var(--grid-size) * 3) auto;
+}
+
+.leading {
+	flex: 66.6%;
+	padding: calc(var(--grid-size) * 2);
+}
+
+.trailing {
+	flex: 33.3%;
+	padding: calc(var(--grid-size) * 2);
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: calc(var(--grid-size) * 2);
+}
+
+.field {
+	padding: var(--grid-size);
+	flex: 1;
+}
+
+.submit {
+	composes: root expertise from '../ConnectButton.m.css';
+}
+
+.root .submit {
+	border: none;
+	background-color: var(--color-medium);
+	color: var(--color-text-on-dark);
+	cursor: pointer;
+}
+
+.label {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	color: var(--color-subheading);
+}
+
+.label .required {
+	margin-left: 2px;
+	color: red;
+}
+
+.textarea,
+.input {
+	padding: var(--grid-size) calc(var(--grid-size) * 2);
+	border: 1px solid var(--input-border-color);
+	border-radius: var(--input-border-radius);
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: var(--color-dark);
+	transition: border-color 0.3s ease;
+	outline: none;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.textarea {
+	min-height: calc(var(--grid-size) * 20);
+	resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+	border-color: var(--color-medium);
+}
+
+.input:active,
+.input:focus:active,
+.textarea:active,
+.textarea:focus:active {
+	border-color: var(--color-dark);
+}
