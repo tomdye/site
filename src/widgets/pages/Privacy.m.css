@@ -1,2 +1,36 @@
-.root {
+.root .content {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.heroWrapper {
+	background-color: var(--dojo-hero-background);
+}
+
+.heading {
+	font-family: var(--base-font-family);
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: 500;
+	margin-top: calc(var(--grid-size) * 4);
+	margin-bottom: calc(var(--grid-size) * 2);
+}
+
+.subheading {
+	font-family: var(--base-font-family);
+	font-size: 28px;
+	line-height: 34px;
+	font-weight: 500;
+	margin-top: calc(var(--grid-size) * 4);
+	margin-bottom: calc(var(--grid-size) * 2);
+}
+
+.numberedList {
+	list-style: decimal;
+	padding-left: calc(var(--grid-size) * 5);
+}
+
+.bulletList {
+	list-style: disc;
+	padding-left: calc(var(--grid-size) * 5);
 }

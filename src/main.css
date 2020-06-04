@@ -55,3 +55,22 @@ img {
 b {
 	font-weight: bolder;
 }
+
+table {
+	margin-top: var(--grid-size);
+}
+
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+	background-color: #eee;
+}
+
+table td,
+table th {
+	padding: 15px;
+	line-height: 1.5;
+	vertical-align: top;
+	border: 1px solid #ccc;
+	font-size: 15px;
+	line-height: 21px;
+}
