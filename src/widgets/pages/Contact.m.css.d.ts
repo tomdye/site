@@ -10,3 +10,4 @@ export const label: string;
 export const required: string;
 export const textarea: string;
 export const input: string;
+export const thankyouBody: string;

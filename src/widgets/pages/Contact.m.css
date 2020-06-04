@@ -61,6 +61,7 @@
 
 .textarea,
 .input {
+	font-family: var(--base-font-family);
 	padding: var(--grid-size) calc(var(--grid-size) * 2);
 	border: 1px solid var(--input-border-color);
 	border-radius: var(--input-border-radius);
@@ -90,4 +91,8 @@
 .textarea:active,
 .textarea:focus:active {
 	border-color: var(--color-dark);
+}
+
+.thankyouBody {
+	text-align: center;
 }

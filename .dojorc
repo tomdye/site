@@ -3,7 +3,10 @@
 		"build-time-render": {
 			"root": "app",
 			"static": true,
-			"renderer": "jsdom"
+			"renderer": "jsdom",
+			"paths": [
+				"contact-thank-you"
+			]
 		}
 	},
 	"create-app": {}

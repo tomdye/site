@@ -22,12 +22,10 @@ export const Contact = factory(function Contact() {
 			<div classes={[commonCss.contentWrapper, css.content]}>
 				<form
 					accept-charset="UTF-8"
-					action="https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec"
-					enctype="multipart/form-data"
-					id="hsForm_2e1a1b5b-27bb-447d-aac4-0b87c1e88fec"
+					action="https://forms.hubspot.com/uploads/form/v2/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec"
+					enctype="application/x-www-form-urlencoded"
 					method="POST"
 					classes={css.leading}
-					// target="target_iframe_2e1a1b5b-27bb-447d-aac4-0b87c1e88fec"
 				>
 					<div classes={css.row}>
 						<div classes={css.field}>
@@ -108,7 +106,7 @@ export const Contact = factory(function Contact() {
 							<input
 								classes={css.input}
 								id="email"
-								name="company"
+								name="email"
 								type="email"
 								required
 								autocomplete="email"
