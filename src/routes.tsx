@@ -12,7 +12,13 @@ const routes: RouteConfig[] = [
 		id: 'contact',
 		path: 'contact',
 		outlet: 'main',
-		title: 'Contact | SitePen'
+		title: 'Contact Us | SitePen'
+	},
+	{
+		id: 'contactThankyou',
+		path: 'contact-thank-you',
+		outlet: 'main',
+		title: 'Contact Us | SitePen'
 	},
 	{
 		id: 'expertise',

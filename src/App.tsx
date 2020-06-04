@@ -5,6 +5,7 @@ import { Header } from './widgets/Header';
 import { About } from './widgets/pages/About';
 import { Careers } from './widgets/pages/Careers';
 import { Contact } from './widgets/pages/Contact';
+import { ContactThankyou } from './widgets/pages/ContactThankyou';
 import { Expertise } from './widgets/pages/Expertise';
 import { Home } from './widgets/pages/Home';
 import { OpenSource } from './widgets/pages/OpenSource';
@@ -37,6 +38,7 @@ export const App = factory(function App() {
 						about: <About />,
 						careers: <Careers />,
 						contact: <Contact />,
+						contactThankyou: <ContactThankyou />,
 						expertise: <Expertise />,
 						home: <Home />,
 						opensource: <OpenSource />,
