@@ -109,7 +109,7 @@ export const Home = factory(function Home() {
 											src={targetIcon}
 											alt="target icon"
 										/>
-										<h3>ENTERPRISE EXPERTISE</h3>
+										<h3 classes={css.iconheading}>ENTERPRISE EXPERTISE</h3>
 									</dt>
 									<dd classes={css.definition}>
 										Align with people who provide a rare combination of
@@ -123,7 +123,7 @@ export const Home = factory(function Home() {
 											src={flagIcon}
 											alt="flag icon"
 										/>
-										<h3>INDUSTRY LEADERSHIP</h3>
+										<h3 classes={css.iconheading}>INDUSTRY LEADERSHIP</h3>
 									</dt>
 									<dd classes={css.definition}>
 										Be in sync with leaders in Enterprise JavaScript and{' '}
@@ -132,7 +132,7 @@ export const Home = factory(function Home() {
 									</dd>
 									<dt classes={css.title}>
 										<i classes={[css.dependIcon, 'icon-route']} />
-										<h3>PREDICTABILITY</h3>
+										<h3 classes={css.iconheading}>PREDICTABILITY</h3>
 									</dt>
 									<dd classes={css.definition}>
 										Rely on timely delivery with predictably dependable results
@@ -144,7 +144,7 @@ export const Home = factory(function Home() {
 											src={rosetteIcon}
 											alt="rosette icon"
 										/>
-										<h3>GREAT CUSTOMER EXPERIENCE</h3>
+										<h3 classes={css.iconheading}>GREAT CUSTOMER EXPERIENCE</h3>
 									</dt>
 									<dd classes={css.definition}>
 										Reach your goals with a company that develops applications
@@ -156,7 +156,7 @@ export const Home = factory(function Home() {
 											src={partnershipIcon}
 											alt="partnership icon"
 										/>
-										<h3>DEDICATED PARTNERSHIP</h3>
+										<h3 classes={css.iconheading}>DEDICATED PARTNERSHIP</h3>
 									</dt>
 									<dd classes={css.definition}>
 										Benefit from ongoing communication and a partnership based

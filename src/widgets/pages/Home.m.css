@@ -21,7 +21,15 @@
 
 .dependList .definition {
 	padding-left: calc(var(--grid-size) * 6);
-	margin-bottom: calc(var(--grid-size) * 7);
+	margin-bottom: calc(var(--grid-size) * 5);
+}
+
+.dependList .definition:last-of-type {
+	margin-bottom: 0;
+}
+
+.dependList .iconheading {
+	margin-bottom: 0;
 }
 
 .dependIcon {
@@ -31,7 +39,7 @@
 }
 
 .carouselWrapper {
-	padding: calc(var(--grid-size) * 2);
+	margin-bottom: calc(var(--grid-size) * 4);
 }
 
 .reference {

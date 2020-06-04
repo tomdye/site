@@ -4,6 +4,7 @@ export const dependSummary: string;
 export const dependList: string;
 export const title: string;
 export const definition: string;
+export const iconheading: string;
 export const dependIcon: string;
 export const carouselWrapper: string;
 export const reference: string;
