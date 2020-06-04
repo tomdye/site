@@ -31,30 +31,18 @@ export const Footer = factory(function Footer() {
 							<li classes={css.item}>
 								<a
 									classes={css.link}
-									target="_blank"
-									rel="noopener"
 									href="https://blog.sitepen.com/learn-typescript-best-practices-at-tsconf/"
 								>
 									TS Conf
 								</a>
 							</li>
 							<li classes={css.item}>
-								<a
-									classes={css.link}
-									target="_blank"
-									rel="noopener"
-									href="https://talkscript.sitepen.com/"
-								>
+								<a classes={css.link} href="https://talkscript.sitepen.com/">
 									Talkscript.fm
 								</a>
 							</li>
 							<li classes={css.item}>
-								<a
-									classes={css.link}
-									target="_blank"
-									rel="noopener"
-									href="https://milestonemayhem.com/"
-								>
+								<a classes={css.link} href="https://milestonemayhem.com/">
 									Milestone Mayhem
 								</a>
 							</li>
