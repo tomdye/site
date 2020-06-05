@@ -49,32 +49,9 @@
 	--base-font-weight: 400;
 	--base-line-height: 24px;
 
-	/* breakponts */
+	/* breakponts for reference - sadly cannot use var in @media queries
 	--breakpoint-small: 576px;
 	--breakpoint-medium: 768px;
 	--breakpoint-large: 992px;
-	--breakpoint-xlarge: 1200px;
-
-	/* // Small devices (landscape phones, 576px and up)
-	@media (min-width: 576px) { ... }
-
-	// Medium devices (tablets, 768px and up)
-	@media (min-width: 768px) { ... }
-
-	// Large devices (desktops, 992px and up)
-	@media (min-width: 992px) { ... }
-
-	// Extra large devices (large desktops, 1200px and up)
-	@media (min-width: 1200px) { ... } */
-
-	/* @media (max-width: 575.98px) { ... }
-
-	// Small devices (landscape phones, less than 768px)
-	@media (max-width: 767.98px) { ... }
-
-	// Medium devices (tablets, less than 992px)
-	@media (max-width: 991.98px) { ... }
-
-	// Large devices (desktops, less than 1200px)
-	@media (max-width: 1199.98px) { ... } */
+	--breakpoint-xlarge: 1200px; */
 }
