@@ -82,6 +82,7 @@
 	}
 	.root .top {
 		height: auto;
+		padding: var(--grid-size) 0;
 	}
 	.root .top .links {
 		flex-wrap: wrap;
