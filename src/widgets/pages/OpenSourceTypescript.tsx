@@ -22,10 +22,10 @@ export const OpenSourceTypescript = factory(function OpenSourceTypescript() {
 			</div>
 			<div classes={commonCss.smallerContentWrapper}>
 				<p>
-					We recognized the potential
+					We recognized the potential{' '}
 					<a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">
 						TypeScript
-					</a>
+					</a>{' '}
 					had all the way back in 2013. By embracing rather than trying to replace
 					JavaScript, we knew that TypeScript could bring significant tooling improvements
 					to the language we already loved through its addition of optional typing,
