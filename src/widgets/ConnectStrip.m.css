@@ -21,13 +21,13 @@
 	font-size: 25px;
 	line-height: 25px;
 	letter-spacing: 2px;
+	font-family: var(--heading-font-family);
 }
 
 .blurb {
 	font-weight: 400;
 	font-size: 22.5px;
 	line-height: 30px;
-	font-family: var(--base-font-family);
 	letter-spacing: unset;
 }
 

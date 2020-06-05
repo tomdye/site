@@ -1,15 +1,6 @@
 .root {
 }
 
-.heading {
-	font-size: 32px;
-	font-weight: 600;
-	font-family: var(--base-font-family);
-	line-height: 32px;
-	margin: calc(var(--grid-size) * 2) 0;
-	text-align: center;
-}
-
 .intro {
 	font-size: 18px;
 	font-weight: 400;

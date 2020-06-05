@@ -18,13 +18,19 @@
 	--grid-size: 8px;
 	--max-width: 1140px;
 	--max-width-smaller: 840px;
+	--gutter-size: calc(var(--grid-size) * 4);
 
 	/* typography */
 	--base-font-family: 'Open Sans', sans-serif;
 	--heading-font-family: 'Montserrat', sans-serif;
 
-	--heading1-font-weight: 600;
-	--heading1-font-size: 32px;
+	--heading-font-size: 32px;
+	--heading-font-weight: 600;
+	--heading-line-height: 32px;
+
+	--subheading-font-size: 28px;
+	--subheading-font-weight: 600;
+	--subheading-line-height: 28px;
 
 	--heading-xl-font-weight: 800;
 	--heading-xl-font-size: 96px;
@@ -57,4 +63,15 @@
 
 	// Extra large devices (large desktops, 1200px and up)
 	@media (min-width: 1200px) { ... } */
+
+	/* @media (max-width: 575.98px) { ... }
+
+	// Small devices (landscape phones, less than 768px)
+	@media (max-width: 767.98px) { ... }
+
+	// Medium devices (tablets, less than 992px)
+	@media (max-width: 991.98px) { ... }
+
+	// Large devices (desktops, less than 1200px)
+	@media (max-width: 1199.98px) { ... } */
 }

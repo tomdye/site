@@ -1,5 +1,6 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './OSSLinks.m.css';
+import * as commonCss from '../Common.m.css';
 import { Link } from '@dojo/framework/routing/Link';
 
 const dojoLogo = require('../assets/images/oss/dojo.svg');
@@ -13,7 +14,9 @@ const factory = create();
 export const OSSLinks = factory(function OSSLinks() {
 	return (
 		<div classes={css.root}>
-			<h2 classes={css.heading}>Open Source Software Development</h2>
+			<h2 classes={[commonCss.heading, commonCss.centered]}>
+				Open Source Software Development
+			</h2>
 			<p classes={css.intro}>
 				With over a decade of experience developing large-scale web applications, SitePen
 				creates, maintains, and contributes to open source software that prioritizes the

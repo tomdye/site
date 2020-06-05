@@ -30,6 +30,10 @@
 
 .dependList .iconheading {
 	margin-bottom: 0;
+	font-family: var(--heading-font-family);
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 700;
 }
 
 .dependIcon {
@@ -40,6 +44,8 @@
 
 .carouselWrapper {
 	margin-bottom: calc(var(--grid-size) * 4);
+	padding: 0 var(--gutter-size);
+	overflow: hidden;
 }
 
 .reference {
@@ -71,5 +77,5 @@
 }
 
 .summaryImage {
-	width: 80%;
+	max-width: 80%;
 }

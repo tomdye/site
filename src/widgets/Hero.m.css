@@ -11,6 +11,9 @@
 .title {
 	color: var(--color-primary);
 	letter-spacing: 4px;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 32px;
 }
 
 .xlTitle {
@@ -24,6 +27,7 @@
 	margin-bottom: calc(var(--grid-size) * 2);
 	text-transform: uppercase;
 	line-height: 1;
+	font-family: var(--heading-font-family);
 }
 
 .blurb {

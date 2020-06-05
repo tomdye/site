@@ -59,7 +59,9 @@ export const Careers = factory(function Careers() {
 				</Summary>
 			</div>
 			<div classes={commonCss.contentWrapper}>
-				<h2 classes={css.subheading}>Some Super Things About Working Here</h2>
+				<h2 classes={[commonCss.heading, commonCss.centered]}>
+					Some Super Things About Working Here
+				</h2>
 				<ul classes={css.list}>
 					<li classes={css.item}>
 						<img src={commuteIcon} alt="Icon for commute" />
@@ -131,7 +133,9 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 				</ul>
-				<h3 classes={css.subheading}>We're on the lookout for...</h3>
+				<h3 classes={[commonCss.heading, commonCss.centered]}>
+					We're on the lookout for...
+				</h3>
 				<div classes={css.openPositions}>
 					There are no open positions at this time. Please check back soon!
 				</div>

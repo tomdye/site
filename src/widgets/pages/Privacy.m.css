@@ -8,21 +8,7 @@
 }
 
 .heading {
-	font-family: var(--base-font-family);
-	font-size: 32px;
-	line-height: 38px;
-	font-weight: 500;
 	margin-top: calc(var(--grid-size) * 4);
-	margin-bottom: calc(var(--grid-size) * 2);
-}
-
-.subheading {
-	font-family: var(--base-font-family);
-	font-size: 28px;
-	line-height: 34px;
-	font-weight: 500;
-	margin-top: calc(var(--grid-size) * 4);
-	margin-bottom: calc(var(--grid-size) * 2);
 }
 
 .numberedList {

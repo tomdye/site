@@ -6,6 +6,7 @@ export interface SummaryProperties {
 	reverse?: boolean;
 	smaller?: boolean;
 	trailingBias?: boolean;
+	collapse?: 'hide' | 'stack';
 }
 
 export interface SummaryChildren {
@@ -18,7 +19,7 @@ const factory = create().properties<SummaryProperties>().children<SummaryChildre
 
 export const Summary = factory(function Summary({ children, properties }) {
 	const [{ title, image, blurb }] = children();
-	const { reverse, smaller, trailingBias } = properties();
+	const { reverse, smaller, trailingBias, collapse = 'stack' } = properties();
 
 	const titleNode = smaller ? (
 		<h3 classes={css.title3}>{title}</h3>
@@ -27,7 +28,15 @@ export const Summary = factory(function Summary({ children, properties }) {
 	);
 
 	return (
-		<div classes={[css.root, reverse && css.reverse, trailingBias && css.trailingBias]}>
+		<div
+			classes={[
+				css.root,
+				reverse && css.reverse,
+				trailingBias && css.trailingBias,
+				collapse === 'hide' && css.collapseHide,
+				collapse === 'stack' && css.collapseStack
+			]}
+		>
 			<div classes={css.leading}>{image}</div>
 			<div classes={css.trailing}>
 				{titleNode}
