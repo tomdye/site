@@ -43,7 +43,7 @@
 .links .item {
 	padding-right: calc(var(--grid-size) * 4);
 	text-transform: uppercase;
-	font-weight: var(--heading2-font-weight);
+	font-weight: var(--heading-font-weight);
 	font-family: var(--heading-font-family);
 	font-size: 12px;
 	letter-spacing: 1px;
