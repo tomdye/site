@@ -24,3 +24,9 @@
 .img {
 	height: calc(var(--grid-size) * 5);
 }
+
+@media (max-width: 768px) {
+	.list {
+		flex-wrap: wrap;
+	}
+}
