@@ -30,7 +30,9 @@ export const OpenSource = factory(function OpenSource() {
 				</div>
 			</div>
 			<div classes={commonCss.smallerContentWrapper}>
-				<h2 classes={css.heading}>Open Source Software Contributions</h2>
+				<h2 classes={[commonCss.heading, commonCss.centered]}>
+					Open Source Software Contributions
+				</h2>
 				<p classes={css.intro}>
 					We are lifelong advocates of open source software and have harnessed its
 					benefits since the early days of JavaScript. We bring engineers from around the

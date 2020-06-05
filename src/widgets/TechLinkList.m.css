@@ -14,7 +14,6 @@
 .heading {
 	font-size: 16px;
 	font-weight: 700;
-	font-family: var(--base-font-family);
 	line-height: 20px;
 	letter-spacing: 1.6px;
 	text-transform: uppercase;
@@ -24,4 +23,10 @@
 
 .img {
 	height: calc(var(--grid-size) * 5);
+}
+
+@media (max-width: 768px) {
+	.list {
+		flex-wrap: wrap;
+	}
 }

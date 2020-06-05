@@ -3,18 +3,19 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 var(--grid-size);
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	background: transparent;
 	transition: background 0.3s, padding 0.3s;
-	z-index: 99;
+	z-index: 101;
 }
 
 .homeLink {
 	display: flex;
+	position: relative;
+	z-index: 102;
 }
 
 .wrapper {
@@ -24,6 +25,7 @@
 	justify-content: space-between;
 	flex-grow: 1;
 	max-width: var(--max-width);
+	padding: 0 var(--gutter-size);
 }
 
 .links {
@@ -33,10 +35,11 @@
 .item {
 	padding-right: calc(var(--grid-size) * 5);
 	text-transform: uppercase;
-	font-weight: var(--heading2-font-weight);
+	font-weight: var(--heading-font-weight);
 	font-family: var(--heading-font-family);
 	font-size: 14.4px;
 	transition: color 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
+	text-align: center;
 }
 
 .item .link {
@@ -50,4 +53,128 @@
 .link.active,
 .item .link:hover {
 	color: var(--color-primary);
+}
+
+.nav {
+	padding: 0 var(--gutter-size);
+}
+
+.menuToggleLabel,
+.menuToggleInput {
+	display: none;
+}
+
+.menuToggleLabel {
+	z-index: 102;
+	text-align: left;
+	background: none;
+	font: inherit;
+	position: relative;
+	cursor: pointer;
+	height: var(--toggle-button-height);
+	width: var(--toggle-button-width);
+	z-index: 2;
+	top: calc(50 - var(--toggle-button-height));
+	border: none;
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menuToggleInput {
+	font-size: 0;
+	display: none;
+	opacity: 0;
+}
+
+.srOnly {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.toggleBar {
+	margin-top: 0;
+}
+
+.toggleBar::after {
+	margin-top: calc(var(--toggle-button-height) / 2.5);
+}
+
+.toggleBar::before {
+	margin-top: calc(calc(var(--toggle-button-height) / 2.5) * -1);
+}
+
+.toggleBar,
+.toggleBar::after,
+.toggleBar::before {
+	position: absolute;
+	z-index: 102;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.25s ease-in-out;
+	background: var(--color-text-on-dark);
+	border-radius: 2px;
+	content: '';
+	height: calc(var(--toggle-button-height) / 10);
+	width: 100%;
+}
+
+.menuToggleInput:checked ~ .menuToggleLabel .toggleBar {
+	background: transparent;
+}
+
+.menuToggleInput:checked ~ .menuToggleLabel .toggleBar::after,
+.menuToggleInput:checked ~ .menuToggleLabel .toggleBar::before {
+	background: var(--color-text-on-dark);
+	margin-top: 0;
+	top: 0;
+}
+
+.menuToggleInput:checked ~ .menuToggleLabel .toggleBar::before {
+	transform: rotate(-45deg);
+}
+
+.menuToggleInput:checked ~ .menuToggleLabel .toggleBar::after {
+	transform: rotate(45deg);
+}
+
+.menuToggleInput:checked ~ .nav {
+	display: block;
+	z-index: 100;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(var(--grid-size) * 8);
+	background-color: var(--dojo-hero-background);
+	animation: enter 0.25s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes enter {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.root .nav {
+		display: none;
+	}
+
+	.root .links {
+		flex-direction: column;
+	}
+	.root .item {
+		text-align: left;
+		padding: calc(var(--grid-size) * 2) 0;
+	}
+	.root .menuToggleLabel {
+		display: block;
+	}
 }

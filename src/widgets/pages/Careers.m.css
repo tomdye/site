@@ -8,14 +8,6 @@
 	background-color: var(--color-dark);
 }
 
-.subheading {
-	font-size: 32px;
-	font-weight: 600;
-	font-family: var(--base-font-family);
-	line-height: 32px;
-	text-align: center;
-}
-
 .list {
 	display: flex;
 	flex-direction: row;
@@ -36,10 +28,17 @@
 	font-weight: bolder;
 	margin: calc(var(--grid-size) * 2) 0;
 	letter-spacing: 1px;
+	font-family: var(--heading-font-family);
 }
 
 .openPositions {
 	text-align: center;
 	margin-top: calc(var(--grid-size) * 4);
 	margin-bottom: calc(var(--grid-size) * 6);
+}
+
+@media (max-width: 768px) {
+	.root .list {
+		flex-direction: column;
+	}
 }

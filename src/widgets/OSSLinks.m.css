@@ -1,15 +1,6 @@
 .root {
 }
 
-.heading {
-	font-size: 32px;
-	font-weight: 600;
-	font-family: var(--base-font-family);
-	line-height: 32px;
-	margin: calc(var(--grid-size) * 2) 0;
-	text-align: center;
-}
-
 .intro {
 	font-size: 18px;
 	font-weight: 400;
@@ -28,8 +19,19 @@
 	flex-grow: 1;
 	overflow: hidden;
 	padding: var(--grid-size);
+	box-sizing: border-box;
 }
 
 .list .img {
 	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	.list {
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.list .item {
+		flex: 50%;
+	}
 }

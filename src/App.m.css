@@ -1,2 +1,12 @@
 .root {
 }
+
+@media (max-width: 768px) {
+	.root {
+		--heading-font-size: 26px;
+		--heading-line-height: 26px;
+
+		--subheading-font-size: 20px;
+		--subheading-line-height: 20px;
+	}
+}

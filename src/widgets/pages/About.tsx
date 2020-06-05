@@ -41,7 +41,7 @@ export const About = factory(function About() {
 				</p>
 			</div>
 			<div classes={commonCss.smallerContentWrapper}>
-				<h2 classes={css.heading}>Our Philosophy</h2>
+				<h2 classes={commonCss.heading}>Our Philosophy</h2>
 				<p>
 					Our people are our success. We bring together the expertise and experience of
 					talented professionals who are born to solve problems, move with purpose, and
@@ -54,7 +54,7 @@ export const About = factory(function About() {
 							<img classes={css.img} src={knowledgeImg} alt="Knowledge Icon" />
 						</div>
 						<div>
-							<h3 classes={css.subHeading}>Knowledge</h3>
+							<h3 classes={commonCss.subheading}>Knowledge</h3>
 							<p>
 								Our continuous focus on learning, research, and experimentation
 								allows us to hone all aspects of our approach to lean application
@@ -67,7 +67,7 @@ export const About = factory(function About() {
 							<img classes={css.img} src={respectImg} alt="Respect Icon" />
 						</div>
 						<div>
-							<h3 classes={css.subHeading}>Respect</h3>
+							<h3 classes={commonCss.subheading}>Respect</h3>
 							<p>
 								We nurture a team culture that promotes a healthy, sustainable
 								work-life balance, one that is always supportive and respectful of
@@ -84,7 +84,7 @@ export const About = factory(function About() {
 							/>
 						</div>
 						<div>
-							<h3 classes={css.subHeading}>Integrity</h3>
+							<h3 classes={commonCss.subheading}>Integrity</h3>
 							<p>
 								We never price an engagement to win business. We strive to sell our
 								services in a way that balances honesty and effort with the

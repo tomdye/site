@@ -8,7 +8,6 @@ export const dgridHeroWrapper: string;
 export const internHeroWrapper: string;
 export const typescriptHeroWrapper: string;
 export const dojoToolkitHeroWrapper: string;
-export const heading: string;
 export const intro: string;
 export const logo: string;
 export const list: string;

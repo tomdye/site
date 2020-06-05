@@ -5,5 +5,6 @@ export const leading: string;
 export const trailing: string;
 export const title2: string;
 export const title3: string;
-export const title: string;
 export const blurb: string;
+export const collapseHide: string;
+export const collapseStack: string;

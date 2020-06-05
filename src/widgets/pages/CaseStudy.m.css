@@ -27,6 +27,7 @@
 .bullets {
 	list-style: disc;
 	padding-left: calc(var(--grid-size) * 4);
+	text-align: left;
 }
 
 .root .outroTitle {

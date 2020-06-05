@@ -89,7 +89,7 @@ export const CaseStudySocial = factory(function CaseStudySocial() {
 					}}
 				</Summary>
 				<div classes={css.result}>
-					<h3 classes={summaryCss.title}>The Result</h3>
+					<h3 classes={summaryCss.title3}>The Result</h3>
 					<p classes={summaryCss.blurb}>
 						In one big step, SitePen eliminated the weighty technical debt of an
 						outdated front-end technology stack and helped put Social Knowledge on a

@@ -172,7 +172,9 @@ export const Services = factory(function Services() {
 			</div>
 			<div classes={commonCss.smallerContentWrapper}>
 				<section>
-					<h2 classes={css.heading}>We Will Drive Your Success</h2>
+					<h2 classes={[commonCss.heading, commonCss.centered, css.heading]}>
+						We Will Drive Your Success
+					</h2>
 					<Summary smaller>
 						{{
 							title: 'Complete Team',
@@ -232,7 +234,9 @@ export const Services = factory(function Services() {
 			<ConnectStrip variant="expertise" />
 			<div classes={commonCss.contentWrapper}>
 				<section>
-					<h2 classes={css.heading}>Services We Offer</h2>
+					<h2 classes={[commonCss.heading, commonCss.centered, css.heading]}>
+						Services We Offer
+					</h2>
 					<Summary smaller>
 						{{
 							title: 'Modern Enterprise Web Development',

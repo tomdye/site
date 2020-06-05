@@ -31,7 +31,9 @@ export const Work = factory(function Work() {
 				</div>
 			</div>
 			<div classes={commonCss.contentWrapper}>
-				<h2 classes={css.heading}>Recent Enterprise-Grade Software Solutions</h2>
+				<h2 classes={[commonCss.heading, commonCss.centered, css.heading]}>
+					Recent Enterprise-Grade Software Solutions
+				</h2>
 				<p classes={css.intro}>
 					From proofs-of-concept to fullstack feature development to legacy
 					re-engineering, companies rely on our agility and expertise in all areas of the

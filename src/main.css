@@ -19,27 +19,18 @@ a:hover {
 	color: var(--color-primary);
 }
 
-h1 {
-	font-weight: var(--heading1-font-weight);
-	font-family: var(--heading-font-family);
-	color: var(--color-text-on-dark);
-	font-size: var(--heading1-font-size);
-	line-height: var(--heading1-font-size);
-}
-
 h2 {
-	font-weight: var(--heading2-font-weight);
-	font-family: var(--heading-font-family);
+	font-weight: var(--heading-font-weight);
 	color: var(--color-subheading);
-	font-size: var(--heading2-font-size);
-	line-height: var(--heading2-line-height);
+	font-size: var(--heading-font-size);
+	line-height: var(--heading-line-height);
 	margin-bottom: calc(var(--grid-size) * 2);
 }
 
 h3 {
-	font-weight: var(--heading3-font-weight);
-	font-family: var(--base-font-family);
-	font-size: var(--heading3-font-size);
+	font-weight: var(--subheading-font-weight);
+	font-size: var(--subheading-font-size);
+	line-height: var(--subheading-line-height);
 	margin-bottom: calc(var(--grid-size) * 2);
 	color: var(--color-subheading);
 }

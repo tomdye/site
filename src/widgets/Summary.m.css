@@ -31,24 +31,50 @@
 
 .title2 {
 	margin-bottom: calc(var(--grid-size) * 2);
-	font-size: 40px;
-	font-weight: 500;
-	font-family: var(--base-font-family);
+	font-size: 38px;
+	font-weight: 600;
 	line-height: 52px;
+	color: var(--color-medium);
 }
 
 .title3 {
 	margin-bottom: calc(var(--grid-size) * 2);
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 28px;
-	font-family: var(--base-font-family);
-}
-
-.title {
+	font-size: var(--subheading-font-size);
+	font-weight: var(--subheading-font-weight);
+	line-height: var(--subheading-lineheight);
 	color: var(--color-medium);
 }
 
 .blurb {
 	line-height: 28.8px;
+}
+
+@media (max-width: 992px) {
+	.collapseHide .leading {
+		display: none;
+	}
+	.collapseHide .trailing {
+		flex: 1;
+	}
+	.collapseHide .title3,
+	.collapseHide .title2 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.collapseStack.root {
+		flex-direction: column;
+	}
+	.collapseStack .leading,
+	.collapseStack .trailing {
+		flex: 1;
+	}
+	.collapseStack .trailing {
+		text-align: center;
+	}
+	.collapseStack .title2,
+	.collapseStack .title3 {
+		text-align: center;
+	}
 }

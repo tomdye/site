@@ -98,7 +98,7 @@ export const Home = factory(function Home() {
 					}}
 				</Summary>
 				<div classes={css.dependSummary}>
-					<Summary reverse>
+					<Summary reverse collapse="hide">
 						{{
 							title: <span id="dependable">You can depend on us</span>,
 							blurb: (

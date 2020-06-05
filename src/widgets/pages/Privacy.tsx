@@ -39,8 +39,10 @@ export const Privacy = factory(function Privacy() {
 				See our contact page to contact us. To ask questions about this Privacy Policy or
 				our privacy practices, please contact us at{' '}
 				<a href="mailto:hello@sitepen.com">hello@sitepen.com</a>.
-				<h2 classes={css.heading}>Collection of Personal Information</h2>
-				<h3 classes={css.subheading}>
+				<h2 classes={[commonCss.heading, css.heading]}>
+					Collection of Personal Information
+				</h2>
+				<h3 classes={[commonCss.subheading, css.heading]}>
 					Information We Collect About You and How We Collect It
 				</h3>
 				We collect several types of information from and about users of our Platform,
@@ -77,7 +79,7 @@ export const Privacy = factory(function Privacy() {
 						analytics services.
 					</li>
 				</ol>
-				<h3 classes={css.subheading}>Information You Provide to Us</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Information You Provide to Us</h3>
 				The information we collect on or through our Platform may include:
 				<ol classes={css.numberedList}>
 					<li>
@@ -101,7 +103,7 @@ export const Privacy = factory(function Privacy() {
 						measures are perfect or impenetrable.
 					</li>
 				</ol>
-				<h3 classes={css.subheading}>
+				<h3 classes={[commonCss.subheading, css.heading]}>
 					Information We Collect through Automatic Data Collection Technologies
 				</h3>
 				As you navigate through and interact with our Platform, we may use automatic data
@@ -153,7 +155,7 @@ export const Privacy = factory(function Privacy() {
 						content and verifying system and server integrity).
 					</li>
 				</ol>
-				<h3 classes={css.subheading}>How We Use Your Information</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>How We Use Your Information</h3>
 				We use information that we collect about you or that you provide to us, including
 				any personal information: 1) To present our Platform and its contents to you; 2) To
 				provide you with information, products or services that you request from us; 3) To
@@ -170,7 +172,7 @@ export const Privacy = factory(function Privacy() {
 				<a href="mailto:hello@sitepen.com">hello@sitepen.com</a>. We may send you certain
 				service and administrative notices regarding your purchased services, which are not
 				subject to opt out.
-				<h3 classes={css.subheading}>Information Sharing</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Information Sharing</h3>
 				We do not sell personal information. To provide the Services, we share personal data
 				with service providers who are contractually obliged to comply with all applicable
 				laws and who can only access the Personal Data required for them to provide the
@@ -216,7 +218,9 @@ export const Privacy = factory(function Privacy() {
 				displayed in public and private areas of the Site, except that Content and
 				associated data submitted in connection with Services will be used only per the
 				relevant Services agreement.
-				<h3 classes={css.subheading}>Accessing and Correcting Your Information</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>
+					Accessing and Correcting Your Information
+				</h3>
 				You can review and change your personal information by logging into the Platform and
 				visiting your Profile and account settings pages. You may also send us an email at
 				hello@sitepen.com to request access to, correct or delete any personal information
@@ -225,12 +229,12 @@ export const Privacy = factory(function Privacy() {
 				information if we believe the change would violate any law or legal requirement or
 				cause the information to be incorrect. Proper access and use of information provided
 				on the Platform, including User Contributions, is governed by our Terms of Service.
-				<h3 classes={css.subheading}>Links</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Links</h3>
 				The Site and Content on it may contain links to other sites and resources controlled
 				by third parties. We are not responsible for the privacy practices or content of
 				these other sites or resources, and you should consult the privacy statements of
 				such other sites and resources.
-				<h3 classes={css.subheading}>Data Security</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Data Security</h3>
 				We have implemented measures designed to secure your personal information and
 				messages from accidental loss and from unauthorized access, use, alteration and
 				disclosure. Any online payment transactions will be encrypted. The safety and
@@ -246,7 +250,7 @@ export const Privacy = factory(function Privacy() {
 				information and messages is at your own risk. We are not responsible for
 				circumvention of any privacy settings or security measures contained on the
 				Platform.
-				<h3 classes={css.subheading}>Changes to this Policy</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Changes to this Policy</h3>
 				We may amend this Privacy Policy, including the use of your information for new,
 				unanticipated purposes, at any time by posting a revised version on the Site, and/or
 				sending information regarding the amendment to your email address in our records.
@@ -257,12 +261,12 @@ export const Privacy = factory(function Privacy() {
 				any of such changes, you may immediately cease all access and use of the Site and/or
 				the Services. You agree that such termination will be your exclusive remedy in such
 				event.
-				<h3 classes={css.subheading}>California and EU Users</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>California and EU Users</h3>
 				<b>
 					This section applies to the extent the California Consumer Privacy Act (CCPA) or
 					EU General Data Protection Regulation (GDPR) applies to you and your data.
 				</b>
-				<h3 classes={css.subheading}>Privacy Rights</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Privacy Rights</h3>
 				You have the rights described below with respect to your Personal Data that we
 				process. These rights apply equally to EU and California users. To exercise any of
 				your rights below, please send an e-mail to{' '}
@@ -310,7 +314,7 @@ export const Privacy = factory(function Privacy() {
 						Information. We do not sell Personal Information to third parties.
 					</li>
 				</ul>
-				<h3 classes={css.subheading}>Information We Collect</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Information We Collect</h3>
 				We collect information that identifies, relates to, describes, references, is
 				capable of being associated with, or could reasonably be linked, directly or
 				indirectly, with a particular consumer or device (for purposes of this “California
@@ -491,14 +495,14 @@ export const Privacy = factory(function Privacy() {
 						</tr>
 					</tbody>
 				</table>
-				<h3 classes={css.subheading}>International Users</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>International Users</h3>
 				The Site is hosted and the Services are provided in the United States of America. If
 				you are accessing the Site or Services from the European Union, Asia, or any other
 				jurisdiction with laws or regulations governing personal data collection, use, and
 				disclosure, which differ from United States laws, please be advised that through
 				your use of the Site and the Services, you are transferring your personal
 				information to the United States of America and you consent to that transfer.
-				<h3 classes={css.subheading}>Children Under the Age of 16</h3>
+				<h3 classes={[commonCss.subheading, css.heading]}>Children Under the Age of 16</h3>
 				The Site is not intended for children under 16 years of age. No one under age 16 may
 				provide any personal information to or on the Site. We do not knowingly collect
 				personal information from children under 16. If you are under 16, do not use or

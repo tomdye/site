@@ -14,21 +14,6 @@
 	font-weight: 400;
 }
 
-.heading {
-	font-size: 32px;
-	font-family: var(--base-font-family);
-	font-weight: 600;
-	line-height: 32px;
-	margin-bottom: calc(var(--grid-size) * 3);
-}
-
-.subHeading {
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 28px;
-	margin-bottom: calc(var(--grid-size) * 2);
-}
-
 .list {
 	margin: calc(var(--grid-size) * 4) 0;
 }
@@ -55,4 +40,10 @@
 
 .integrityImg {
 	height: 120px;
+}
+
+@media (max-width: 768px) {
+	.item {
+		flex-direction: column;
+	}
 }

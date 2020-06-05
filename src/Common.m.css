@@ -1,11 +1,13 @@
 .contentWrapper {
 	max-width: var(--max-width);
 	margin: 0 auto;
+	padding: 0 var(--gutter-size);
 }
 
 .smallerContentWrapper {
 	max-width: var(--max-width-smaller);
 	margin: calc(var(--grid-size) * 8) auto;
+	padding: 0 var(--gutter-size);
 }
 
 .linkButton {
@@ -26,4 +28,24 @@
 .linkButton:hover {
 	background-color: var(--color-medium);
 	color: var(--color-text-on-dark);
+}
+
+.heading {
+	font-weight: var(--heading-font-weight);
+	color: var(--color-subheading);
+	font-size: var(--heading-font-size);
+	line-height: var(--heading-line-height);
+	margin-bottom: calc(var(--grid-size) * 2);
+}
+
+.subheading {
+	font-weight: var(--subheading-font-weight);
+	font-size: var(--subheading-font-size);
+	line-height: var(--subheading-line-height);
+	margin-bottom: calc(var(--grid-size) * 2);
+	color: var(--color-subheading);
+}
+
+.centered {
+	text-align: center;
 }
