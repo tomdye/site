@@ -58,4 +58,7 @@
 		font-size: var(--heading-font-size);
 		line-height: var(--heading-line-height);
 	}
+	.jsList {
+		flex-wrap: wrap;
+	}
 }
