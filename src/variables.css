@@ -20,6 +20,9 @@
 	--max-width-smaller: 840px;
 	--gutter-size: calc(var(--grid-size) * 4);
 
+	--toggle-button-height: 20px;
+	--toggle-button-width: 26px;
+
 	/* typography */
 	--base-font-family: 'Open Sans', sans-serif;
 	--heading-font-family: 'Montserrat', sans-serif;

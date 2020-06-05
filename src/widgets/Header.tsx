@@ -15,7 +15,12 @@ export const Header = factory(function Header() {
 				<Link to="home" classes={css.homeLink} title="Home">
 					<img loading="lazy" src={sitepenLogo} alt="Sitepen Logo" />
 				</Link>
-				<nav>
+				<input id="menuToggle" classes={css.menuToggleInput} type="checkbox" />
+				<label classes={css.menuToggleLabel} for="menuToggle">
+					<span classes={css.srOnly}>Menu</span>
+					<div classes={css.toggleBar} />
+				</label>
+				<nav classes={css.nav}>
 					<ul classes={css.links}>
 						<li classes={css.item}>
 							<ActiveLink
