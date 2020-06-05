@@ -94,3 +94,20 @@
 .heading {
 	margin: calc(var(--grid-size) * 8) 0;
 }
+
+@media (max-width: 768px) {
+	.root .list {
+		flex-direction: column;
+	}
+	.topSection {
+		flex-direction: column;
+	}
+	.topSection .leading,
+	.topSection .trailing {
+		flex: 1;
+	}
+	.root .topSection .topTitle {
+		font-size: var(--heading-font-size);
+		line-height: var(--heading-line-height);
+	}
+}

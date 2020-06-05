@@ -70,11 +70,11 @@
 	.collapseStack .trailing {
 		flex: 1;
 	}
-	.collapseStack .leading {
-		/* max-width: 60%; */
+	.collapseStack .trailing {
+		text-align: center;
 	}
 	.collapseStack .title2,
-	.collapseStack.title3 {
+	.collapseStack .title3 {
 		text-align: center;
 	}
 }

@@ -36,3 +36,9 @@
 	margin-top: calc(var(--grid-size) * 4);
 	margin-bottom: calc(var(--grid-size) * 6);
 }
+
+@media (max-width: 768px) {
+	.root .list {
+		flex-direction: column;
+	}
+}

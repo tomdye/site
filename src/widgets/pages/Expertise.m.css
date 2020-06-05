@@ -45,3 +45,17 @@
 .jsImg {
 	max-width: 58px;
 }
+
+@media (max-width: 768px) {
+	.topSection {
+		flex-direction: column;
+	}
+	.topSection .leading,
+	.topSection .trailing {
+		flex: 1;
+	}
+	.root .topSection .topHeading {
+		font-size: var(--heading-font-size);
+		line-height: var(--heading-line-height);
+	}
+}
