@@ -41,3 +41,9 @@
 .integrityImg {
 	height: 120px;
 }
+
+@media (max-width: 768px) {
+	.item {
+		flex-direction: column;
+	}
+}
