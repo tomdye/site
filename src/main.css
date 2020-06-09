@@ -66,33 +66,6 @@ table th {
 	line-height: 21px;
 }
 
-.gdprBanner.hidden {
+.hidden {
 	display: none;
-}
-
-.gdprBanner {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: var(--color-medium);
-	padding: var(--grid-size) var(--gutter-size);
-	z-index: 500;
-	color: var(--color-text-on-dark);
-	font-size: 13px;
-	line-height: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.gdprBanner .gdprButton {
-	border: none;
-	background-color: #fbb03b;
-	color: var(--color-text-on-dark);
-	padding: var(--grid-size);
-	margin-left: var(--grid-size);
-	border-radius: 3px;
-	line-height: 18px;
-	white-space: nowrap;
 }

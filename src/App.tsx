@@ -22,6 +22,7 @@ import { OpenSourceIntern } from './widgets/pages/OpenSourceIntern';
 import { OpenSourceTypescript } from './widgets/pages/OpenSourceTypescript';
 import { OpenSourceDojoToolkit } from './widgets/pages/OpenSourceDojoToolkit';
 import { OpenSourceDgrid } from './widgets/pages/OpenSourceDgrid';
+import { GDPRBanner } from './widgets/GDPRBanner';
 
 export interface AppProperties {}
 
@@ -58,6 +59,7 @@ export const App = factory(function App() {
 				</Outlet>
 			</main>
 			<Footer />
+			<GDPRBanner />
 		</div>
 	);
 });
