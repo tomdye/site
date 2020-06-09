@@ -1,8 +1,8 @@
 {
 	"routes": [
 		{ "handle": "filesystem" },
-		{ "src": "/(.*)", "status": 404, "dest": "/error-404" },
-		{ "src": "/sitemap.xml", "dest": "assets/sitemap.xml" },
-		{ "src": "/page-sitemap.xml", "dest": "assets/page-sitemap.xml" }
+		{ "src": "/sitemap.xml", "dest": "/assets/sitemap.xml" },
+		{ "src": "/page-sitemap.xml", "dest": "/assets/page-sitemap.xml" },
+		{ "src": "/(.*)", "status": 404, "dest": "/error-404" }
 	]
 }
