@@ -26,34 +26,35 @@
 		<div id="app"></div>
 	</body>
 	<script>
-		const banner = document.getElementById('gdprbanner');
-		if (document.cookie.indexOf('sitepenCookieConsent=accepted') < 0) {
-			banner && banner.classList.remove('hidden');
-			const acceptButton = document.getElementById('gdpraccept');
-			acceptButton &&
-				acceptButton.addEventListener('click', () => {
+		// gdpr banner
+		const banner = document.getElementById('gdpr-banner');
+		if (banner) {
+			if (document.cookie.indexOf('sitepenCookieConsent=accepted') < 0) {
+				banner.classList.remove('hidden');
+				document.getElementById('gdpr-accept').addEventListener('click', () => {
 					const date = new Date();
 					date.setTime(date.getTime() + 24 * 60 * 60 * 1000 * 28);
 					document.cookie = `sitepenCookieConsent=accepted; expires=${date.toGMTString()}; path=/`;
 					banner.remove();
 				});
-		} else {
-			banner && banner.remove();
+			} else {
+				banner.remove();
+			}
 		}
-	</script>
-	<script>
+
+		// sticky header
 		if (window.IntersectionObserver) {
 			const observer = new IntersectionObserver(
 				function (entries) {
 					if (entries[0].intersectionRatio === 0)
-						document.querySelector('#site-header').classList.add('sticky');
+						document.getElementById('site-header').classList.add('sticky');
 					else if (entries[0].intersectionRatio === 1)
-						document.querySelector('#site-header').classList.remove('sticky');
+						document.getElementById('site-header').classList.remove('sticky');
 				},
 				{ threshold: [0, 1] }
 			);
 
-			observer.observe(document.querySelector('#sentinel'));
+			observer.observe(document.getElementById('sentinel'));
 		}
 	</script>
 </html>
