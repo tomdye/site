@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://www.sitepen.com/post-sitemap.xml</loc>
-		<lastmod>2020-06-04T18:22:34+00:00</lastmod>
+		<loc>https://blog.sitepen.com/post-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
 		<loc>https://www.sitepen.com/page-sitemap.xml</loc>
-		<lastmod>2020-05-18T21:53:42+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://www.sitepen.com/category-sitemap.xml</loc>
-		<lastmod>2020-06-04T18:22:34+00:00</lastmod>
+		<loc>https://blog.sitepen.com/category-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
-		<loc>https://www.sitepen.com/series-sitemap.xml</loc>
-		<lastmod>2020-05-29T16:48:05+00:00</lastmod>
+		<loc>https://blog.sitepen.com/series-sitemap.xml</loc>
 	</sitemap>
 </sitemapindex>
