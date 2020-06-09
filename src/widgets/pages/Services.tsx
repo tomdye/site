@@ -32,9 +32,7 @@ const agileImg = require('../../assets/images/services/agile.svg');
 const devImg = require('../../assets/images/services/dev.svg');
 const consultingImg = require('../../assets/images/services/consulting.svg');
 
-export interface ServicesProperties {}
-
-const factory = create().properties<ServicesProperties>();
+const factory = create();
 
 export const Services = factory(function Services() {
 	return (

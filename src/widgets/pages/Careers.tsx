@@ -16,9 +16,7 @@ const doneImage = require('../../assets/images/careers/done.svg');
 const projectsImage = require('../../assets/images/careers/projects.svg');
 const teamImage = require('../../assets/images/careers/team.svg');
 
-export interface CareersProperties {}
-
-const factory = create().properties<CareersProperties>();
+const factory = create();
 
 export const Careers = factory(function Careers() {
 	return (

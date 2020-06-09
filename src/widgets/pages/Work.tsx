@@ -12,9 +12,7 @@ const marriottImage = require('../../assets/images/ourwork/marriott.jpg');
 const builtImage = require('../../assets/images/ourwork/built.jpg');
 const socialKnowledgeImage = require('../../assets/images/ourwork/socialKnowledge.jpg');
 
-export interface WorkProperties {}
-
-const factory = create().properties<WorkProperties>();
+const factory = create();
 
 export const Work = factory(function Work() {
 	return (

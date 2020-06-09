@@ -2,9 +2,7 @@ import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './Footer.m.css';
 import { Link } from '@dojo/framework/routing/Link';
 
-export interface FooterProperties {}
-
-const factory = create().properties<FooterProperties>();
+const factory = create();
 
 export const Footer = factory(function Footer() {
 	return (

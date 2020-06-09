@@ -18,9 +18,7 @@ const reactLogo = require('../../assets/images/expertise/react.svg');
 const reduxLogo = require('../../assets/images/expertise/redux.svg');
 const angularLogo = require('../../assets/images/expertise/angular.svg');
 
-export interface ExpertiseProperties {}
-
-const factory = create().properties<ExpertiseProperties>();
+const factory = create();
 
 export const Expertise = factory(function Expertise() {
 	return (

@@ -22,9 +22,7 @@ const clientsSlide1 = require('../../assets/images/logos/clients-slide1.svg');
 const clientsSlide2 = require('../../assets/images/logos/clients-slide2.svg');
 const clientsSlide3 = require('../../assets/images/logos/clients-slide3.svg');
 
-export interface HomeProperties {}
-
-const factory = create().properties<HomeProperties>();
+const factory = create();
 
 export const Home = factory(function Home() {
 	return (
