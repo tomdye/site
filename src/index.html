@@ -30,7 +30,7 @@
 		const banner = document.getElementById('gdpr-banner');
 		if (banner) {
 			if (document.cookie.indexOf('sitepenCookieConsent=accepted') < 0) {
-				banner.classList.remove('hidden');
+				banner.style.display = '';
 				document.getElementById('gdpr-accept').addEventListener('click', () => {
 					const date = new Date();
 					date.setTime(date.getTime() + 24 * 60 * 60 * 1000 * 28);
