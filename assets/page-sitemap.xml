@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//www.sitepen.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.sitepen.com/</loc>
+		<lastmod>2020-04-20T16:15:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Clinet-Logo-Slide-1.svg</image:loc>
+			<image:caption><![CDATA[Logos for TD Ameritrade, Ellie Mae, Fannie Mae, &amp; HSBC]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Clinet-Logo-Slide-2.svg</image:loc>
+			<image:caption><![CDATA[Logos for Intuit, JP Morgan Chase, Liberty Mutual, &amp; Marriott]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Clinet-Logo-Slide-3.svg</image:loc>
+			<image:caption><![CDATA[Logos for BMO, Pearson, Bristol-Myers Squibb and Pershing]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/challenging.svg</image:loc>
+			<image:caption><![CDATA[Illustration of Problem Solving]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/advisement.svg</image:loc>
+			<image:caption><![CDATA[Illustration of SDLC Advisement]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/confidence.svg</image:loc>
+			<image:caption><![CDATA[Illustration of Confidence]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/depend.svg</image:loc>
+			<image:caption><![CDATA[Illustration of a Smart Phone]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_logo_marriott.svg</image:loc>
+			<image:caption><![CDATA[– Sr. Software Engineer]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_logo_fannie-1.svg</image:loc>
+			<image:caption><![CDATA[– Head of Digital Products]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_logo_pershing.svg</image:loc>
+			<image:caption><![CDATA[– Director]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_logo_intuit.svg</image:loc>
+			<image:caption><![CDATA[– Engineering Manager]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/blog/</loc>
+		<lastmod>2020-03-05T22:06:19+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/contact-thank-you/</loc>
+		<lastmod>2020-03-06T20:13:10+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Respect.svg</image:loc>
+			<image:caption><![CDATA[Icon for Respect]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/case-study/fannie-mae</loc>
+		<lastmod>2020-03-12T02:40:12+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_JavaScript.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_TypeScript.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Angular.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/img_Protractor.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_ngrx.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Jasmine.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Spring.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_fannie_mae.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/quoteblock_fanniemae.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Complete-Team.svg</image:loc>
+			<image:caption><![CDATA[Illustration for Complete Team]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/case-study/marriott</loc>
+		<lastmod>2020-03-12T02:41:56+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Dojo_Toolkit.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_dgrid.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_dstore.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Intern.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_JavaScript.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_marriott.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/quoteblock_marriott-1.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Holistic-Approach.svg</image:loc>
+			<image:caption><![CDATA[Illustration for Holistic Approach]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/case-study/built-technologies</loc>
+		<lastmod>2020-03-12T02:43:43+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_React.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_TypeScript.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Intern.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_CanJS.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_PHP.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_built.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/quoteblock_built.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Complete-Team.svg</image:loc>
+			<image:caption><![CDATA[Illustration for Complete Team]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/case-study/social-knowledge</loc>
+		<lastmod>2020-03-12T02:45:37+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_React.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_React_Native_Web.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Redux.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_MobX.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_TypeScript.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/icon_Jest.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_social_knowledge.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Engineering.svg</image:loc>
+			<image:caption><![CDATA[Illustration of Engineering]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/careers/</loc>
+		<lastmod>2020-04-14T10:41:57+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_jobs_projects.svg</image:loc>
+			<image:caption><![CDATA[Project Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_jobs_team.svg</image:loc>
+			<image:caption><![CDATA[Teams Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_jobs_done.svg</image:loc>
+			<image:caption><![CDATA[Jobs Well Done Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_1.svg</image:loc>
+			<image:caption><![CDATA[Car Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_2.svg</image:loc>
+			<image:caption><![CDATA[Suitcase Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_3.svg</image:loc>
+			<image:caption><![CDATA[Medical Case Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_4.svg</image:loc>
+			<image:caption><![CDATA[Money Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_5.svg</image:loc>
+			<image:caption><![CDATA[Piggy Bank Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_6.svg</image:loc>
+			<image:caption><![CDATA[Tooth Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_7.svg</image:loc>
+			<image:caption><![CDATA[Clock icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_8.svg</image:loc>
+			<image:caption><![CDATA[Heart Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_jobs_9.svg</image:loc>
+			<image:caption><![CDATA[Team Icon]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/privacy-policy/</loc>
+		<lastmod>2020-04-16T23:17:14+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/contact/</loc>
+		<lastmod>2020-04-17T19:24:03+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/expertise/</loc>
+		<lastmod>2020-04-17T19:28:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Engineering.svg</image:loc>
+			<image:caption><![CDATA[Illustration of Engineering]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/UI-_-UX-Design.svg</image:loc>
+			<image:caption><![CDATA[Illustration for UI &amp; UX Design]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Business-Analysis.svg</image:loc>
+			<image:caption><![CDATA[Illustration of Business Analysis]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Project-Management.svg</image:loc>
+			<image:caption><![CDATA[Illustration for Project Management]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_js.svg</image:loc>
+			<image:caption><![CDATA[JavaScript Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_vue.svg</image:loc>
+			<image:caption><![CDATA[Vue Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_node.svg</image:loc>
+			<image:caption><![CDATA[Node.js Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_ts.svg</image:loc>
+			<image:caption><![CDATA[TypeScript Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_dojo.svg</image:loc>
+			<image:caption><![CDATA[Dojo Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_react.svg</image:loc>
+			<image:caption><![CDATA[React Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_redux.svg</image:loc>
+			<image:caption><![CDATA[Redux Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/icon_framework_angular.svg</image:loc>
+			<image:caption><![CDATA[Angular Logo]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/services/</loc>
+		<lastmod>2020-04-20T16:13:27+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/04/img_logo_fannie-1-1.png</image:loc>
+			<image:caption><![CDATA[FannieMae Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_angular-1.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/04/img_logo_marriott-1.png</image:loc>
+			<image:caption><![CDATA[Marriott Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_dojo.svg</image:loc>
+			<image:caption><![CDATA[Dojo Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/04/Built-1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/img_icon_react.svg</image:loc>
+			<image:caption><![CDATA[React Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Complete-Team.svg</image:loc>
+			<image:caption><![CDATA[Illustration for Complete Team]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Holistic-Approach.svg</image:loc>
+			<image:caption><![CDATA[Illustration for Holistic Approach]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Agile-Methodologies.svg</image:loc>
+			<image:caption><![CDATA[Illustration of Agile Methodologies]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/App-Dev.svg</image:loc>
+			<image:caption><![CDATA[Illustration of App Development]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Consulting.svg</image:loc>
+			<image:caption><![CDATA[Illustration of Consulting]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/about-us/</loc>
+		<lastmod>2020-04-20T16:17:33+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Knowledge.svg</image:loc>
+			<image:caption><![CDATA[Knowledge Icon]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Respect.svg</image:loc>
+			<image:caption><![CDATA[Icon for Respect]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/Integrity.svg</image:loc>
+			<image:caption><![CDATA[Integrity Icon]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/our-work/</loc>
+		<lastmod>2020-05-18T21:10:41+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_fannie_mae.png</image:loc>
+			<image:caption><![CDATA[fannie mae application technology case study]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_marriott.png</image:loc>
+			<image:caption><![CDATA[marriott application technology case study]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_built.png</image:loc>
+			<image:caption><![CDATA[built with application technology case study]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/03/image_social_knowledge.png</image:loc>
+			<image:caption><![CDATA[social knowledge application technology case study]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-dojo-framework.svg</image:loc>
+			<image:title><![CDATA[oss-logo-dojo-framework]]></image:title>
+			<image:caption><![CDATA[Dojo Framework]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-intern.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-intern]]></image:title>
+			<image:caption><![CDATA[Intern]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-dojo-toolkit.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-dojo-toolkit]]></image:title>
+			<image:caption><![CDATA[Gojo Toolkit]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-d-grid.svg</image:loc>
+			<image:title><![CDATA[oss-logo-d-grid]]></image:title>
+			<image:caption><![CDATA[dgrid]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/open-source/intern/</loc>
+		<lastmod>2020-05-18T21:37:51+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-dojo-framework.svg</image:loc>
+			<image:title><![CDATA[oss-logo-dojo-framework]]></image:title>
+			<image:caption><![CDATA[Dojo Framework]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-intern.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-intern]]></image:title>
+			<image:caption><![CDATA[Intern]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-ts.svg</image:loc>
+			<image:title><![CDATA[oss-logo-ts]]></image:title>
+			<image:caption><![CDATA[Typescript]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-dojo-toolkit.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-dojo-toolkit]]></image:title>
+			<image:caption><![CDATA[Gojo Toolkit]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-d-grid.svg</image:loc>
+			<image:title><![CDATA[oss-logo-d-grid]]></image:title>
+			<image:caption><![CDATA[dgrid]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/open-source/dojo-framework/</loc>
+		<lastmod>2020-05-18T21:38:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-dojo-framework.svg</image:loc>
+			<image:title><![CDATA[oss-logo-dojo-framework]]></image:title>
+			<image:caption><![CDATA[Dojo Framework]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-intern.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-intern]]></image:title>
+			<image:caption><![CDATA[Intern]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-ts.svg</image:loc>
+			<image:title><![CDATA[oss-logo-ts]]></image:title>
+			<image:caption><![CDATA[Typescript]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-dojo-toolkit.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-dojo-toolkit]]></image:title>
+			<image:caption><![CDATA[Gojo Toolkit]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-d-grid.svg</image:loc>
+			<image:title><![CDATA[oss-logo-d-grid]]></image:title>
+			<image:caption><![CDATA[dgrid]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/open-source/typescript/</loc>
+		<lastmod>2020-05-18T21:38:34+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-dojo-framework.svg</image:loc>
+			<image:title><![CDATA[oss-logo-dojo-framework]]></image:title>
+			<image:caption><![CDATA[Dojo Framework]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-intern.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-intern]]></image:title>
+			<image:caption><![CDATA[Intern]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-ts.svg</image:loc>
+			<image:title><![CDATA[oss-logo-ts]]></image:title>
+			<image:caption><![CDATA[Typescript]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-dojo-toolkit.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-dojo-toolkit]]></image:title>
+			<image:caption><![CDATA[Gojo Toolkit]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-d-grid.svg</image:loc>
+			<image:title><![CDATA[oss-logo-d-grid]]></image:title>
+			<image:caption><![CDATA[dgrid]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/open-source/dojo-toolkit/</loc>
+		<lastmod>2020-05-18T21:39:22+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-dojo-framework.svg</image:loc>
+			<image:title><![CDATA[oss-logo-dojo-framework]]></image:title>
+			<image:caption><![CDATA[Dojo Framework]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-intern.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-intern]]></image:title>
+			<image:caption><![CDATA[Intern]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-ts.svg</image:loc>
+			<image:title><![CDATA[oss-logo-ts]]></image:title>
+			<image:caption><![CDATA[Typescript]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-dojo-toolkit.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-dojo-toolkit]]></image:title>
+			<image:caption><![CDATA[Gojo Toolkit]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-d-grid.svg</image:loc>
+			<image:title><![CDATA[oss-logo-d-grid]]></image:title>
+			<image:caption><![CDATA[dgrid]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/open-source/dgrid/</loc>
+		<lastmod>2020-05-18T21:39:46+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-dojo-framework.svg</image:loc>
+			<image:title><![CDATA[oss-logo-dojo-framework]]></image:title>
+			<image:caption><![CDATA[Dojo Framework]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-intern.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-intern]]></image:title>
+			<image:caption><![CDATA[Intern]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-ts.svg</image:loc>
+			<image:title><![CDATA[oss-logo-ts]]></image:title>
+			<image:caption><![CDATA[Typescript]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-light-dojo-toolkit.svg</image:loc>
+			<image:title><![CDATA[oss-logo-light-dojo-toolkit]]></image:title>
+			<image:caption><![CDATA[Gojo Toolkit]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/oss-logo-d-grid.svg</image:loc>
+			<image:title><![CDATA[oss-logo-d-grid]]></image:title>
+			<image:caption><![CDATA[dgrid]]></image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://www.sitepen.com/open-source/</loc>
+		<lastmod>2020-05-18T21:53:42+00:00</lastmod>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/01/favicon.png</image:loc>
+			<image:title><![CDATA[favicon]]></image:title>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/illus-dojo-mark.svg</image:loc>
+			<image:caption><![CDATA[Dojo Logo Mark]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/illus-intern-01.svg</image:loc>
+			<image:caption><![CDATA[Intern Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/illus-dgrid.svg</image:loc>
+			<image:caption><![CDATA[Dgrid Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/illus-dojo.svg</image:loc>
+			<image:caption><![CDATA[Dojo Logo]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://www.sitepen.com/wp-content/uploads/2020/05/illus-ts.svg</image:loc>
+			<image:caption><![CDATA[Typescript Logo]]></image:caption>
+		</image:image>
+	</url>
+</urlset>
+<!-- XML Sitemap generated by Yoast SEO -->
