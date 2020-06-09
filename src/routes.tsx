@@ -115,6 +115,12 @@ const routes: RouteConfig[] = [
 		path: 'case-study/social-knowledge',
 		outlet: 'main',
 		title: 'Using React to Update Social Knowledge Platforms | SitePen'
+	},
+	{
+		id: 'error404',
+		path: 'error-404',
+		outlet: 'main',
+		title: 'Page Not Found | SitePen'
 	}
 ];
 

@@ -5,7 +5,8 @@
 			"static": true,
 			"renderer": "jsdom",
 			"paths": [
-				"contact-thank-you"
+				"contact-thank-you",
+				"error-404"
 			]
 		}
 	},

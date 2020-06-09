@@ -23,6 +23,7 @@ import { OpenSourceTypescript } from './widgets/pages/OpenSourceTypescript';
 import { OpenSourceDojoToolkit } from './widgets/pages/OpenSourceDojoToolkit';
 import { OpenSourceDgrid } from './widgets/pages/OpenSourceDgrid';
 import { GDPRBanner } from './widgets/GDPRBanner';
+import { Error404 } from './widgets/pages/Error404';
 
 export interface AppProperties {}
 
@@ -54,7 +55,8 @@ export const App = factory(function App() {
 						casestudyFannie: <CaseStudyFannie />,
 						casestudyMarriott: <CaseStudyMarriott />,
 						casestudyBuilt: <CaseStudyBuilt />,
-						casestudySocial: <CaseStudySocial />
+						casestudySocial: <CaseStudySocial />,
+						error404: <Error404 />
 					}}
 				</Outlet>
 			</main>
