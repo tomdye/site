@@ -24,8 +24,28 @@
 	</head>
 	<body>
 		<div id="app"></div>
+		<div id="gdprBanner" class="gdprBanner hidden">
+			We use cookies to ensure that we give you the best experience on our website. If you
+			continue to use this site we will assume that you are happy with it.
+			<button id="gdprAccept" type="button" class="gdprButton">OK</button>
+			<a class="gdprButton" href="/privacy-policy">Privacy Policy</a>
+		</div>
 	</body>
-	<script src="./gdprBanner.js"></script>
+	<script>
+		const banner = document.getElementById('gdprBanner');
+		console.log(document.cookie);
+		if (document.cookie.indexOf('sitepenCookieConsent=accepted') < 0) {
+			banner.classList.remove('hidden');
+			document.getElementById('gdprAccept').addEventListener('click', () => {
+				const date = new Date();
+				date.setTime(date.getTime() + 28 * 24 * 60 * 60 * 1000);
+				document.cookie = `sitepenCookieConsent=accepted; expires=${date.toGMTString()}; path=/`;
+				banner.remove();
+			});
+		} else {
+			banner.remove();
+		}
+	</script>
 	<script>
 		if (window.IntersectionObserver) {
 			const observer = new IntersectionObserver(

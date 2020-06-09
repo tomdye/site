@@ -66,6 +66,10 @@ table th {
 	line-height: 21px;
 }
 
+.gdprBanner.hidden {
+	display: none;
+}
+
 .gdprBanner {
 	position: fixed;
 	bottom: 0;
