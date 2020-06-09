@@ -33,7 +33,6 @@
 	</body>
 	<script>
 		const banner = document.getElementById('gdprBanner');
-		console.log(document.cookie);
 		if (document.cookie.indexOf('sitepenCookieConsent=accepted') < 0) {
 			banner.classList.remove('hidden');
 			document.getElementById('gdprAccept').addEventListener('click', () => {
