@@ -4,9 +4,7 @@ import { ActiveLink } from '@dojo/framework/routing/ActiveLink';
 import { Link } from '@dojo/framework/routing/Link';
 const sitepenLogo = require('../assets/images/SitePenLogo_Light.svg');
 
-export interface HeaderProperties {}
-
-const factory = create().properties<HeaderProperties>();
+const factory = create();
 
 export const Header = factory(function Header() {
 	return (

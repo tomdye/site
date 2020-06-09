@@ -8,9 +8,7 @@ const integrityImg = require('../../assets/images/about/integrity.svg');
 const knowledgeImg = require('../../assets/images/about/knowledge.svg');
 const respectImg = require('../../assets/images/about/respect.svg');
 
-export interface AboutProperties {}
-
-const factory = create().properties<AboutProperties>();
+const factory = create();
 
 export const About = factory(function About() {
 	return (

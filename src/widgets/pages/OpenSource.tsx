@@ -11,9 +11,7 @@ const dgridLogo = require('../../assets/images/oss/large/dgrid.svg');
 const dojoToolkitLogo = require('../../assets/images/oss/large/dojoToolkit.svg');
 const tsLogo = require('../../assets/images/oss/large/ts.svg');
 
-export interface OpenSourceProperties {}
-
-const factory = create().properties<OpenSourceProperties>();
+const factory = create();
 
 export const OpenSource = factory(function OpenSource() {
 	return (

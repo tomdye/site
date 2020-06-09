@@ -47,32 +47,29 @@
 	position: relative;
 }
 
-.root * {
-	box-sizing: border-box;
-	scrollbar-color: transparent transparent; /* thumb and track color */
-	scrollbar-width: 0px;
-	-ms-overflow-style: none;
-}
-
-.root *::-webkit-scrollbar {
-	width: 0;
-}
-
-.root *::-webkit-scrollbar-track {
-	background: transparent;
-}
-
-.root *::-webkit-scrollbar-thumb {
-	background: transparent;
-	border: none;
-}
-
 .viewport {
 	display: flex;
 	overflow-x: scroll;
 	counter-reset: item;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
+	box-sizing: border-box;
+	scrollbar-color: transparent transparent;
+	scrollbar-width: 0px;
+	-ms-overflow-style: none;
+}
+
+.viewport::-webkit-scrollbar {
+	width: 0;
+}
+
+.viewport::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.viewport::-webkit-scrollbar-thumb {
+	background: transparent;
+	border: none;
 }
 
 .slide {

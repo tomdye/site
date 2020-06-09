@@ -25,9 +25,7 @@ import { OpenSourceDgrid } from './widgets/pages/OpenSourceDgrid';
 import { GDPRBanner } from './widgets/GDPRBanner';
 import { Error404 } from './widgets/pages/Error404';
 
-export interface AppProperties {}
-
-const factory = create().properties<AppProperties>();
+const factory = create();
 
 export const App = factory(function App() {
 	return (

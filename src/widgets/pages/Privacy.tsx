@@ -3,9 +3,7 @@ import * as css from './Privacy.m.css';
 import * as commonCss from '../../Common.m.css';
 import { Hero } from '../Hero';
 
-export interface ContactProperties {}
-
-const factory = create().properties<ContactProperties>();
+const factory = create();
 
 export const Privacy = factory(function Privacy() {
 	return (

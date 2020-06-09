@@ -3,9 +3,7 @@ import { Hero } from '../Hero';
 import * as css from './Contact.m.css';
 import * as commonCss from '../../Common.m.css';
 
-export interface ContactProperties {}
-
-const factory = create().properties<ContactProperties>();
+const factory = create();
 
 export const Contact = factory(function Contact() {
 	return (
