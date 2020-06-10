@@ -43,11 +43,13 @@ export const Home = factory(function Home() {
 							alt="Logos for TD Ameritrade, Ellie Mae, Fannie Mae, and HSBC"
 						/>
 						<img
+							loading="lazy"
 							classes={css.clientSlide}
 							src={clientsSlide2}
 							alt="Logos for Intuit, JP Morgan Chase, Liberty Mutual, and Marriott"
 						/>
 						<img
+							loading="lazy"
 							classes={css.clientSlide}
 							src={clientsSlide3}
 							alt="Logos for BMO, Pearson, Bristol-Myers Squibb and Pershing"
@@ -88,6 +90,7 @@ export const Home = factory(function Home() {
 						blurb: `Imagine leading a dedicated development team with unwavering confidence in its ability to tackle challenging problems, meet business objectives and deliver on a shared vision. With us as your partner, you’ll always have a technically validated project plan with an expert, cross-functional team producing high-quality results with care and predictability.`,
 						image: (
 							<img
+								loading="lazy"
 								src={confidenceImg}
 								classes={css.summaryImage}
 								alt="illustration of confidence"
@@ -103,6 +106,7 @@ export const Home = factory(function Home() {
 								<dl classes={css.dependList}>
 									<dt classes={css.title}>
 										<img
+											loading="lazy"
 											classes={css.dependIcon}
 											src={targetIcon}
 											alt="target icon"
@@ -117,6 +121,7 @@ export const Home = factory(function Home() {
 									</dd>
 									<dt classes={css.title}>
 										<img
+											loading="lazy"
 											classes={css.dependIcon}
 											src={flagIcon}
 											alt="flag icon"
@@ -138,6 +143,7 @@ export const Home = factory(function Home() {
 									</dd>
 									<dt classes={css.title}>
 										<img
+											loading="lazy"
 											classes={css.dependIcon}
 											src={rosetteIcon}
 											alt="rosette icon"
@@ -150,6 +156,7 @@ export const Home = factory(function Home() {
 									</dd>
 									<dt classes={css.title}>
 										<img
+											loading="lazy"
 											classes={css.dependIcon}
 											src={partnershipIcon}
 											alt="partnership icon"

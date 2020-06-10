@@ -42,7 +42,7 @@ export const Careers = factory(function Careers() {
 				<Summary trailingBias smaller>
 					{{
 						title: 'An Amazing Team',
-						image: <img src={teamImage} alt="Illustration of team" />,
+						image: <img loading="lazy" src={teamImage} alt="Illustration of team" />,
 						blurb:
 							'SitePen has one of the most talented and engaged software development teams around. If you’re self-motivated, know how to throw out a bad pun, get a kick out of Internet memes, and have a passion for Web development, solving difficult problems, and building open source software, you’ll fit right in.'
 					}}
@@ -50,7 +50,7 @@ export const Careers = factory(function Careers() {
 				<Summary trailingBias smaller>
 					{{
 						title: 'Getting Things Done',
-						image: <img src={doneImage} alt="Illustration of done" />,
+						image: <img loading="lazy" src={doneImage} alt="Illustration of done" />,
 						blurb:
 							'When you’re part of the SitePen team, you’ll always be working on something new and interesting. Our flat organizational structure and collaborative management style gives everyone the opportunity to take initiative without any middle managers getting in the way.'
 					}}
@@ -83,7 +83,7 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img src={pensionIcon} alt="Icon for pension" />
+						<img loading="lazy" src={pensionIcon} alt="Icon for pension" />
 						<div classes={css.itemTitle}>401(K) WITH MATCHING</div>
 						<p>
 							Our plan administrator thought we were nuts to do a match. He also
@@ -91,7 +91,7 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img src={spendingIcon} alt="Icon for spending" />
+						<img loading="lazy" src={spendingIcon} alt="Icon for spending" />
 						<div classes={css.itemTitle}>FLEXIBLE SPENDING ACCOUNT</div>
 						<p>
 							We’re not saying you’re accident-prone, but we do want to make sure all
@@ -99,7 +99,7 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img src={dentalIcon} alt="Icon for dental" />
+						<img loading="lazy" src={dentalIcon} alt="Icon for dental" />
 						<div classes={css.itemTitle}>DENTAL DISCOUNTS</div>
 						<p>
 							With all the sweet things you’ll be doing, our dental plan makes sure
@@ -107,7 +107,7 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img src={hoursIcon} alt="Icon for hours" />
+						<img loading="lazy" src={hoursIcon} alt="Icon for hours" />
 						<div classes={css.itemTitle}>FLEXIBLE HOURS</div>
 						<p>
 							You’re the boss of your time. For your own sake, we hope you’re not a
@@ -115,7 +115,7 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img src={loveIcon} alt="Icon for love" />
+						<img loading="lazy" src={loveIcon} alt="Icon for love" />
 						<div classes={css.itemTitle}>DO WHAT YOU LOVE</div>
 						<p>
 							We are, of course, referring to developing amazing Web apps. We don’t
@@ -123,7 +123,7 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img src={peopleIcon} alt="Icon for people" />
+						<img loading="lazy" src={peopleIcon} alt="Icon for people" />
 						<div classes={css.itemTitle}>PEOPLE YOU'LL LOVE WORKING WITH</div>
 						<p>
 							With their spectacular wit, intellect, and good looks, SitePenners are

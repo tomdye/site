@@ -62,13 +62,7 @@ export const Expertise = factory(function Expertise() {
 						title: 'Web Engineering',
 						blurb:
 							'Engineering considerations for the enterprise are vast. With an agnostic approach to full-stack JavaScript development, our engineers are adept at quickly understanding challenging business and technical requirements to advise on the right architecture, technical stack, and approach for each customer’s unique business objectives and constraints.',
-						image: (
-							<img
-								loading="lazy"
-								src={engineeringImg}
-								alt="Illustration of Engineering"
-							/>
-						)
+						image: <img src={engineeringImg} alt="Illustration of Engineering" />
 					}}
 				</Summary>
 				<Summary smaller trailingBias reverse>
@@ -76,13 +70,7 @@ export const Expertise = factory(function Expertise() {
 						title: 'UI | UX Design',
 						blurb:
 							'Investment in the UI and UX design for enterprise applications goes beyond the user’s experience. Having an enterprise UX designer on your team increases user performance and satisfaction, but it also reduces time spent to deploy a software solution and minimizes the amount of rework on applications.',
-						image: (
-							<img
-								loading="lazy"
-								src={designImg}
-								alt="Illustration for UI and UX Design"
-							/>
-						)
+						image: <img src={designImg} alt="Illustration for UI and UX Design" />
 					}}
 				</Summary>
 				<Summary smaller trailingBias>
@@ -118,64 +106,64 @@ export const Expertise = factory(function Expertise() {
 					<ul classes={css.jsList}>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={jsLogo}
 								alt="logo for js"
 							/>
 						</li>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={vueLogo}
 								alt="logo for vue"
 							/>
 						</li>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={nodeLogo}
 								alt="logo for node"
 							/>
 						</li>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={tsLogo}
 								alt="logo for typescript"
 							/>
 						</li>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={dojoLogo}
 								alt="logo for dojo"
 							/>
 						</li>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={reactLogo}
 								alt="logo for react"
 							/>
 						</li>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={reduxLogo}
 								alt="logo for redux"
 							/>
 						</li>
 						<li>
 							<img
-								classes={css.jsImg}
 								loading="lazy"
+								classes={css.jsImg}
 								src={angularLogo}
 								alt="logo for angular"
 							/>

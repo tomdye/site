@@ -10,9 +10,24 @@
 		<meta name="theme-color" content="#222127" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" href="favicon.png" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+		<link rel="preconnect" href="https://www.google-analytics.com" />
+		<link rel="preconnect" href="https://vc.hotjar.io" crossorigin />
+		<link rel="preconnect" href="https://vars.hotjar.com" crossorigin />
+		<link rel="preconnect" href="https://script.hotjar.com" crossorigin />
+
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;700&display=swap"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
+			media="print"
+			onload="this.media='all'"
 		/>
 		<!-- Google Tag Manager -->
 		<script>
@@ -62,6 +77,12 @@
 				style="display: none; visibility: hidden;"
 			></iframe
 		></noscript>
+		<noscript>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;700&display=swap"
+			/>
+		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		<div id="app"></div>
 	</body>

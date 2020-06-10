@@ -76,6 +76,7 @@ export const About = factory(function About() {
 					<li classes={css.item}>
 						<div classes={css.leading}>
 							<img
+								loading="lazy"
 								classes={[css.img, css.integrityImg]}
 								src={integrityImg}
 								alt="Integrity Icon"

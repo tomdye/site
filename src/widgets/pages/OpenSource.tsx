@@ -49,7 +49,11 @@ export const OpenSource = factory(function OpenSource() {
 									A modern, reactive TypeScript framework for building robust,
 									enterprise-grade web applications.
 								</p>
-								<Link to="opensourceDojo" classes={commonCss.linkButton}>
+								<Link
+									to="opensourceDojo"
+									classes={commonCss.linkButton}
+									title="Learn more about our work with Dojo"
+								>
 									learn more
 								</Link>
 							</virtual>
@@ -66,12 +70,23 @@ export const OpenSource = factory(function OpenSource() {
 									An all-in-one solution for full-lifecycle testing of JavaScript
 									and TypeScript applications in Node and modern browsers.
 								</p>
-								<Link to="opensourceIntern" classes={commonCss.linkButton}>
+								<Link
+									to="opensourceIntern"
+									classes={commonCss.linkButton}
+									title="Learn more about our work with Intern"
+								>
 									learn more
 								</Link>
 							</virtual>
 						),
-						image: <img classes={css.logo} src={internLogo} alt="Intern Logo" />
+						image: (
+							<img
+								loading="lazy"
+								classes={css.logo}
+								src={internLogo}
+								alt="Intern Logo"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary smaller reverse>
@@ -84,7 +99,11 @@ export const OpenSource = factory(function OpenSource() {
 									scalable and embeddable within any application or framework
 									including React and Angular.
 								</p>
-								<Link to="opensourceDgrid" classes={commonCss.linkButton}>
+								<Link
+									to="opensourceDgrid"
+									classes={commonCss.linkButton}
+									title="Learn more about our work with DGrid"
+								>
 									learn more
 								</Link>
 							</virtual>
@@ -102,13 +121,22 @@ export const OpenSource = factory(function OpenSource() {
 									supporting modern and legacy browsers and applications since
 									2004.
 								</p>
-								<Link to="opensourceDojoToolkit" classes={commonCss.linkButton}>
+								<Link
+									to="opensourceDojoToolkit"
+									classes={commonCss.linkButton}
+									title="Learn more about our work with Dojo Toolkit"
+								>
 									learn more
 								</Link>
 							</virtual>
 						),
 						image: (
-							<img classes={css.logo} src={dojoToolkitLogo} alt="Dojo Toolkit Logo" />
+							<img
+								loading="lazy"
+								classes={css.logo}
+								src={dojoToolkitLogo}
+								alt="Dojo Toolkit Logo"
+							/>
 						)
 					}}
 				</Summary>
@@ -122,12 +150,23 @@ export const OpenSource = factory(function OpenSource() {
 									JavaScript. Works with any browser, any host, any OS, and is
 									fully open source.
 								</p>
-								<Link to="opensourceTypescript" classes={commonCss.linkButton}>
+								<Link
+									to="opensourceTypescript"
+									classes={commonCss.linkButton}
+									title="Learn more about our work with Typescript"
+								>
 									learn more
 								</Link>
 							</virtual>
 						),
-						image: <img classes={css.logo} src={tsLogo} alt="Typescript Logo" />
+						image: (
+							<img
+								loading="lazy"
+								classes={css.logo}
+								src={tsLogo}
+								alt="Typescript Logo"
+							/>
+						)
 					}}
 				</Summary>
 			</div>

@@ -55,11 +55,7 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 				<Summary smaller>
 					{{
 						image: (
-							<img
-								loading="lazy"
-								src={builtImage}
-								alt="built application technology case study"
-							/>
+							<img src={builtImage} alt="built application technology case study" />
 						),
 						title: 'The Solution',
 						blurb: (

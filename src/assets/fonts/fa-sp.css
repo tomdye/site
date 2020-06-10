@@ -5,6 +5,7 @@
 		url('fa-sp.ttf?36938951') format('truetype'), url('fa-sp.svg?36938951#fa-sp') format('svg');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 [class^='icon-']:before,

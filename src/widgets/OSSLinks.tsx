@@ -25,24 +25,24 @@ export const OSSLinks = factory(function OSSLinks() {
 			<ul classes={css.list}>
 				<li classes={css.item}>
 					<Link to="opensourceDojo">
-						<img classes={css.img} loading="lazy" src={dojoLogo} alt="Dojo" />
+						<img loading="lazy" classes={css.img} src={dojoLogo} alt="Dojo" />
 					</Link>
 				</li>
 				<li classes={css.item}>
 					<Link to="opensourceIntern">
-						<img classes={css.img} loading="lazy" src={internLogo} alt="intern" />
+						<img loading="lazy" classes={css.img} src={internLogo} alt="intern" />
 					</Link>
 				</li>
 				<li classes={css.item}>
 					<Link to="opensourceTypescript">
-						<img classes={css.img} loading="lazy" src={tsLogo} alt="typescript" />
+						<img loading="lazy" classes={css.img} src={tsLogo} alt="typescript" />
 					</Link>
 				</li>
 				<li classes={css.item}>
 					<Link to="opensourceDojoToolkit">
 						<img
-							classes={css.img}
 							loading="lazy"
+							classes={css.img}
 							src={dojoToolkitLogo}
 							alt="dojoToolkit"
 						/>
@@ -50,7 +50,7 @@ export const OSSLinks = factory(function OSSLinks() {
 				</li>
 				<li classes={css.item}>
 					<Link to="opensourceDgrid">
-						<img classes={css.img} loading="lazy" src={dgridLogo} alt="dgrid" />
+						<img loading="lazy" classes={css.img} src={dgridLogo} alt="dgrid" />
 					</Link>
 				</li>
 			</ul>

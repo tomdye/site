@@ -114,6 +114,7 @@ export const Work = factory(function Work() {
 						),
 						image: (
 							<img
+								loading="lazy"
 								src={builtImage}
 								alt="Built Technologies application technology case study"
 							/>
@@ -141,6 +142,7 @@ export const Work = factory(function Work() {
 						),
 						image: (
 							<img
+								loading="lazy"
 								styles={{ marginLeft: '-160px' }}
 								src={socialKnowledgeImage}
 								alt="Social Knowledge application technology case study"
