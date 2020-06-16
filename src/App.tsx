@@ -24,6 +24,8 @@ import { OpenSourceDojoToolkit } from './widgets/pages/OpenSourceDojoToolkit';
 import { OpenSourceDgrid } from './widgets/pages/OpenSourceDgrid';
 import { GDPRBanner } from './widgets/GDPRBanner';
 import { Error404 } from './widgets/pages/Error404';
+import { BlogList } from './widgets/pages/BlogList';
+import { Blog } from './widgets/pages/Blog';
 
 const factory = create();
 
@@ -54,6 +56,9 @@ export const App = factory(function App() {
 						casestudyMarriott: <CaseStudyMarriott />,
 						casestudyBuilt: <CaseStudyBuilt />,
 						casestudySocial: <CaseStudySocial />,
+						blogs: ({ params: { page } }) => <BlogList page={parseInt(page)} />,
+						blogLegacy: <BlogList page={1} />,
+						blog: ({ params: { slug } }) => <Blog slug={slug} />,
 						error404: <Error404 />
 					}}
 				</Outlet>

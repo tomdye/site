@@ -117,6 +117,26 @@ const routes: RouteConfig[] = [
 		title: 'Using React to Update Social Knowledge Platforms | SitePen'
 	},
 	{
+		id: 'blogs',
+		title: 'Development and JavaScript Blog | SitePen',
+		outlet: 'main',
+		path: 'blogs/{page}',
+		defaultParams: {
+			page: '1'
+		}
+	},
+	{
+		id: 'blog',
+		outlet: 'main',
+		path: 'blog/{slug}'
+	},
+	{
+		id: 'blogLegacy',
+		title: 'Development and JavaScript Blog | SitePen',
+		outlet: 'main',
+		path: 'blog'
+	},
+	{
 		id: 'error404',
 		path: 'error-404',
 		outlet: 'main',

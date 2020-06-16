@@ -1,6 +1,8 @@
 @import './reset.css';
 @import './variables.css';
+@import '~prismjs/themes/prism-tomorrow.css';
 @import './assets/fonts/fa-sp.css';
+@import './post-content.css';
 
 body {
 	font-family: var(--base-font-family);

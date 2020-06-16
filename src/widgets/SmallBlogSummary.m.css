@@ -1,0 +1,31 @@
+.root {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: var(--grid-size);
+}
+
+.imageWrapper {
+	width: 35%;
+	margin-right: calc(var(--grid-size) * 2);
+	box-sizing: border-box;
+}
+
+.title {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 17px;
+	margin: 0;
+}
+
+.date {
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 15px;
+	margin: 0;
+	color: #939393;
+}
+
+.trailing {
+	flex: 1;
+	box-sizing: border-box;
+}

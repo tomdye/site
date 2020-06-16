@@ -3,9 +3,7 @@ import { Hero } from '../Hero';
 import * as commonCss from '../../Common.m.css';
 import * as css from './Error404.m.css';
 
-export interface Error404Properties {}
-
-const factory = create().properties<Error404Properties>();
+const factory = create();
 
 export const Error404 = factory(function Error404() {
 	return (

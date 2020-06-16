@@ -1,0 +1,81 @@
+.root {
+}
+
+.spacer {
+	height: 68px;
+	background: var(--color-dark);
+	margin-bottom: calc(var(--grid-size) * 4);
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	padding: calc(var(--grid-size) * 4) 0;
+}
+
+.leading {
+	flex: 66.6%;
+	box-sizing: border-box;
+	padding-right: var(--gutter-size);
+}
+
+.trailing {
+	flex: 33.3%;
+	box-sizing: border-box;
+	padding-left: var(--gutter-size);
+}
+
+.blogList {
+}
+
+.blogItem {
+}
+
+.categoryGroup {
+	padding: calc(var(--grid-size) * 2) 0;
+	border-bottom: 1px solid #adadad;
+}
+
+.categoryTitle {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 14px;
+	margin-bottom: calc(var(--grid-size) * 2);
+	font-family: var(--heading-font-family);
+}
+
+.paginationLink {
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	color: #363636;
+	cursor: pointer;
+	justify-content: center;
+	padding-bottom: calc(0.5em - 1px);
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: calc(0.5em - 1px);
+	text-align: center;
+	white-space: nowrap;
+	box-shadow: none;
+	text-shadow: none;
+	margin-right: var(--grid-size);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.root .paginationLink:hover {
+	border-color: #83d8dc;
+	color: #363636;
+}
+
+@media (max-width: 768px) {
+	.root .trailing {
+		display: none;
+	}
+	.root .leading {
+		width: 100%;
+		padding-right: 0;
+	}
+}
