@@ -5,120 +5,100 @@ const routes: RouteConfig[] = [
 		id: 'home',
 		path: '/',
 		outlet: 'main',
-		defaultRoute: true,
-		title: 'Custom Web App Development for Enterprises | SitePen'
+		defaultRoute: true
 	},
 	{
 		id: 'contact',
 		path: 'contact',
-		outlet: 'main',
-		title: 'Contact Us | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'contactThankyou',
 		path: 'contact-thank-you',
-		outlet: 'main',
-		title: 'Contact Us | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'expertise',
 		path: 'expertise',
-		outlet: 'main',
-		title: 'Expertise | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'work',
 		path: 'our-work',
-		outlet: 'main',
-		title: 'Our Work | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'services',
 		path: 'services',
-		outlet: 'main',
-		title: 'Services | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'privacy',
 		path: 'privacy-policy',
-		outlet: 'main',
-		title: 'Privacy Policy | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'opensource',
 		path: 'open-source',
-		outlet: 'main',
-		title: 'Open Source | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'opensourceDojo',
 		path: 'open-source/dojo-framework',
-		outlet: 'main',
-		title: 'Dojo Framework | Sitepen'
+		outlet: 'main'
 	},
 	{
 		id: 'opensourceDgrid',
 		path: 'open-source/dgrid',
-		outlet: 'main',
-		title: 'dgrid | Sitepen'
+		outlet: 'main'
 	},
 	{
 		id: 'opensourceIntern',
 		path: 'open-source/intern',
-		outlet: 'main',
-		title: 'Intern | Sitepen'
+		outlet: 'main'
 	},
 	{
 		id: 'opensourceTypescript',
 		path: 'open-source/typescript',
-		outlet: 'main',
-		title: 'TypeScript | Sitepen'
+		outlet: 'main'
 	},
 	{
 		id: 'opensourceDojoToolkit',
 		path: 'open-source/dojo-toolkit',
-		outlet: 'main',
-		title: 'Dojo Toolkit | Sitepen'
+		outlet: 'main'
 	},
 	{
 		id: 'about',
 		path: 'about-us',
-		outlet: 'main',
-		title: 'About Us | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'careers',
 		path: 'careers',
-		outlet: 'main',
-		title: 'Careers | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'casestudyFannie',
 		path: 'case-study/fannie-mae',
-		outlet: 'main',
-		title: 'Modernizing & Automating Technology for Fannie Mae | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'casestudyMarriott',
 		path: 'case-study/marriott',
-		outlet: 'main',
-		title: 'Modernizing Apps & Improving Usability for Marriott | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'casestudyBuilt',
 		path: 'case-study/built-technologies',
-		outlet: 'main',
-		title: 'Custom Web Application: Built Technologies | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'casestudySocial',
 		path: 'case-study/social-knowledge',
-		outlet: 'main',
-		title: 'Using React to Update Social Knowledge Platforms | SitePen'
+		outlet: 'main'
 	},
 	{
 		id: 'blogs',
-		title: 'Development and JavaScript Blog | SitePen',
 		outlet: 'main',
 		path: 'blogs/{page}',
 		defaultParams: {
@@ -132,15 +112,13 @@ const routes: RouteConfig[] = [
 	},
 	{
 		id: 'blogLegacy',
-		title: 'Development and JavaScript Blog | SitePen',
 		outlet: 'main',
 		path: 'blog'
 	},
 	{
 		id: 'error404',
 		path: 'error-404',
-		outlet: 'main',
-		title: 'Page Not Found | SitePen'
+		outlet: 'main'
 	}
 ];
 

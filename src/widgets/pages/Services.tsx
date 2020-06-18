@@ -37,6 +37,53 @@ const factory = create();
 export const Services = factory(function Services() {
 	return (
 		<div classes={css.root}>
+			<head>
+				<title>Custom Web App Development for Enterprises | SitePen</title>
+				<meta
+					name="description"
+					content="SitePen provides web app development for businesses and enterprises. We develop new applications and update legacy applications. Contact us to learn more."
+				/>
+				<meta name="robots" content="index, follow" />
+				<meta
+					name="googlebot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<meta
+					name="bingbot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<link rel="canonical" href="https://www.sitepen.com/services/" />
+				<meta property="og:locale" content="en_US" />
+				<meta property="og:type" content="article" />
+				<meta
+					property="og:title"
+					content="Custom Web App Development for Enterprises│SitePen"
+				/>
+				<meta
+					property="og:description"
+					content="SitePen provides web application development and consulting for the enterprise. We can help you modernize your application the right way, the first time. Contact us to learn more."
+				/>
+				<meta property="og:url" content="https://www.sitepen.com/services/" />
+				<meta property="og:site_name" content="SitePen" />
+				<meta property="article:publisher" content="https://www.facebook.com/SitePen" />
+				<meta
+					property="og:image"
+					content="https://wp.sitepen.com/wp-content/uploads/2020/01/favicon.png"
+				/>
+				<meta property="og:image:width" content="512" />
+				<meta property="og:image:height" content="512" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta
+					name="twitter:title"
+					content="Custom Web App Development for Enterprises│SitePen"
+				/>
+				<meta
+					name="twitter:description"
+					content="SitePen provides web application development and consulting for the enterprise. We can help you modernize your application the right way, the first time. Contact us to learn more."
+				/>
+				<meta name="twitter:creator" content="@SitePen" />
+				<meta name="twitter:site" content="@SitePen" />
+			</head>
 			<div classes={css.heroWrapper}>
 				<div classes={commonCss.contentWrapper}>
 					<Hero>

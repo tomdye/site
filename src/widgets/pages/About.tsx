@@ -13,6 +13,53 @@ const factory = create();
 export const About = factory(function About() {
 	return (
 		<div classes={css.root}>
+			<head>
+				<title>About SitePen - A Leading Web App Development Company</title>
+				<meta
+					name="description"
+					content="Learn more about SitePen, a leading web engineering consultancy based in the US with more than two decades of experience developing enterprise-grade solutions."
+				/>
+				<meta name="robots" content="index, follow" />
+				<meta
+					name="googlebot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<meta
+					name="bingbot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<link rel="canonical" href="https://www.sitepen.com/about-us/" />
+				<meta property="og:locale" content="en_US" />
+				<meta property="og:type" content="article" />
+				<meta
+					property="og:title"
+					content="About SitePen - A Leading Web App Development Company"
+				/>
+				<meta
+					property="og:description"
+					content="Learn more about SitePen, a leading web engineering consultancy based in the US with more than two decades of experience developing enterprise-grade solutions."
+				/>
+				<meta property="og:url" content="https://www.sitepen.com/about-us/" />
+				<meta property="og:site_name" content="SitePen" />
+				<meta property="article:publisher" content="https://www.facebook.com/SitePen" />
+				<meta
+					property="og:image"
+					content="https://wp.sitepen.com/wp-content/uploads/2020/01/favicon.png"
+				/>
+				<meta property="og:image:width" content="512" />
+				<meta property="og:image:height" content="512" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta
+					name="twitter:title"
+					content="About SitePen - A Leading Web App Development Company"
+				/>
+				<meta
+					name="twitter:description"
+					content="Learn more about SitePen, a leading web engineering consultancy based in the US with more than two decades of experience developing enterprise-grade solutions."
+				/>
+				<meta name="twitter:creator" content="@SitePen" />
+				<meta name="twitter:site" content="@SitePen" />
+			</head>
 			<div classes={css.heroWrapper}>
 				<div classes={commonCss.contentWrapper}>
 					<Hero>

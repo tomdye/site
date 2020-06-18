@@ -15,6 +15,45 @@ const factory = create();
 export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 	return (
 		<div classes={css.root}>
+			<head>
+				<title>Modernizing Apps &amp; Improving Usability for Marriott | SitePen</title>
+				<meta
+					name="description"
+					content="See how our team at SitePen provided technical expertise and leadership to help Marriott forge a new path in updating its business applications."
+				/>
+				<meta name="robots" content="index, follow" />
+				<meta
+					name="googlebot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<meta
+					name="bingbot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<link rel="canonical" href="https://www.sitepen.com/case-study/marriott/" />
+				<meta property="og:locale" content="en_US" />
+				<meta property="og:type" content="article" />
+				<meta
+					property="og:title"
+					content="Modernizing Apps &amp; Improving Usability for Marriott | SitePen"
+				/>
+				<meta
+					property="og:description"
+					content="See how our team at SitePen provided technical expertise and leadership to help Marriott forge a new path in updating its business applications."
+				/>
+				<meta property="og:url" content="https://www.sitepen.com/case-study/marriott/" />
+				<meta property="og:site_name" content="SitePen" />
+				<meta property="article:publisher" content="https://www.facebook.com/SitePen" />
+				<meta
+					property="og:image"
+					content="https://wp.sitepen.com/wp-content/uploads/2020/01/favicon.png"
+				/>
+				<meta property="og:image:width" content="512" />
+				<meta property="og:image:height" content="512" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:creator" content="@SitePen" />
+				<meta name="twitter:site" content="@SitePen" />
+			</head>
 			<div classes={[css.heroWrapper, css.marriottHero]}>
 				<div classes={commonCss.contentWrapper}>
 					<Hero>

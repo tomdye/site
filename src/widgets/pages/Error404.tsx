@@ -8,6 +8,13 @@ const factory = create();
 export const Error404 = factory(function Error404() {
 	return (
 		<div classes={css.heroWrapper}>
+			<head>
+				<title>Page not found | SitePen</title>
+				<meta name="robots" content="noindex, follow" />
+				<meta property="og:locale" content="en_US" />
+				<meta property="og:title" content="Page not found | SitePen" />
+				<meta property="og:site_name" content="SitePen" />
+			</head>
 			<div classes={commonCss.contentWrapper}>
 				<Hero>
 					{{

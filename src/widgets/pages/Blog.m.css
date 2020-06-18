@@ -77,6 +77,10 @@
 	margin-top: calc(var(--grid-size) * 4);
 }
 
+.ctaImage {
+	max-height: 280px;
+}
+
 @media (max-width: 768px) {
 	.root .trailing {
 		display: none;

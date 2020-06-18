@@ -11,3 +11,4 @@ export const categoryItem: string;
 export const previews: string;
 export const outroTitle: string;
 export const connectButtonWrapper: string;
+export const ctaImage: string;

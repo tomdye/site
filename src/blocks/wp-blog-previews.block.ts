@@ -88,7 +88,7 @@ export default async function (
 	return {
 		blogPreviews,
 		total: parseInt(String(response.headers.get('x-wp-total'))),
-		totalPages: 4, //parseInt(String(response.headers.get('x-wp-totalpages'))),
+		totalPages: 5, //parseInt(String(response.headers.get('x-wp-totalpages'))),
 		currentPage: page,
 		pageSize: size
 	};

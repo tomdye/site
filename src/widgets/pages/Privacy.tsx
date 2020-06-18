@@ -8,6 +8,39 @@ const factory = create();
 export const Privacy = factory(function Privacy() {
 	return (
 		<div classes={css.root}>
+			<head>
+				<title>Privacy Policy | Sitepen</title>
+				<meta name="description" content="Read Sitepen&#039;s Privacy Policy here." />
+				<meta name="robots" content="index, follow" />
+				<meta
+					name="googlebot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<meta
+					name="bingbot"
+					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+				/>
+				<link rel="canonical" href="https://www.sitepen.com/privacy-policy/" />
+				<meta property="og:locale" content="en_US" />
+				<meta property="og:type" content="article" />
+				<meta property="og:title" content="Privacy Policy | Sitepen" />
+				<meta
+					property="og:description"
+					content="Read Sitepen&#039;s Privacy Policy here."
+				/>
+				<meta property="og:url" content="https://www.sitepen.com/privacy-policy/" />
+				<meta property="og:site_name" content="SitePen" />
+				<meta property="article:publisher" content="https://www.facebook.com/SitePen" />
+				<meta
+					property="og:image"
+					content="https://wp.sitepen.com/wp-content/uploads/2020/01/favicon.png"
+				/>
+				<meta property="og:image:width" content="512" />
+				<meta property="og:image:height" content="512" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:creator" content="@SitePen" />
+				<meta name="twitter:site" content="@SitePen" />
+			</head>
 			<div classes={css.heroWrapper}>
 				<Hero>{{ xlTitle: 'privacy policy' }}</Hero>
 			</div>
