@@ -22,8 +22,11 @@
 
 .root .topHeading {
 	font-weight: 600;
-	font-size: 38px;
+	font-size: 36px;
 	line-height: 48px;
+	margin: 0;
+	position: relative;
+	top: -4px;
 }
 
 .javascript {
@@ -32,6 +35,7 @@
 
 .jsHeading {
 	text-align: center;
+	margin-top: calc(var(--grid-size) * 10);
 }
 
 .jsList {
@@ -60,5 +64,8 @@
 	}
 	.jsList {
 		flex-wrap: wrap;
+	}
+	.jsImg {
+		max-width: 40px;
 	}
 }

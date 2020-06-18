@@ -26,7 +26,7 @@ const builtLogo = require('../../assets/images/logos/built.png');
 const angularLogo = require('../../assets/images/logos/angular.svg');
 const dojoLogo = require('../../assets/images/logos/dojo.svg');
 const reactLogo = require('../../assets/images/logos/react.svg');
-const completeImg = require('../../assets/images/services/complete.svg');
+const completeImg = require('../../assets/images/services/complete.png');
 const holisticImg = require('../../assets/images/services/holistic.svg');
 const agileImg = require('../../assets/images/services/agile.svg');
 const devImg = require('../../assets/images/services/dev.svg');
@@ -175,6 +175,7 @@ export const Services = factory(function Services() {
 							),
 							image: (
 								<img
+									classes={commonCss.sizedSummaryImage}
 									loading="lazy"
 									src={completeImg}
 									alt="Illustration for Complete Team"
@@ -195,6 +196,7 @@ export const Services = factory(function Services() {
 							),
 							image: (
 								<img
+									classes={css.holisticImage}
 									loading="lazy"
 									src={holisticImg}
 									alt="Illustration for Holistic Approach"
@@ -209,6 +211,7 @@ export const Services = factory(function Services() {
 								'Conquer the complexities of building and scaling enterprise-level applications with a lean, agile process that effectively delivers on all of your requirements.',
 							image: (
 								<img
+									classes={commonCss.sizedSummaryImage}
 									loading="lazy"
 									src={agileImg}
 									alt="Illustration for Agile Methodologies"
@@ -244,7 +247,7 @@ export const Services = factory(function Services() {
 												src={agileIcon}
 												alt="agile icon"
 											/>{' '}
-											alt='agile Icon' Agile discover, analysis, and planning
+											Agile discover, analysis, and planning
 										</li>
 										<li classes={css.item}>
 											<img

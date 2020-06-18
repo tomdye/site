@@ -29,4 +29,17 @@
 	.list {
 		flex-wrap: wrap;
 	}
+	.root {
+		margin-top: calc(var(--grid-size) * 2);
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+	.root {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	.list {
+		flex-wrap: wrap;
+	}
 }

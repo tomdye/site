@@ -28,7 +28,7 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 				</div>
 			</div>
 			<div classes={commonCss.contentWrapper}>
-				<Summary smaller reverse>
+				<Summary smaller reverse collapse="stackReverse">
 					{{
 						title: 'The Situation',
 						blurb:
@@ -44,6 +44,7 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 					{{
 						image: (
 							<img
+								classes={css.mainImage}
 								src={marriottImage}
 								alt="marriott application technology case study"
 							/>
@@ -51,7 +52,7 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 						title: 'The Solution',
 						blurb: (
 							<p>
-								SitePen provided senior technical
+								SitePen provided senior technical{' '}
 								<Link to="expertise">expertise</Link> and leadership to help
 								Marriott forge a new path in developing its mission-critical
 								applications. SitePen migrated several applications to new
@@ -88,6 +89,7 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 						),
 						image: (
 							<img
+								classes={css.bubble}
 								loading="lazy"
 								src={marriottBubbleImage}
 								alt="quote from marriott"
@@ -115,6 +117,7 @@ export const CaseStudyMarriott = factory(function CaseStudyMarriott() {
 						),
 						image: (
 							<img
+								classes={commonCss.sizedSummaryImage}
 								loading="lazy"
 								src={holisticImg}
 								alt="Illustration for Holistic Approach"

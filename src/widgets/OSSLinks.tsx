@@ -3,11 +3,11 @@ import * as css from './OSSLinks.m.css';
 import * as commonCss from '../Common.m.css';
 import { Link } from '@dojo/framework/routing/Link';
 
-const dojoLogo = require('../assets/images/oss/dojo.svg');
-const internLogo = require('../assets/images/oss/intern.svg');
-const tsLogo = require('../assets/images/oss/ts.svg');
-const dojoToolkitLogo = require('../assets/images/oss/dojoToolkit.svg');
-const dgridLogo = require('../assets/images/oss/dgrid.svg');
+const dojoLogo = require('../assets/images/oss/dojo.png');
+const internLogo = require('../assets/images/oss/intern.png');
+const tsLogo = require('../assets/images/oss/ts.png');
+const dojoToolkitLogo = require('../assets/images/oss/dojoToolkit.png');
+const dgridLogo = require('../assets/images/oss/dgrid.png');
 
 const factory = create();
 

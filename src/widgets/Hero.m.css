@@ -5,7 +5,7 @@
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	padding: calc(var(--grid-size) * 21) 0;
+	padding: calc(var(--grid-size) * 25) 0 calc(var(--grid-size) * 21) 0;
 }
 
 .title {
@@ -53,7 +53,7 @@
 
 @media (max-width: 768px) {
 	.root {
-		padding: calc(var(--grid-size) * 10) 0;
+		padding: calc(var(--grid-size) * 14) 0 calc(var(--grid-size) * 10) 0;
 	}
 	.root .xlTitle {
 		font-size: 40px;

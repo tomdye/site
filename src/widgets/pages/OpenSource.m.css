@@ -50,7 +50,7 @@
 }
 
 .dojoToolkitHeroWrapper {
-	background-image: url('../../assets/images/hero/dojoToolkit.jpg');
+	background-image: url('../../assets/images/hero/toolkit.jpg');
 }
 
 .intro {
@@ -61,7 +61,7 @@
 }
 
 .logo {
-	height: 300px;
+	max-height: 300px;
 	max-width: 90%;
 }
 

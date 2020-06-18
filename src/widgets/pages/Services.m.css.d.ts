@@ -15,3 +15,4 @@ export const clientLogoWrapper: string;
 export const clientImg: string;
 export const builtWith: string;
 export const heading: string;
+export const holisticImage: string;

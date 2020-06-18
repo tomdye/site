@@ -3,6 +3,10 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+	margin-bottom: calc(var(--grid-size) * 10);
+}
+
+.root.smaller {
 	margin-bottom: calc(var(--grid-size) * 8);
 }
 
@@ -30,7 +34,7 @@
 }
 
 .title2 {
-	margin-bottom: calc(var(--grid-size) * 2);
+	margin-bottom: calc(var(--grid-size) * 1);
 	font-size: 38px;
 	font-weight: 600;
 	line-height: 52px;
@@ -56,25 +60,25 @@
 	.collapseHide .trailing {
 		flex: 1;
 	}
-	.collapseHide .title3,
-	.collapseHide .title2 {
-		text-align: center;
-	}
 }
 
 @media (max-width: 768px) {
 	.collapseStack.root {
 		flex-direction: column;
 	}
+	.collapseStackReverse.root {
+		flex-direction: column-reverse !important;
+	}
 	.collapseStack .leading,
 	.collapseStack .trailing {
 		flex: 1;
 	}
-	.collapseStack .trailing {
+	.collapseStack .leading {
 		text-align: center;
 	}
-	.collapseStack .title2,
-	.collapseStack .title3 {
-		text-align: center;
+	.title2 {
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 40px;
 	}
 }

@@ -102,7 +102,7 @@ const routes: RouteConfig[] = [
 		id: 'casestudyMarriott',
 		path: 'case-study/marriott',
 		outlet: 'main',
-		title: 'Modernizing Apps &amp; Improving Usability for Marriott | SitePen'
+		title: 'Modernizing Apps & Improving Usability for Marriott | SitePen'
 	},
 	{
 		id: 'casestudyBuilt',

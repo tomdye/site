@@ -5,7 +5,7 @@ import * as commonCss from '../../Common.m.css';
 import { Summary } from '../Summary';
 import { TechLinkList } from '../TechLinkList';
 import ConnectButton from '../ConnectButton';
-const completeImg = require('../../assets/images/services/complete.svg');
+const completeImg = require('../../assets/images/services/complete.png');
 const builtImage = require('../../assets/images/ourwork/built.jpg');
 const builtBubbleImage = require('../../assets/images/ourwork/builtBubble.png');
 
@@ -27,7 +27,7 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 				</div>
 			</div>
 			<div classes={commonCss.contentWrapper}>
-				<Summary smaller reverse>
+				<Summary smaller reverse collapse="stackReverse">
 					{{
 						title: 'The Situation',
 						blurb: (
@@ -55,7 +55,11 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 				<Summary smaller>
 					{{
 						image: (
-							<img src={builtImage} alt="built application technology case study" />
+							<img
+								classes={[css.mainImage, css.paddedImage]}
+								src={builtImage}
+								alt="built application technology case study"
+							/>
 						),
 						title: 'The Solution',
 						blurb: (
@@ -89,7 +93,14 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 						title: 'The Result',
 						blurb:
 							'Built Technologies could more quickly add critical features to meet customer needs while maintaining a stable code base. Built now has a clear path to transition from aging technologies to a more modern, nimble architecture.',
-						image: <img loading="lazy" src={builtBubbleImage} alt="quote from built" />
+						image: (
+							<img
+								classes={css.bubble}
+								loading="lazy"
+								src={builtBubbleImage}
+								alt="quote from built"
+							/>
+						)
 					}}
 				</Summary>
 				<Summary smaller reverse>
@@ -111,6 +122,7 @@ export const CaseStudyBuilt = factory(function CaseStudyBuilt() {
 						),
 						image: (
 							<img
+								classes={commonCss.sizedSummaryImage}
 								loading="lazy"
 								src={completeImg}
 								alt="Illustration for Complete Team"

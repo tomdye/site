@@ -5,7 +5,7 @@ import * as commonCss from '../../Common.m.css';
 import { Summary } from '../Summary';
 import { TechLinkList } from '../TechLinkList';
 import ConnectButton from '../ConnectButton';
-const completeImg = require('../../assets/images/services/complete.svg');
+const completeImg = require('../../assets/images/services/complete.png');
 const fannieImage = require('../../assets/images/ourwork/fannie.jpg');
 const fannieBubbleImage = require('../../assets/images/ourwork/fannieBubble.png');
 
@@ -27,7 +27,7 @@ export const CaseStudyFannie = factory(function CaseStudyFannie() {
 				</div>
 			</div>
 			<div classes={commonCss.contentWrapper}>
-				<Summary smaller reverse>
+				<Summary smaller reverse collapse="stackReverse">
 					{{
 						title: 'The Situation',
 						blurb:
@@ -51,6 +51,7 @@ export const CaseStudyFannie = factory(function CaseStudyFannie() {
 					{{
 						image: (
 							<img
+								classes={css.mainImage}
 								src={fannieImage}
 								alt="fannie mae application technology case study"
 							/>
@@ -71,22 +72,22 @@ export const CaseStudyFannie = factory(function CaseStudyFannie() {
 									applications and helped Fannie Mae:
 								</p>
 								<ul classes={css.bullets}>
-									<li>
+									<li classes={css.bulletItem}>
 										Solve challenges with critical applications including
 										real-time scalability with very large data sets and complex
 										business logic.
 									</li>
-									<li>
+									<li classes={css.bulletItem}>
 										Modernize software architecture and DevOps to improve the
 										reliability and efficiency of adding and releasing new
 										features.
 									</li>
-									<li>
+									<li classes={css.bulletItem}>
 										Bridge the gap that often exists between the business and
 										engineering teams through the design of enterprise
 										applications for advanced user scenarios.
 									</li>
-									<li>
+									<li classes={css.bulletItem}>
 										Accelerate the migration of enterprise applications from
 										legacy to modern software architecture based on Fannie Mae’s
 										preferred architectural standards.
@@ -103,6 +104,7 @@ export const CaseStudyFannie = factory(function CaseStudyFannie() {
 							'SitePen collaborated with Fannie Mae teams with multiple applications and development groups for major functionality releases, application rearchitectures and redesigns, and major technology and architecture upgrades. With SitePen’s guidance and support, Fannie Mae has made significant strides in improving automated testing and other DevOps refinements. They also received coaching and mentoring to improve and sustain engineering best practices.',
 						image: (
 							<img
+								classes={css.bubble}
 								loading="lazy"
 								src={fannieBubbleImage}
 								alt="quote from fannie mae"
@@ -129,6 +131,7 @@ export const CaseStudyFannie = factory(function CaseStudyFannie() {
 						),
 						image: (
 							<img
+								classes={commonCss.sizedSummaryImage}
 								loading="lazy"
 								src={completeImg}
 								alt="Illustration for Complete Team"

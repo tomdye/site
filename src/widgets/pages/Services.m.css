@@ -25,12 +25,15 @@
 
 .trailing {
 	flex: 50%;
+	margin-top: var(--grid-size);
 }
 
-.topSection .topTitle {
+.topTitle {
 	font-weight: 600;
-	font-size: 38px;
-	line-height: 52px;
+	font-size: 36px;
+	line-height: 48px;
+	padding-right: calc(var(--grid-size) * 3);
+	box-sizing: border-box;
 }
 
 .iconList .item {
@@ -92,7 +95,12 @@
 }
 
 .heading {
-	margin: calc(var(--grid-size) * 8) 0;
+	margin-top: calc(var(--grid-size) * 12);
+	margin-bottom: calc(var(--grid-size) * 8);
+}
+
+.holisticImage {
+	max-width: 314px;
 }
 
 @media (max-width: 768px) {
@@ -106,8 +114,18 @@
 	.topSection .trailing {
 		flex: 1;
 	}
-	.root .topSection .topTitle {
-		font-size: var(--heading-font-size);
-		line-height: var(--heading-line-height);
+	.topTitle {
+		font-size: 34px;
+		line-height: 40px;
+		padding-right: 0;
+	}
+	.title {
+		margin-bottom: calc(var(--grid-size) * 4);
+	}
+	.item {
+		margin-bottom: calc(var(--grid-size) * 8);
+	}
+	.resultsSection {
+		padding-bottom: 0;
 	}
 }

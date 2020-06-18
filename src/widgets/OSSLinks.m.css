@@ -1,4 +1,5 @@
 .root {
+	margin-top: calc(var(--grid-size) * 12);
 }
 
 .intro {

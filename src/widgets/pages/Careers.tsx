@@ -57,17 +57,17 @@ export const Careers = factory(function Careers() {
 				</Summary>
 			</div>
 			<div classes={commonCss.contentWrapper}>
-				<h2 classes={[commonCss.heading, commonCss.centered]}>
+				<h2 classes={[commonCss.heading, commonCss.centered, css.superThingsTitle]}>
 					Some Super Things About Working Here
 				</h2>
 				<ul classes={css.list}>
 					<li classes={css.item}>
-						<img src={commuteIcon} alt="Icon for commute" />
+						<img classes={css.itemIcon} src={commuteIcon} alt="Icon for commute" />
 						<div classes={css.itemTitle}>ZERO COMMUTE TIME</div>
 						<p>The only traffic you’ll ever get stuck in is a series of tubes.</p>
 					</li>
 					<li classes={css.item}>
-						<img src={vacationIcon} alt="Icon for vacation" />
+						<img classes={css.itemIcon} src={vacationIcon} alt="Icon for vacation" />
 						<div classes={css.itemTitle}>SEVEN WEEKS PAID VACATION</div>
 						<p>
 							With one month of personal time off plus a week of sick time plus ten
@@ -75,7 +75,7 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img src={insuranceIcon} alt="Icon for insurance" />
+						<img classes={css.itemIcon} src={insuranceIcon} alt="Icon for insurance" />
 						<div classes={css.itemTitle}>REALLY GOOD HEALTH INSURANCE</div>
 						<p>
 							Once our fountain of youth is finished, we hope to save a bundle on
@@ -83,7 +83,12 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img loading="lazy" src={pensionIcon} alt="Icon for pension" />
+						<img
+							classes={css.itemIcon}
+							loading="lazy"
+							src={pensionIcon}
+							alt="Icon for pension"
+						/>
 						<div classes={css.itemTitle}>401(K) WITH MATCHING</div>
 						<p>
 							Our plan administrator thought we were nuts to do a match. He also
@@ -91,7 +96,12 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img loading="lazy" src={spendingIcon} alt="Icon for spending" />
+						<img
+							classes={css.itemIcon}
+							loading="lazy"
+							src={spendingIcon}
+							alt="Icon for spending"
+						/>
 						<div classes={css.itemTitle}>FLEXIBLE SPENDING ACCOUNT</div>
 						<p>
 							We’re not saying you’re accident-prone, but we do want to make sure all
@@ -99,7 +109,12 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img loading="lazy" src={dentalIcon} alt="Icon for dental" />
+						<img
+							classes={css.itemIcon}
+							loading="lazy"
+							src={dentalIcon}
+							alt="Icon for dental"
+						/>
 						<div classes={css.itemTitle}>DENTAL DISCOUNTS</div>
 						<p>
 							With all the sweet things you’ll be doing, our dental plan makes sure
@@ -107,7 +122,12 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img loading="lazy" src={hoursIcon} alt="Icon for hours" />
+						<img
+							classes={css.itemIcon}
+							loading="lazy"
+							src={hoursIcon}
+							alt="Icon for hours"
+						/>
 						<div classes={css.itemTitle}>FLEXIBLE HOURS</div>
 						<p>
 							You’re the boss of your time. For your own sake, we hope you’re not a
@@ -115,7 +135,12 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img loading="lazy" src={loveIcon} alt="Icon for love" />
+						<img
+							classes={css.itemIcon}
+							loading="lazy"
+							src={loveIcon}
+							alt="Icon for love"
+						/>
 						<div classes={css.itemTitle}>DO WHAT YOU LOVE</div>
 						<p>
 							We are, of course, referring to developing amazing Web apps. We don’t
@@ -123,8 +148,14 @@ export const Careers = factory(function Careers() {
 						</p>
 					</li>
 					<li classes={css.item}>
-						<img loading="lazy" src={peopleIcon} alt="Icon for people" />
-						<div classes={css.itemTitle}>PEOPLE YOU'LL LOVE WORKING WITH</div>
+						<img
+							classes={css.itemIcon}
+							loading="lazy"
+							src={peopleIcon}
+							alt="Icon for people"
+						/>
+						<div classes={css.itemTitle}>A team you'll love</div>
+						]]{' '}
 						<p>
 							With their spectacular wit, intellect, and good looks, SitePenners are
 							one of the best reasons to work here.

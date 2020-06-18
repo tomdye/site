@@ -6,10 +6,10 @@ import { Summary } from '../Summary';
 import { ConnectStrip } from '../ConnectStrip';
 import { Link } from '@dojo/framework/routing/Link';
 import { Carousel } from '../Carousel';
-const advisementImg = require('../../assets/images/home/advisement.svg');
-const challengingImg = require('../../assets/images/home/challenging.svg');
-const confidenceImg = require('../../assets/images/home/confidence.svg');
-const dependImg = require('../../assets/images/home/depend.svg');
+const advisementImg = require('../../assets/images/home/advisement.png');
+const challengingImg = require('../../assets/images/home/challenging.png');
+const confidenceImg = require('../../assets/images/home/confidence.png');
+const dependImg = require('../../assets/images/home/depend.png');
 const targetIcon = require('../../assets/images/icons/target.svg');
 const flagIcon = require('../../assets/images/icons/flag.svg');
 const rosetteIcon = require('../../assets/images/icons/rosette.svg');
@@ -57,7 +57,7 @@ export const Home = factory(function Home() {
 					</Carousel>
 				</div>
 			</div>
-			<div classes={commonCss.contentWrapper}>
+			<div classes={[css.topSection, commonCss.contentWrapper]}>
 				<Summary>
 					{{
 						title: 'Solve your most challenging problems',
@@ -171,6 +171,7 @@ export const Home = factory(function Home() {
 							),
 							image: (
 								<img
+									classes={css.dependImg}
 									loading="lazy"
 									src={dependImg}
 									alt="illustration of dependability"

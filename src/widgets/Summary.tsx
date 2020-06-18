@@ -6,7 +6,7 @@ export interface SummaryProperties {
 	reverse?: boolean;
 	smaller?: boolean;
 	trailingBias?: boolean;
-	collapse?: 'hide' | 'stack';
+	collapse?: 'hide' | 'stack' | 'stackReverse';
 }
 
 export interface SummaryChildren {
@@ -32,9 +32,11 @@ export const Summary = factory(function Summary({ children, properties }) {
 			classes={[
 				css.root,
 				reverse && css.reverse,
+				smaller && css.smaller,
 				trailingBias && css.trailingBias,
 				collapse === 'hide' && css.collapseHide,
-				collapse === 'stack' && css.collapseStack
+				(collapse === 'stack' || collapse === 'stackReverse') && css.collapseStack,
+				collapse === 'stackReverse' && css.collapseStackReverse
 			]}
 		>
 			<div classes={css.leading}>{image}</div>

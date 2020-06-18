@@ -9,7 +9,7 @@ import { SmallBlogSummary } from '../SmallBlogSummary';
 import { Summary } from '../Summary';
 import { ConnectButton } from '../ConnectButton';
 import { Share } from '../Share';
-const ctaImg = require('../../assets/images/services/management.svg');
+const ctaImg = require('../../assets/images/services/management.png');
 
 export interface BlogProperties {
 	slug: string;

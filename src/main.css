@@ -14,11 +14,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--color-primary-subtle);
+	color: var(--color-link);
 }
 
 a:hover {
-	color: var(--color-primary);
+	color: var(--color-link-hover);
 }
 
 h2 {

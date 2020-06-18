@@ -30,12 +30,43 @@
 	text-align: left;
 }
 
+.bulletItem {
+	margin-bottom: var(--grid-size);
+}
+
+.bulletItem:last-child {
+	margin-bottom: 0;
+}
+
 .root .outroTitle {
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 600;
 }
 
+.bubble {
+	box-sizing: border-box;
+	padding-left: calc(var(--grid-size) * 8);
+}
+
 .result {
 	margin-bottom: calc(var(--grid-size) * 8);
+}
+
+.mainImage {
+	max-height: calc(var(--grid-size) * 36);
+}
+
+.paddedImage {
+	padding-right: calc(var(--grid-size) * 3);
+	box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+	.root .bubble {
+		padding-left: 0;
+	}
+	.root .paddedImage {
+		padding-right: 0;
+	}
 }

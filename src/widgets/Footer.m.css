@@ -33,7 +33,6 @@
 
 .links {
 	display: flex;
-	padding: 0 var(--gutter-size);
 }
 
 .social {
@@ -61,7 +60,7 @@
 }
 
 .social .item .link {
-	margin-right: calc(var(--grid-size) * 2);
+	margin-left: calc(var(--grid-size) * 2);
 	background-color: #083859;
 	border-radius: 50%;
 	width: 32px;

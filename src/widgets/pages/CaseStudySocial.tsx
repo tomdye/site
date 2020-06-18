@@ -6,7 +6,7 @@ import * as commonCss from '../../Common.m.css';
 import { Summary } from '../Summary';
 import { TechLinkList } from '../TechLinkList';
 import ConnectButton from '../ConnectButton';
-const engineeringImg = require('../../assets/images/services/engineering.svg');
+const engineeringImg = require('../../assets/images/services/engineering.png');
 const socialKnowledgeImage = require('../../assets/images/ourwork/socialKnowledge.jpg');
 
 const factory = create();
@@ -27,7 +27,7 @@ export const CaseStudySocial = factory(function CaseStudySocial() {
 				</div>
 			</div>
 			<div classes={commonCss.contentWrapper}>
-				<Summary smaller reverse>
+				<Summary smaller reverse collapse="stackReverse">
 					{{
 						title: 'The Situation',
 						blurb:
@@ -50,6 +50,7 @@ export const CaseStudySocial = factory(function CaseStudySocial() {
 					{{
 						image: (
 							<img
+								classes={[css.mainImage, css.paddedImage]}
 								src={socialKnowledgeImage}
 								alt="social knowledge application technology case study"
 							/>
@@ -64,7 +65,7 @@ export const CaseStudySocial = factory(function CaseStudySocial() {
 									application.
 								</p>
 								<ul classes={css.bullets}>
-									<li>
+									<li classes={css.bulletItem}>
 										Considering Social Knowledge’s long-term goal of having both
 										a responsive website and moving into native apps in the
 										future, SitePen leveraged the React Native Web library. This
@@ -73,7 +74,7 @@ export const CaseStudySocial = factory(function CaseStudySocial() {
 										Knowledge increase future efficiency by re-using this
 										architecture for future native application development.
 									</li>
-									<li>
+									<li classes={css.bulletItem}>
 										Leveraging the Jest JavaScript testing framework, SitePen
 										authored unit tests for state logic and snapshot tests for
 										widgets, providing solid test coverage for prop-driven
@@ -116,6 +117,7 @@ export const CaseStudySocial = factory(function CaseStudySocial() {
 						),
 						image: (
 							<img
+								classes={commonCss.sizedSummaryImage}
 								loading="lazy"
 								src={engineeringImg}
 								alt="Illustration for Holistic Approach"

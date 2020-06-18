@@ -88,7 +88,7 @@ export const Work = factory(function Work() {
 						),
 						image: (
 							<img
-								styles={{ marginLeft: '-80px' }}
+								classes={css.marriottImage}
 								src={marriottImage}
 								alt="marriott application technology case study"
 							/>
@@ -143,7 +143,6 @@ export const Work = factory(function Work() {
 						image: (
 							<img
 								loading="lazy"
-								styles={{ marginLeft: '-160px' }}
 								src={socialKnowledgeImage}
 								alt="Social Knowledge application technology case study"
 							/>

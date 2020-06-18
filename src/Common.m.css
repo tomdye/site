@@ -12,13 +12,12 @@
 
 .linkButton {
 	display: inline-block;
-	margin-top: calc(var(--grid-size) * 2);
 	background-color: var(--color-primary);
 	color: var(--color-text-on-dark);
-	padding: var(--grid-size) calc(var(--grid-size) * 2);
+	padding: calc(var(--grid-size) * 1.5) calc(var(--grid-size) * 2.5);
 	text-transform: uppercase;
 	font-size: 13px;
-	font-weight: 600;
+	font-weight: 400;
 	letter-spacing: 2px;
 	line-height: 13px;
 	border-radius: 50%;
@@ -48,4 +47,8 @@
 
 .centered {
 	text-align: center;
+}
+
+.sizedSummaryImage {
+	max-height: calc(var(--grid-size) * 33);
 }

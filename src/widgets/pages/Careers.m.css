@@ -31,10 +31,18 @@
 	font-family: var(--heading-font-family);
 }
 
+.itemIcon {
+	height: calc(var(--grid-size) * 4);
+}
+
 .openPositions {
 	text-align: center;
 	margin-top: calc(var(--grid-size) * 4);
 	margin-bottom: calc(var(--grid-size) * 6);
+}
+
+.superThingsTitle {
+	margin-top: calc(var(--grid-size) * 12);
 }
 
 @media (max-width: 768px) {

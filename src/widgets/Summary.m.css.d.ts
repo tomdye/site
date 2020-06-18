@@ -1,4 +1,5 @@
 export const root: string;
+export const smaller: string;
 export const reverse: string;
 export const trailingBias: string;
 export const leading: string;
@@ -8,3 +9,4 @@ export const title3: string;
 export const blurb: string;
 export const collapseHide: string;
 export const collapseStack: string;
+export const collapseStackReverse: string;
