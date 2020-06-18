@@ -1,6 +1,7 @@
 import fetch from '../util/fetch';
 import { JSDOM } from 'jsdom';
 import { highlightAllUnder } from 'prismjs';
+import { WpBlogPreview } from './wp-blog-previews.block';
 require('prismjs/components/prism-clike');
 require('prismjs/components/prism-javascript');
 require('prismjs/components/prism-jsx');
@@ -23,6 +24,15 @@ export interface Blog {
 const mapping = {
 	jscript: 'js'
 };
+
+interface WpBlog extends WpBlogPreview {
+	content: {
+		rendered: string;
+	};
+	categories: number[];
+	link: string;
+	yoast_head: string;
+}
 
 function processCodeBlocks(content: string) {
 	const dom = new JSDOM(`<!DOCTYPE html><div id='wrapper'></div>`);
@@ -60,19 +70,16 @@ function processCodeBlocks(content: string) {
 	}
 }
 
-export default async function (baseUrl: string, slug: string): Promise<Blog> {
+export default async function (baseUrl: string, slug: string): Promise<Blog | undefined> {
 	const response = await fetch(
 		`${baseUrl}/wp-json/wp/v2/posts?slug=${slug}&_embed=wp:featuredmedia,author`
 	);
-	const [blog]: any = await response.json();
-
-	let image = blog.jetpack_featured_media_url;
-	if (
-		blog._embedded['wp:featuredmedia'][0].media_details.sizes &&
-		blog._embedded['wp:featuredmedia'][0].media_details.sizes.large
-	) {
-		image = blog._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url;
+	const [blog]: WpBlog[] = await response.json();
+	if (!blog) {
+		return undefined;
 	}
+	const [media] = (blog?._embedded && blog?._embedded['wp:featuredmedia']) || [];
+	const image = media?.media_details?.sizes?.large?.source_url || blog.jetpack_featured_media_url;
 
 	return {
 		title: blog.title.rendered,
@@ -80,7 +87,7 @@ export default async function (baseUrl: string, slug: string): Promise<Blog> {
 		id: blog.id,
 		image,
 		content: processCodeBlocks(blog.content.rendered),
-		author: blog._embedded.author[0].name,
+		author: blog?._embedded.author[0].name || 'Unknown',
 		date: blog.date,
 		categories: blog.categories,
 		link: blog.link,

@@ -19,6 +19,36 @@ export interface BlogPreviews {
 	pageSize: number;
 }
 
+export interface WpBlogPreview {
+	jetpack_featured_media_url: string;
+	slug: string;
+	id: string;
+	date: string;
+	title: {
+		rendered: string;
+	};
+	excerpt: {
+		rendered: string;
+	};
+	_embedded: {
+		author: {
+			name: string;
+		}[];
+		'wp:featuredmedia': {
+			media_details?: {
+				sizes?: {
+					large?: {
+						source_url: string;
+					};
+					medium?: {
+						source_url: string;
+					};
+				};
+			};
+		}[];
+	};
+}
+
 const categories = {
 	dojo: 214,
 	enterprisejs: 2
@@ -36,20 +66,12 @@ export default async function (
 	}
 
 	const response = await fetch(url, { tempCache: true });
-	const json: any[] = await response.json();
+	const json: WpBlogPreview[] = await response.json();
 	const blogPreviews = json.map<BlogPreview>((item) => {
-		let image = item.jetpack_featured_media_url;
-		let imageSmall;
-
-		if (item._embedded['wp:featuredmedia'][0].media_details.sizes) {
-			if (item._embedded['wp:featuredmedia'][0].media_details.sizes.large) {
-				image = item._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url;
-			}
-			if (item._embedded['wp:featuredmedia'][0].media_details.sizes.medium) {
-				imageSmall =
-					item._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url;
-			}
-		}
+		const [media] = (item._embedded && item._embedded['wp:featuredmedia']) || [];
+		const image =
+			media?.media_details?.sizes?.large?.source_url || item.jetpack_featured_media_url;
+		const imageSmall = media?.media_details?.sizes?.medium?.source_url || image;
 
 		return {
 			title: item.title.rendered,
@@ -59,14 +81,13 @@ export default async function (
 			imageSmall: imageSmall || image,
 			excerpt: item.excerpt.rendered,
 			date: item.date,
-			author: item._embedded.author[0].name
+			author: item._embedded.author[0].name || 'Unknown'
 		};
 	});
 
 	return {
 		blogPreviews,
 		total: parseInt(String(response.headers.get('x-wp-total'))),
-		// limit pages for testing
 		totalPages: 4, //parseInt(String(response.headers.get('x-wp-totalpages'))),
 		currentPage: page,
 		pageSize: size

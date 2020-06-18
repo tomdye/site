@@ -9,7 +9,7 @@ export const Privacy = factory(function Privacy() {
 	return (
 		<div classes={css.root}>
 			<div classes={css.heroWrapper}>
-				<Hero>{{ xlTitle: 'privacy policy' }}</Hero>>
+				<Hero>{{ xlTitle: 'privacy policy' }}</Hero>
 			</div>
 			<div classes={[commonCss.smallerContentWrapper, css.content]}>
 				SitePen, Inc. (collectively “SitePen”, “we,” “us,” or “our”) respect your privacy
