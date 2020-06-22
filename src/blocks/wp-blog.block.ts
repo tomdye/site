@@ -7,6 +7,12 @@ require('prismjs/components/prism-javascript');
 require('prismjs/components/prism-jsx');
 require('prismjs/components/prism-typescript');
 require('prismjs/components/prism-tsx');
+import { v } from '@dojo/framework/core/vdom';
+import { RenderResult } from '@dojo/framework/core/interfaces';
+const unified = require('unified');
+const parse = require('rehype-parse');
+const toH = require('hast-to-hyperscript');
+const { selectAll } = require('hast-util-select');
 
 export interface Blog {
 	id: string;
@@ -18,7 +24,7 @@ export interface Blog {
 	date: string;
 	categories: number[];
 	link: string;
-	meta: string;
+	meta: RenderResult;
 }
 
 const mapping = {
@@ -32,6 +38,18 @@ interface WpBlog extends WpBlogPreview {
 	categories: number[];
 	link: string;
 	yoast_head: string;
+}
+
+let counter = 0;
+const pragma = (tag: string, props: any = {}, children?: any[]) =>
+	v(tag, { ...props, key: `key-${counter++}` }, children);
+const pipeline = unified().use(parse);
+
+function parseContent(content: string) {
+	const nodes = pipeline.parse(content);
+	const res = selectAll('meta, title', nodes);
+
+	return res.map((node: any) => toH(pragma, node));
 }
 
 function processCodeBlocks(content: string) {
@@ -91,6 +109,6 @@ export default async function (baseUrl: string, slug: string): Promise<Blog | un
 		date: blog.date,
 		categories: blog.categories,
 		link: blog.link,
-		meta: blog.yoast_head
+		meta: parseContent(blog.yoast_head)
 	};
 }

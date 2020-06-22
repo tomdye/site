@@ -3,7 +3,6 @@ import * as commonCss from '../../Common.m.css';
 import * as css from './Blog.m.css';
 import block from '@dojo/framework/core/middleware/block';
 import getBlog from '../../blocks/wp-blog.block';
-import parseMeta from '../../blocks/wp-blog-meta.block';
 import getBlogPreviews, { BlogPreview } from '../../blocks/wp-blog-previews.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { SmallBlogSummary } from '../SmallBlogSummary';
@@ -53,7 +52,7 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 	if (post) {
 		return (
 			<div classes={css.root}>
-				<head>{block(parseMeta)(post.meta)}</head>
+				<head>{post.meta}</head>
 				<div classes={css.spacer}></div>
 				<Share href={post.link} postId={post.id} title={post.title} />
 				<div classes={commonCss.contentWrapper}>
