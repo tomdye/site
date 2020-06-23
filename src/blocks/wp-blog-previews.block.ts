@@ -49,20 +49,15 @@ export interface WpBlogPreview {
 	};
 }
 
-const categories = {
-	dojo: 214,
-	enterprisejs: 2
-};
-
 export default async function (
 	baseUrl: string,
 	size: number,
 	page: number,
-	category?: keyof typeof categories
+	category?: number
 ): Promise<BlogPreviews> {
 	let url = `${baseUrl}/wp-json/wp/v2/posts?per_page=${size}&page=${page}&_embed=wp:featuredmedia,author`;
 	if (category) {
-		url = `${url}&categories=${categories[category]}`;
+		url = `${url}&categories=${category}`;
 	}
 
 	const response = await fetch(url, { tempCache: true });
@@ -88,7 +83,7 @@ export default async function (
 	return {
 		blogPreviews,
 		total: parseInt(String(response.headers.get('x-wp-total'))),
-		totalPages: 5, //parseInt(String(response.headers.get('x-wp-totalpages'))),
+		totalPages: parseInt(String(response.headers.get('x-wp-totalpages'))),
 		currentPage: page,
 		pageSize: size
 	};

@@ -58,7 +58,7 @@
 	color: var(--color-primary-subtle);
 	text-transform: uppercase;
 	font-family: var(--heading-font-family);
-	margin: 0 var(--grid-size);
+	margin-right: calc(var(--grid-size) * 2);
 }
 
 .previews {

@@ -5,6 +5,4 @@ export const leading: string;
 export const trailing: string;
 export const blogList: string;
 export const blogItem: string;
-export const categoryGroup: string;
-export const categoryTitle: string;
 export const paginationLink: string;

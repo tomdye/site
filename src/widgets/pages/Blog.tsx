@@ -4,11 +4,13 @@ import * as css from './Blog.m.css';
 import block from '@dojo/framework/core/middleware/block';
 import getBlog from '../../blocks/wp-blog.block';
 import getBlogPreviews, { BlogPreview } from '../../blocks/wp-blog-previews.block';
+import getCategories from '../../blocks/wp-blog-category.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { SmallBlogSummary } from '../SmallBlogSummary';
 import { Summary } from '../Summary';
 import { ConnectButton } from '../ConnectButton';
 import { Share } from '../Share';
+import { Link } from '@dojo/framework/routing/Link';
 const ctaImg = require('../../assets/images/services/management.png');
 
 export interface BlogProperties {
@@ -21,15 +23,22 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 	const { slug } = properties();
 	const post = block(getBlog)('https://wp.sitepen.com', slug);
 	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 6, 1);
+	const categories = block(getCategories)('https://wp.sitepen.com');
 
 	let summaryItems: RenderResult[] = [];
 
-	function renderCategoryItem(category: number) {
-		return (
-			<li classes={css.categoryItem} key={`category-${category}`}>
-				{`${category}`}
-			</li>
-		);
+	function renderCategoryItem(categoryId: number) {
+		const categoryDetails = categories?.find((category) => category.id === categoryId);
+		if (categoryDetails) {
+			const { name, id, slug } = categoryDetails;
+			return (
+				<li key={`category-${id}`}>
+					<Link classes={css.categoryItem} to="category" params={{ slug }}>
+						{name}
+					</Link>
+				</li>
+			);
+		}
 	}
 
 	function renderSmallSummary(preview: BlogPreview, index: number) {

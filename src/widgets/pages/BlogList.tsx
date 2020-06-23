@@ -2,11 +2,11 @@ import { create, tsx } from '@dojo/framework/core/vdom';
 import * as commonCss from '../../Common.m.css';
 import * as css from './BlogList.m.css';
 import { BlogSummary } from '../BlogSummary';
-import SmallBlogSummary from '../SmallBlogSummary';
 import block from '@dojo/framework/core/middleware/block';
-import getBlogPreviews, { BlogPreview } from '../../blocks/wp-blog-previews.block';
+import getBlogPreviews from '../../blocks/wp-blog-previews.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { Link } from '@dojo/framework/routing/Link';
+import { BlogListSidePane } from '../BlogListSidePane';
 
 export interface BlogListProperties {
 	page: number;
@@ -14,20 +14,11 @@ export interface BlogListProperties {
 
 const factory = create({ block }).properties<BlogListProperties>();
 
-export const BlogList = factory(function Blog({ properties, middleware: { block } }) {
+export const BlogList = factory(function BlogList({ properties, middleware: { block } }) {
 	const { page } = properties();
 	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 12, page);
-	const dojoPreviews = block(getBlogPreviews)('https://wp.sitepen.com', 3, 1, 'dojo');
-	const enterprisePreviews = block(getBlogPreviews)(
-		'https://wp.sitepen.com',
-		3,
-		1,
-		'enterprisejs'
-	);
 
 	let blogSummaryItems: RenderResult[] = [];
-	let dojoSummaryItems: RenderResult[] = [];
-	let enterpriseSummaryItems: RenderResult[] = [];
 	let pagination: RenderResult | undefined;
 
 	if (previews) {
@@ -70,28 +61,6 @@ export const BlogList = factory(function Blog({ properties, middleware: { block 
 				)}
 			</nav>
 		);
-	}
-
-	function renderSmallSummary(preview: BlogPreview, index: number) {
-		return (
-			<SmallBlogSummary key={`dojoblog-${index}`} slug={preview.slug}>
-				{{
-					title: preview.title,
-					date: preview.date,
-					image: <img src={preview.imageSmall} />
-				}}
-			</SmallBlogSummary>
-		);
-	}
-
-	if (dojoPreviews) {
-		const { blogPreviews } = dojoPreviews;
-		dojoSummaryItems = blogPreviews.map(renderSmallSummary);
-	}
-
-	if (enterprisePreviews) {
-		const { blogPreviews } = enterprisePreviews;
-		enterpriseSummaryItems = blogPreviews.map(renderSmallSummary);
 	}
 
 	return (
@@ -145,31 +114,7 @@ export const BlogList = factory(function Blog({ properties, middleware: { block 
 						{pagination}
 					</div>
 					<div classes={css.trailing}>
-						<aside classes={css.categoryGroup}>
-							<h3 classes={css.categoryTitle}>#enterprisejs</h3>
-							{enterpriseSummaryItems}
-						</aside>
-						<aside classes={css.categoryGroup}>
-							<h3 classes={css.categoryTitle}>#dojo</h3>
-							{dojoSummaryItems}
-						</aside>
-						<aside classes={css.categoryGroup}>
-							<h3 classes={css.categoryTitle}>#podcast</h3>
-							<a href="https://talkscript.sitepen.com/">
-								<img src="https://wp.sitepen.com/wp-content/uploads//2020/06/logo_TS-wide.svg" />
-							</a>
-						</aside>
-						<aside classes={css.categoryGroup}>
-							<h3 classes={css.categoryTitle}>popular categories</h3>
-							<ul>
-								<li>Angular</li>
-								<li>Dojo</li>
-								<li>Dojo Toolkit</li>
-								<li>Node.js</li>
-								<li>React</li>
-								<li>Vue</li>
-							</ul>
-						</aside>
+						<BlogListSidePane />
 					</div>
 				</section>
 			</div>
