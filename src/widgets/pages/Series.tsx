@@ -49,7 +49,7 @@ export const Series = factory(function Category({ properties, middleware: { bloc
 	return (
 		<div classes={css.root}>
 			<head>
-				<title>`${seriesDetails?.name} Archives | SitePen`</title>
+				<title>{`${seriesDetails?.name} Archives | SitePen`}</title>
 				<meta name="robots" content="index, follow" />
 				<meta
 					name="googlebot"
