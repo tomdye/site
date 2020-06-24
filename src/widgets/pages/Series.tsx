@@ -5,24 +5,24 @@ import * as categoryCss from './Category.m.css';
 import { BlogSummary } from '../BlogSummary';
 import block from '@dojo/framework/core/middleware/block';
 import getBlogPreviews from '../../blocks/wp-blog-previews.block';
-import getCategories from '../../blocks/wp-blog-category.block';
+import getSeries from '../../blocks/wp-blog-series.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { BlogListSidePane } from '../BlogListSidePane';
 
-export interface CategoryProperties {
+export interface SeriesProperties {
 	slug: string;
 }
 
-const factory = create({ block }).properties<CategoryProperties>();
+const factory = create({ block }).properties<SeriesProperties>();
 
-export const Category = factory(function Category({ properties, middleware: { block } }) {
+export const Series = factory(function Category({ properties, middleware: { block } }) {
 	const { slug } = properties();
 
-	const categories = block(getCategories)('https://wp.sitepen.com');
-	const categoryDetails = categories?.find((category) => category.slug === slug);
+	const series = block(getSeries)('https://wp.sitepen.com');
+	const seriesDetails = series?.find((series) => series.slug === slug);
 
 	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 100, 1, {
-		category: categoryDetails?.id
+		series: seriesDetails?.id
 	});
 
 	let blogSummaryItems: RenderResult[] = [];
@@ -31,7 +31,7 @@ export const Category = factory(function Category({ properties, middleware: { bl
 		const { blogPreviews } = previews;
 		blogSummaryItems = blogPreviews.map((preview, index) => {
 			return (
-				<li key={`blog-category-${slug}-${index}`} classes={css.blogItem}>
+				<li key={`blog-series-${slug}-${index}`} classes={css.blogItem}>
 					<BlogSummary slug={preview.slug}>
 						{{
 							title: preview.title,
@@ -49,7 +49,7 @@ export const Category = factory(function Category({ properties, middleware: { bl
 	return (
 		<div classes={css.root}>
 			<head>
-				<title>`${categoryDetails?.name} Archives | SitePen`</title>
+				<title>`${seriesDetails?.name} Archives | SitePen`</title>
 				<meta name="robots" content="index, follow" />
 				<meta
 					name="googlebot"
@@ -59,14 +59,11 @@ export const Category = factory(function Category({ properties, middleware: { bl
 					name="bingbot"
 					content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 				/>
-				<link rel="canonical" href={`https://www.sitepen.com/blog/category/${slug}/`} />
+				<link rel="canonical" href={`https://www.sitepen.com/blog/series/${slug}/`} />
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:type" content="article" />
-				<meta property="og:title" content={`${categoryDetails?.name} Archives | SitePen`} />
-				<meta
-					property="og:url"
-					content={`https://www.sitepen.com/blog/category/${slug}/`}
-				/>
+				<meta property="og:title" content={`${seriesDetails?.name} Archives | SitePen`} />
+				<meta property="og:url" content={`https://www.sitepen.com/blog/series/${slug}/`} />
 				<meta property="og:site_name" content="SitePen" />
 				<meta
 					property="og:image"
@@ -79,7 +76,7 @@ export const Category = factory(function Category({ properties, middleware: { bl
 			</head>
 			<div classes={css.spacer}></div>
 			<div classes={commonCss.contentWrapper}>
-				<h1 classes={categoryCss.title}>{`Category: ${categoryDetails?.name}`}</h1>
+				<h1 classes={categoryCss.title}>{`Series: ${seriesDetails?.name}`}</h1>
 				<section classes={css.content}>
 					<div classes={css.leading}>
 						<ul classes={css.blogList}>{blogSummaryItems}</ul>
@@ -93,4 +90,4 @@ export const Category = factory(function Category({ properties, middleware: { bl
 	);
 });
 
-export default Category;
+export default Series;

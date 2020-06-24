@@ -11,25 +11,18 @@ const factory = create({ block });
 
 export const BlogListSidePane = factory(function BlogListSidePane({ middleware: { block } }) {
 	const categories = block(getCategories)('https://wp.sitepen.com');
-
 	const popularCategories = ['angular', 'dojo', 'dojotoolkit', 'node-js-2', 'react', 'vue'];
 	const dojoCategoryDetails = categories?.find((category) => category.slug === 'dojo');
 	const enterpriseCategoryDetails = categories?.find(
 		(category) => category.slug === 'enterprisejs'
 	);
 
-	const dojoPreviews = block(getBlogPreviews)(
-		'https://wp.sitepen.com',
-		3,
-		1,
-		dojoCategoryDetails?.id
-	);
-	const enterprisePreviews = block(getBlogPreviews)(
-		'https://wp.sitepen.com',
-		3,
-		1,
-		enterpriseCategoryDetails?.id
-	);
+	const dojoPreviews = block(getBlogPreviews)('https://wp.sitepen.com', 3, 1, {
+		category: dojoCategoryDetails?.id
+	});
+	const enterprisePreviews = block(getBlogPreviews)('https://wp.sitepen.com', 3, 1, {
+		category: enterpriseCategoryDetails?.id
+	});
 
 	let dojoSummaryItems: RenderResult[] = [];
 	let enterpriseSummaryItems: RenderResult[] = [];
@@ -82,7 +75,7 @@ export const BlogListSidePane = factory(function BlogListSidePane({ middleware: 
 						return (
 							<li
 								classes={css.popularItem}
-								key={`pouplar-category-link-${categoryDetails?.id}`}
+								key={`popular-category-link-${categoryDetails?.id}`}
 							>
 								<Link to="category" params={{ slug: categorySlug }}>
 									{categoryDetails?.name}

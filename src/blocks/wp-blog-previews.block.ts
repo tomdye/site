@@ -53,11 +53,18 @@ export default async function (
 	baseUrl: string,
 	size: number,
 	page: number,
-	category?: number
+	options?: {
+		category?: number;
+		series?: number;
+	}
 ): Promise<BlogPreviews> {
 	let url = `${baseUrl}/wp-json/wp/v2/posts?per_page=${size}&page=${page}&_embed=wp:featuredmedia,author`;
-	if (category) {
-		url = `${url}&categories=${category}`;
+
+	if (options?.category) {
+		url = `${url}&categories=${options.category}`;
+	}
+	if (options?.series) {
+		url = `${url}&series=${options.series}`;
 	}
 
 	const response = await fetch(url, { tempCache: true });
@@ -74,7 +81,7 @@ export default async function (
 			id: item.id,
 			image,
 			imageSmall: imageSmall || image,
-			excerpt: item.excerpt.rendered,
+			excerpt: item.excerpt.rendered.replace('[&hellip;]', ''),
 			date: item.date,
 			author: item._embedded.author[0].name || 'Unknown'
 		};

@@ -23,6 +23,7 @@ export interface Blog {
 	author: string;
 	date: string;
 	categories: number[];
+	series: number[];
 	link: string;
 	meta: RenderResult;
 }
@@ -36,6 +37,7 @@ interface WpBlog extends WpBlogPreview {
 		rendered: string;
 	};
 	categories: number[];
+	series: number[];
 	link: string;
 	yoast_head: string;
 }
@@ -108,6 +110,7 @@ export default async function (baseUrl: string, slug: string): Promise<Blog | un
 		author: blog?._embedded.author[0].name || 'Unknown',
 		date: blog.date,
 		categories: blog.categories,
+		series: blog.series,
 		link: blog.link,
 		meta: parseContent(blog.yoast_head)
 	};

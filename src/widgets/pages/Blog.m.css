@@ -64,6 +64,9 @@
 .previews {
 	padding: calc(var(--grid-size) * 2) 0;
 	border-top: 1px solid #adadad;
+}
+
+.previews:last-of-type {
 	border-bottom: 1px solid #adadad;
 }
 
@@ -79,6 +82,25 @@
 
 .ctaImage {
 	max-height: 280px;
+}
+
+.previewHeading {
+	margin-bottom: var(--grid-size);
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: var(--color-subheading);
+	font-family: var(--heading-font-family);
+}
+
+.seriesGroup {
+	margin: var(--grid-size) 0;
+}
+
+.seriesTitle {
+	margin-bottom: var(--grid-size);
+	color: var(--color-primary-subtle);
+	font-family: var(--heading-font-family);
 }
 
 @media (max-width: 768px) {

@@ -7,7 +7,7 @@ interface Category {
 	name: string;
 }
 
-export default async function (baseUrl: string): Promise<Category[]> {
+export default async function getCategories(baseUrl: string): Promise<Category[]> {
 	let url = `${baseUrl}/wp-json/wp/v2/categories?per_page=100`;
 	const categories: any[] = [];
 	while (url) {

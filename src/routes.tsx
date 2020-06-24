@@ -103,6 +103,11 @@ const routes: RouteConfig[] = [
 		path: 'blog/category/{slug}'
 	},
 	{
+		id: 'series',
+		outlet: 'main',
+		path: 'blog/series/{slug}'
+	},
+	{
 		id: 'blogs',
 		outlet: 'main',
 		path: 'blogs/{page}',

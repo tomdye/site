@@ -12,3 +12,6 @@ export const previews: string;
 export const outroTitle: string;
 export const connectButtonWrapper: string;
 export const ctaImage: string;
+export const previewHeading: string;
+export const seriesGroup: string;
+export const seriesTitle: string;

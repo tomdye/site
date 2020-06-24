@@ -10,6 +10,7 @@ import { SmallBlogSummary } from '../SmallBlogSummary';
 import { Summary } from '../Summary';
 import { ConnectButton } from '../ConnectButton';
 import { Share } from '../Share';
+import getSeries from '../../blocks/wp-blog-series.block';
 import { Link } from '@dojo/framework/routing/Link';
 const ctaImg = require('../../assets/images/services/management.png');
 
@@ -22,10 +23,13 @@ const factory = create({ block }).properties<BlogProperties>();
 export const Blog = factory(function Blog({ properties, middleware: { block } }) {
 	const { slug } = properties();
 	const post = block(getBlog)('https://wp.sitepen.com', slug);
-	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 6, 1);
+	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 7, 1);
 	const categories = block(getCategories)('https://wp.sitepen.com');
+	const series = block(getSeries)('https://wp.sitepen.com');
 
 	let summaryItems: RenderResult[] = [];
+
+	const partOfSeries = post?.series && post.series.length > 0;
 
 	function renderCategoryItem(categoryId: number) {
 		const categoryDetails = categories?.find((category) => category.id === categoryId);
@@ -55,7 +59,10 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 
 	if (previews) {
 		const { blogPreviews } = previews;
-		summaryItems = blogPreviews.map(renderSmallSummary);
+		summaryItems = blogPreviews
+			.filter((preview) => preview.slug !== slug)
+			.splice(0, 6)
+			.map(renderSmallSummary);
 	}
 
 	if (post) {
@@ -86,7 +93,47 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 							></div>
 						</article>
 						<div classes={css.trailing}>
-							<aside classes={css.previews}>{summaryItems}</aside>
+							<aside classes={css.previews}>
+								<h3 classes={css.previewHeading}>latest articles</h3>
+								{summaryItems}
+							</aside>
+							{partOfSeries && (
+								<aside classes={css.previews}>
+									<h3 classes={css.previewHeading}>part of series</h3>
+									{post.series.map((seriesId) => {
+										const seriesPreviews = block(
+											getBlogPreviews
+										)('https://wp.sitepen.com', 100, 1, { series: seriesId });
+										if (seriesPreviews) {
+											const seriesDetails = series?.find(
+												(series) => series.id === seriesId
+											);
+											return (
+												seriesDetails && (
+													<div classes={css.seriesGroup}>
+														<h4 classes={css.seriesTitle}>
+															<Link
+																to="series"
+																params={{
+																	slug: seriesDetails.slug
+																}}
+															>
+																{seriesDetails.name}
+															</Link>
+														</h4>
+														{seriesPreviews.blogPreviews
+															.reverse()
+															.filter(
+																(blog) => blog.slug !== post.slug
+															)
+															.map(renderSmallSummary)}
+													</div>
+												)
+											);
+										}
+									})}
+								</aside>
+							)}
 						</div>
 					</section>
 					<Summary smaller reverse>
