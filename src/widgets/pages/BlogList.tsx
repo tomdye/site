@@ -4,6 +4,7 @@ import * as css from './BlogList.m.css';
 import { BlogSummary } from '../BlogSummary';
 import block from '@dojo/framework/core/middleware/block';
 import getBlogPreviews from '../../blocks/wp-blog-previews.block';
+import createBlogFeed from '../../blocks/wp-rss.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { Link } from '@dojo/framework/routing/Link';
 import { BlogListSidePane } from '../BlogListSidePane';
@@ -17,6 +18,7 @@ const factory = create({ block }).properties<BlogListProperties>();
 export const BlogList = factory(function BlogList({ properties, middleware: { block } }) {
 	const { page } = properties();
 	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 12, page);
+	block(createBlogFeed)('https://wp.sitepen.com');
 
 	let blogSummaryItems: RenderResult[] = [];
 	let pagination: RenderResult | undefined;

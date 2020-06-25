@@ -9,6 +9,7 @@ export interface BlogPreview {
 	excerpt: string;
 	date: string;
 	author: string;
+	categories: number[];
 }
 
 export interface BlogPreviews {
@@ -24,6 +25,7 @@ export interface WpBlogPreview {
 	slug: string;
 	id: string;
 	date: string;
+	categories: number[];
 	title: {
 		rendered: string;
 	};
@@ -83,7 +85,8 @@ export default async function (
 			imageSmall: imageSmall || image,
 			excerpt: item.excerpt.rendered.replace('[&hellip;]', ''),
 			date: item.date,
-			author: item._embedded.author[0].name || 'Unknown'
+			author: item._embedded.author[0].name || 'Unknown',
+			categories: item.categories
 		};
 	});
 

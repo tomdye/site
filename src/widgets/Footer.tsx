@@ -82,16 +82,6 @@ export const Footer = factory(function Footer() {
 								<i title="linkedin" classes="icon-linkedin"></i>
 							</a>
 						</li>
-						<li classes={css.item}>
-							<a
-								classes={css.link}
-								href="https://blog.sitepen.com/feed/"
-								target="_blank"
-								rel="noopener"
-							>
-								<i title="rss" classes="icon-rss"></i>
-							</a>
-						</li>
 					</ul>
 				</div>
 			</section>

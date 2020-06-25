@@ -36,7 +36,6 @@ interface WpBlog extends WpBlogPreview {
 	content: {
 		rendered: string;
 	};
-	categories: number[];
 	series: number[];
 	link: string;
 	yoast_head: string;
