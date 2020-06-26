@@ -61,7 +61,6 @@ export const App = factory(function App() {
 						category: ({ params: { slug } }) => <Category slug={slug} />,
 						series: ({ params: { slug } }) => <Series slug={slug} />,
 						blogs: ({ params: { page } }) => <BlogList page={parseInt(page)} />,
-						blogLegacy: <BlogList page={1} />,
 						blog: ({ params: { slug } }) => <Blog slug={slug} />,
 						error404: <Error404 />
 					}}

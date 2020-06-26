@@ -121,11 +121,6 @@ const routes: RouteConfig[] = [
 		path: 'blog/{slug}'
 	},
 	{
-		id: 'blogLegacy',
-		outlet: 'main',
-		path: 'blog'
-	},
-	{
 		id: 'error404',
 		path: 'error-404',
 		outlet: 'main'
