@@ -26,6 +26,13 @@
 
 .marriottImage {
 	padding-top: calc(var(--grid-size) * 3);
+	padding-right: calc(var(--grid-size) * 6);
+	box-sizing: border-box;
+}
+
+.socialImage {
+	padding-right: calc(var(--grid-size) * 6);
+	box-sizing: border-box;
 }
 
 @media (max-width: 768px) {

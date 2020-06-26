@@ -190,6 +190,7 @@ export const Work = factory(function Work() {
 						image: (
 							<img
 								loading="lazy"
+								classes={css.socialImage}
 								src={socialKnowledgeImage}
 								alt="Social Knowledge application technology case study"
 							/>

@@ -41,7 +41,7 @@
 	font-weight: var(--subheading-font-weight);
 	font-size: var(--subheading-font-size);
 	line-height: var(--subheading-line-height);
-	margin-bottom: calc(var(--grid-size) * 2);
+	margin-bottom: var(--grid-size);
 	color: var(--color-subheading);
 }
 

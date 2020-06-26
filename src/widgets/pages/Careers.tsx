@@ -202,7 +202,6 @@ export const Careers = factory(function Careers() {
 							alt="Icon for people"
 						/>
 						<div classes={css.itemTitle}>A team you'll love</div>
-						]]{' '}
 						<p>
 							With their spectacular wit, intellect, and good looks, SitePenners are
 							one of the best reasons to work here.

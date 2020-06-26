@@ -60,10 +60,11 @@
 	}
 	.root .topSection .topHeading {
 		font-size: var(--heading-font-size);
-		line-height: var(--heading-line-height);
+		line-height: calc(var(--grid-size) * 4);
 	}
 	.jsList {
 		flex-wrap: wrap;
+		margin: calc(var(--grid-size) * 3) 0;
 	}
 	.jsImg {
 		max-width: 40px;

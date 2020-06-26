@@ -81,4 +81,7 @@
 		font-weight: 600;
 		line-height: 40px;
 	}
+	.title3 {
+		margin-bottom: var(--grid-size);
+	}
 }

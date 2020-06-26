@@ -33,6 +33,7 @@
 	align-items: center;
 	justify-content: center;
 	flex: 0 0 calc(var(--grid-size) * 16);
+	padding-right: calc(var(--grid-size) * 3);
 }
 
 .img {

@@ -10,4 +10,6 @@ export const label: string;
 export const required: string;
 export const textarea: string;
 export const input: string;
+export const addressHeading: string;
 export const thankyouBody: string;
+export const thankyouImage: string;

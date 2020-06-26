@@ -56,8 +56,7 @@ export const ContactThankyou = factory(function ContactThankyou() {
 				</div>
 			</div>
 			<div classes={[commonCss.smallerContentWrapper, css.thankyouBody]}>
-				<img src={respectImg} alt="Illustration of Respect" />
-				<br />
+				<img classes={css.thankyouImage} src={respectImg} alt="Illustration of Respect" />
 				<p>
 					Thank you for contacting us! We look forward to speaking with you and will be in
 					touch shortly.

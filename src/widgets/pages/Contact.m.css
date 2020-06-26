@@ -45,6 +45,7 @@
 	background-color: var(--color-medium);
 	color: var(--color-text-on-dark);
 	cursor: pointer;
+	margin-left: var(--grid-size);
 }
 
 .label {
@@ -93,8 +94,18 @@
 	border-color: var(--color-dark);
 }
 
+.addressHeading {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
 .thankyouBody {
 	text-align: center;
+}
+
+.thankyouImage {
+	max-height: 280px;
+	margin-bottom: calc(var(--grid-size) * 2);
 }
 
 @media (max-width: 768px) {

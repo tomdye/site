@@ -21,6 +21,7 @@
 	overflow: hidden;
 	padding: var(--grid-size);
 	box-sizing: border-box;
+	max-width: 50%;
 }
 
 .list .img {

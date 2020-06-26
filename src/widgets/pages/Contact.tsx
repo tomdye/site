@@ -174,7 +174,7 @@ export const Contact = factory(function Contact() {
 					<input type="submit" value="Submit" classes={css.submit} />
 				</form>
 				<div classes={css.trailing}>
-					<h3>Address</h3>
+					<h3 classes={css.addressHeading}>Address</h3>
 					<address itemscope itemtype="http://schema.org/PostalAddress">
 						<span itemprop="streetAddress">
 							530 Lytton Avenue
