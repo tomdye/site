@@ -23,10 +23,10 @@ export const BlogSummary = factory(function BlogSummary({ children, properties }
 
 	return (
 		<article classes={css.root}>
-			<Link to="blog" params={{ slug }} classes={css.imageWrapper}>
+			<Link to="blogPage" params={{ slugOrPage: slug }} classes={css.imageWrapper}>
 				{image}
 			</Link>
-			<Link to="blog" params={{ slug }}>
+			<Link to="blogPage" params={{ slugOrPage: slug }}>
 				<h2 classes={css.title} innerHTML={title}></h2>
 			</Link>
 			<h3 classes={css.subtitle}>
@@ -40,8 +40,8 @@ export const BlogSummary = factory(function BlogSummary({ children, properties }
 			<div classes={css.blurb} innerHTML={blurb}></div>
 			<Link
 				classes={css.link}
-				to="blog"
-				params={{ slug }}
+				to="blogPage"
+				params={{ slugOrPage: slug }}
 				title={`Read more about blog titled: ${title}`}
 			>{`Read More >>`}</Link>
 		</article>

@@ -46,8 +46,8 @@ export const BlogList = factory(function BlogList({ properties, middleware: { bl
 				{currentPage > 1 && (
 					<Link
 						classes={css.paginationLink}
-						to="blogs"
-						params={{ page: `${currentPage - 1}` }}
+						to="blogPage"
+						params={{ slugOrPage: `${currentPage - 1}` }}
 					>
 						{`<< Previous`}
 					</Link>
@@ -55,8 +55,8 @@ export const BlogList = factory(function BlogList({ properties, middleware: { bl
 				{currentPage < totalPages && (
 					<Link
 						classes={css.paginationLink}
-						to="blogs"
-						params={{ page: `${currentPage + 1}` }}
+						to="blogPage"
+						params={{ slugOrPage: `${currentPage + 1}` }}
 					>
 						{`Next >>`}
 					</Link>

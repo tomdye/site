@@ -98,27 +98,26 @@ const routes: RouteConfig[] = [
 		outlet: 'main'
 	},
 	{
-		id: 'category',
-		outlet: 'main',
-		path: 'blog/category/{slug}'
-	},
-	{
-		id: 'series',
-		outlet: 'main',
-		path: 'blog/series/{slug}'
-	},
-	{
-		id: 'blogs',
-		outlet: 'main',
-		path: 'blogs/{page}',
-		defaultParams: {
-			page: '1'
-		}
-	},
-	{
 		id: 'blog',
 		outlet: 'main',
-		path: 'blog/{slug}'
+		path: 'blog',
+		children: [
+			{
+				id: 'category',
+				outlet: 'main',
+				path: 'category/{slug}'
+			},
+			{
+				id: 'series',
+				outlet: 'main',
+				path: 'series/{slug}'
+			},
+			{
+				id: 'blogPage',
+				outlet: 'main',
+				path: '{slugOrPage}'
+			}
+		]
 	},
 	{
 		id: 'error404',

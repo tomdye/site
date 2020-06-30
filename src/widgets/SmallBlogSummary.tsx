@@ -22,7 +22,7 @@ export const SmallBlogSummary = factory(function SmallBlogSummary({ children, pr
 	const { slug } = properties();
 
 	return (
-		<Link to="blog" params={{ slug }}>
+		<Link to="blogPage" params={{ slugOrPage: slug }}>
 			<article classes={css.root}>
 				<div classes={css.imageWrapper}>{image}</div>
 				<div classes={css.trailing}>

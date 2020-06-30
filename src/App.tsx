@@ -37,7 +37,24 @@ export const App = factory(function App() {
 			<Header />
 			<main>
 				<div id="sentinel"></div>
-				<Outlet id="main">
+				<Outlet
+					id="main"
+					matcher={(defaultMatchers, matchDetailsMap) => {
+						const blogMatch = matchDetailsMap.get('blog');
+						const blogPageOrPostMatch = matchDetailsMap.get('blogPage');
+						if (blogMatch) {
+							defaultMatchers.blog = blogMatch.isExact();
+						}
+
+						if (blogPageOrPostMatch) {
+							const isPage = !!Number(blogPageOrPostMatch.params.slugOrPage);
+							defaultMatchers.blogPage = isPage;
+							defaultMatchers.blogPost = !isPage;
+						}
+
+						return defaultMatchers;
+					}}
+				>
 					{{
 						about: <About />,
 						careers: <Careers />,
@@ -60,8 +77,13 @@ export const App = factory(function App() {
 						casestudySocial: <CaseStudySocial />,
 						category: ({ params: { slug } }) => <Category slug={slug} />,
 						series: ({ params: { slug } }) => <Series slug={slug} />,
-						blogs: ({ params: { page } }) => <BlogList page={parseInt(page)} />,
-						blog: ({ params: { slug } }) => <Blog slug={slug} />,
+						blogPage: ({ params: { slugOrPage: page } }) => {
+							return <BlogList page={parseInt(page)} />;
+						},
+						blogPost: ({ params: { slugOrPage: slug } }) => {
+							return <Blog slug={slug} />;
+						},
+						blog: <BlogList page={1} />,
 						error404: <Error404 />
 					}}
 				</Outlet>

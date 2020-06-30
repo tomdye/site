@@ -4,7 +4,6 @@
 		{ "src": "/sitemap.xml", "dest": "/assets/sitemap.xml" },
 		{ "src": "/page-sitemap.xml", "dest": "/assets/page-sitemap.xml" },
 		{ "src": "/robots.txt", "dest": "/assets/robots.txt" },
-		{ "src": "/blog", "dest": "/blogs/1", "status": 301 },
 		{ "src": "/(.*)", "status": 404, "dest": "/error-404" }
 	]
 }
