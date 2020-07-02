@@ -103,6 +103,10 @@
 	max-width: 314px;
 }
 
+.devImg {
+	height: calc(var(--grid-size) * 40);
+}
+
 @media (max-width: 768px) {
 	.root .list {
 		flex-direction: column;

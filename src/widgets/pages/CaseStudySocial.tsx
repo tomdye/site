@@ -6,7 +6,7 @@ import * as commonCss from '../../Common.m.css';
 import { Summary } from '../Summary';
 import { TechLinkList } from '../TechLinkList';
 import ConnectButton from '../ConnectButton';
-const engineeringImg = require('../../assets/images/services/engineering.png');
+const engineeringImg = require('../../assets/images/services/engineering.jpg');
 const socialKnowledgeImage = require('../../assets/images/ourwork/socialKnowledge.jpg');
 
 const factory = create();

@@ -16,3 +16,4 @@ export const clientImg: string;
 export const builtWith: string;
 export const heading: string;
 export const holisticImage: string;
+export const devImg: string;

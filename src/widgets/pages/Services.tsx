@@ -26,10 +26,10 @@ const builtLogo = require('../../assets/images/logos/built.png');
 const angularLogo = require('../../assets/images/logos/angular.svg');
 const dojoLogo = require('../../assets/images/logos/dojo.svg');
 const reactLogo = require('../../assets/images/logos/react.svg');
-const completeImg = require('../../assets/images/services/complete.png');
+const completeImg = require('../../assets/images/services/complete.jpg');
 const holisticImg = require('../../assets/images/services/holistic.svg');
 const agileImg = require('../../assets/images/services/agile.svg');
-const devImg = require('../../assets/images/services/dev.svg');
+const devImg = require('../../assets/images/services/dev.jpg');
 const consultingImg = require('../../assets/images/services/consulting.svg');
 
 const factory = create();
@@ -355,6 +355,7 @@ export const Services = factory(function Services() {
 							),
 							image: (
 								<img
+									classes={css.devImg}
 									loading="lazy"
 									src={devImg}
 									alt="Illustration for App Development"

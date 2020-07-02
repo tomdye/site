@@ -82,6 +82,11 @@ export const Footer = factory(function Footer() {
 								<i title="linkedin" classes="icon-linkedin"></i>
 							</a>
 						</li>
+						<li classes={css.item}>
+							<a classes={css.link} href="/rss.xml">
+								<i title="rss-feed" classes="icon-rss"></i>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</section>

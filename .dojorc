@@ -10,6 +10,10 @@
 				{
 					"path": "blog/search",
 					"static": false
+				},
+				{
+					"path": "rss.xml",
+					"exclude": true
 				}
 			]
 		}

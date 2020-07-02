@@ -4,7 +4,7 @@ import * as commonCss from '../Common.m.css';
 import { Link } from '@dojo/framework/routing/Link';
 
 const dojoLogo = require('../assets/images/oss/dojo.png');
-const internLogo = require('../assets/images/oss/intern.png');
+const internLogo = require('../assets/images/oss/intern.jpg');
 const tsLogo = require('../assets/images/oss/ts.png');
 const dojoToolkitLogo = require('../assets/images/oss/dojoToolkit.png');
 const dgridLogo = require('../assets/images/oss/dgrid.png');

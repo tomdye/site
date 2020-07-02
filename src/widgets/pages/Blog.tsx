@@ -13,7 +13,7 @@ import { Share } from '../Share';
 import getSeries from '../../blocks/wp-blog-series.block';
 import { Link } from '@dojo/framework/routing/Link';
 import { wpBaseUrl } from '../../config';
-const ctaImg = require('../../assets/images/services/management.png');
+const ctaImg = require('../../assets/images/services/management.jpg');
 
 export interface BlogProperties {
 	slug: string;

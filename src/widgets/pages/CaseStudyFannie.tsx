@@ -5,7 +5,7 @@ import * as commonCss from '../../Common.m.css';
 import { Summary } from '../Summary';
 import { TechLinkList } from '../TechLinkList';
 import ConnectButton from '../ConnectButton';
-const completeImg = require('../../assets/images/services/complete.png');
+const completeImg = require('../../assets/images/services/complete.jpg');
 const fannieImage = require('../../assets/images/ourwork/fannie.jpg');
 const fannieBubbleImage = require('../../assets/images/ourwork/fannieBubble.png');
 
