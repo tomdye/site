@@ -12,6 +12,7 @@ import { ConnectButton } from '../ConnectButton';
 import { Share } from '../Share';
 import getSeries from '../../blocks/wp-blog-series.block';
 import { Link } from '@dojo/framework/routing/Link';
+import { wpBaseUrl } from '../../config';
 const ctaImg = require('../../assets/images/services/management.png');
 
 export interface BlogProperties {
@@ -22,10 +23,10 @@ const factory = create({ block }).properties<BlogProperties>();
 
 export const Blog = factory(function Blog({ properties, middleware: { block } }) {
 	const { slug } = properties();
-	const post = block(getBlog)('https://wp.sitepen.com', slug);
-	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 7, 1);
-	const categories = block(getCategories)('https://wp.sitepen.com');
-	const series = block(getSeries)('https://wp.sitepen.com');
+	const post = block(getBlog)(wpBaseUrl, slug);
+	const previews = block(getBlogPreviews)(wpBaseUrl, 7, 1);
+	const categories = block(getCategories)(wpBaseUrl);
+	const series = block(getSeries)(wpBaseUrl);
 
 	let summaryItems: RenderResult[] = [];
 
@@ -101,9 +102,12 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 								<aside classes={css.previews}>
 									<h3 classes={css.previewHeading}>part of series</h3>
 									{post.series.map((seriesId) => {
-										const seriesPreviews = block(
-											getBlogPreviews
-										)('https://wp.sitepen.com', 100, 1, { series: seriesId });
+										const seriesPreviews = block(getBlogPreviews)(
+											wpBaseUrl,
+											100,
+											1,
+											{ series: seriesId }
+										);
 										if (seriesPreviews) {
 											const seriesDetails = series?.find(
 												(series) => series.id === seriesId

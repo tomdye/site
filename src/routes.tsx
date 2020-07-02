@@ -113,6 +113,11 @@ const routes: RouteConfig[] = [
 				path: 'series/{slug}'
 			},
 			{
+				id: 'search',
+				outlet: 'main',
+				path: 'search?{term}'
+			},
+			{
 				id: 'blogPage',
 				outlet: 'main',
 				path: '{slugOrPage}'

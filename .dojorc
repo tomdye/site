@@ -6,7 +6,11 @@
 			"renderer": "jsdom",
 			"paths": [
 				"contact-thank-you",
-				"error-404"
+				"error-404",
+				{
+					"path": "blog/search",
+					"static": false
+				}
 			]
 		}
 	},

@@ -1,0 +1,25 @@
+.root {
+	background-color: var(--input-border-color);
+	height: var(--grid-size);
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.bar {
+	animation: progress 2s infinite linear;
+	background-color: var(--color-primary-subtle);
+	height: 100%;
+	left: -25%;
+	position: relative;
+	width: 25%;
+}
+
+@keyframes progress {
+	0% {
+		left: -25%;
+	}
+	100% {
+		left: 100%;
+	}
+}

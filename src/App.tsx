@@ -28,6 +28,7 @@ import { BlogList } from './widgets/pages/BlogList';
 import { Blog } from './widgets/pages/Blog';
 import { Category } from './widgets/pages/Category';
 import { Series } from './widgets/pages/Series';
+import SearchResults from './widgets/pages/SearchResults';
 
 const factory = create();
 
@@ -77,6 +78,7 @@ export const App = factory(function App() {
 						casestudySocial: <CaseStudySocial />,
 						category: ({ params: { slug } }) => <Category slug={slug} />,
 						series: ({ params: { slug } }) => <Series slug={slug} />,
+						search: ({ queryParams: { term } }) => <SearchResults searchTerm={term} />,
 						blogPage: ({ params: { slugOrPage: page } }) => {
 							return <BlogList page={parseInt(page)} />;
 						},

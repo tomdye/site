@@ -99,7 +99,7 @@
 				document.getElementById('gdpr-accept').addEventListener('click', () => {
 					const date = new Date();
 					date.setTime(date.getTime() + 24 * 60 * 60 * 1000 * 28);
-					document.cookie = `sitepenCookieConsent=accepted; expires=${date.toGMTString()}; path=/`;
+					document.cookie = `sitepenCookieConsent=accepted; expires=${date.toUTCString()}; path=/`;
 					banner.remove();
 				});
 			} else {

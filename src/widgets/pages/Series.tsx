@@ -2,12 +2,12 @@ import { create, tsx } from '@dojo/framework/core/vdom';
 import * as commonCss from '../../Common.m.css';
 import * as css from './BlogList.m.css';
 import * as categoryCss from './Category.m.css';
-import { BlogSummary } from '../BlogSummary';
 import block from '@dojo/framework/core/middleware/block';
 import getBlogPreviews from '../../blocks/wp-blog-previews.block';
 import getSeries from '../../blocks/wp-blog-series.block';
-import { RenderResult } from '@dojo/framework/core/interfaces';
 import { BlogListSidePane } from '../BlogListSidePane';
+import { BlogPreviewList } from '../BlogPreviewList';
+import { wpBaseUrl } from '../../config';
 
 export interface SeriesProperties {
 	slug: string;
@@ -18,33 +18,12 @@ const factory = create({ block }).properties<SeriesProperties>();
 export const Series = factory(function Category({ properties, middleware: { block } }) {
 	const { slug } = properties();
 
-	const series = block(getSeries)('https://wp.sitepen.com');
+	const series = block(getSeries)(wpBaseUrl);
 	const seriesDetails = series?.find((series) => series.slug === slug);
 
-	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 100, 1, {
+	const previews = block(getBlogPreviews)(wpBaseUrl, 100, 1, {
 		series: seriesDetails?.id
 	});
-
-	let blogSummaryItems: RenderResult[] = [];
-
-	if (previews) {
-		const { blogPreviews } = previews;
-		blogSummaryItems = blogPreviews.map((preview, index) => {
-			return (
-				<li key={`blog-series-${slug}-${index}`} classes={css.blogItem}>
-					<BlogSummary slug={preview.slug}>
-						{{
-							title: preview.title,
-							author: preview.author,
-							date: preview.date,
-							blurb: preview.excerpt,
-							image: <img src={preview.image} />
-						}}
-					</BlogSummary>
-				</li>
-			);
-		});
-	}
 
 	return (
 		<div classes={css.root}>
@@ -79,7 +58,7 @@ export const Series = factory(function Category({ properties, middleware: { bloc
 				<h1 classes={categoryCss.title}>{`Series: ${seriesDetails?.name}`}</h1>
 				<section classes={css.content}>
 					<div classes={css.leading}>
-						<ul classes={css.blogList}>{blogSummaryItems}</ul>
+						{previews && <BlogPreviewList previews={previews?.blogPreviews} />}
 					</div>
 					<div classes={css.trailing}>
 						<BlogListSidePane />

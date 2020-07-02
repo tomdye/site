@@ -67,6 +67,12 @@
 			"search": ["rss"]
 		},
 		{
+			"uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+			"css": "search",
+			"code": 59393,
+			"src": "fontawesome"
+		},
+		{
 			"uid": "7e8017b86620d110c7cb9084e3b3603a",
 			"css": "ad",
 			"code": 59393,

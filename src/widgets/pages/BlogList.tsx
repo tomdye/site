@@ -1,13 +1,14 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as commonCss from '../../Common.m.css';
 import * as css from './BlogList.m.css';
-import { BlogSummary } from '../BlogSummary';
 import block from '@dojo/framework/core/middleware/block';
 import getBlogPreviews from '../../blocks/wp-blog-previews.block';
 import createBlogFeed from '../../blocks/wp-rss.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { Link } from '@dojo/framework/routing/Link';
 import { BlogListSidePane } from '../BlogListSidePane';
+import { BlogPreviewList } from '../BlogPreviewList';
+import { wpBaseUrl } from '../../config';
 
 export interface BlogListProperties {
 	page: number;
@@ -17,29 +18,13 @@ const factory = create({ block }).properties<BlogListProperties>();
 
 export const BlogList = factory(function BlogList({ properties, middleware: { block } }) {
 	const { page } = properties();
-	const previews = block(getBlogPreviews)('https://wp.sitepen.com', 12, page);
-	block(createBlogFeed)('https://wp.sitepen.com');
+	const previews = block(getBlogPreviews)(wpBaseUrl, 12, page);
+	block(createBlogFeed)(wpBaseUrl);
 
-	let blogSummaryItems: RenderResult[] = [];
 	let pagination: RenderResult | undefined;
 
 	if (previews) {
-		const { blogPreviews, currentPage, totalPages } = previews;
-		blogSummaryItems = blogPreviews.map((preview, index) => {
-			return (
-				<li key={`blog-${page}-${index}`} classes={css.blogItem}>
-					<BlogSummary slug={preview.slug}>
-						{{
-							title: preview.title,
-							author: preview.author,
-							date: preview.date,
-							blurb: preview.excerpt,
-							image: <img src={preview.image} />
-						}}
-					</BlogSummary>
-				</li>
-			);
-		});
+		const { currentPage, totalPages } = previews;
 
 		pagination = (
 			<nav>
@@ -112,7 +97,7 @@ export const BlogList = factory(function BlogList({ properties, middleware: { bl
 			<div classes={commonCss.contentWrapper}>
 				<section classes={css.content}>
 					<div classes={css.leading}>
-						<ul classes={css.blogList}>{blogSummaryItems}</ul>
+						{previews && <BlogPreviewList previews={previews.blogPreviews} />}
 						{pagination}
 					</div>
 					<div classes={css.trailing}>

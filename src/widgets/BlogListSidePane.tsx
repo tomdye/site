@@ -6,21 +6,22 @@ import getBlogPreviews, { BlogPreview } from '../blocks/wp-blog-previews.block';
 import getCategories from '../blocks/wp-blog-category.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { Link } from '@dojo/framework/routing/Link';
+import { wpBaseUrl } from '../config';
 
 const factory = create({ block });
 
 export const BlogListSidePane = factory(function BlogListSidePane({ middleware: { block } }) {
-	const categories = block(getCategories)('https://wp.sitepen.com');
+	const categories = block(getCategories)(wpBaseUrl);
 	const popularCategories = ['angular', 'dojo', 'dojotoolkit', 'node-js-2', 'react', 'vue'];
 	const dojoCategoryDetails = categories?.find((category) => category.slug === 'dojo');
 	const enterpriseCategoryDetails = categories?.find(
 		(category) => category.slug === 'enterprisejs'
 	);
 
-	const dojoPreviews = block(getBlogPreviews)('https://wp.sitepen.com', 3, 1, {
+	const dojoPreviews = block(getBlogPreviews)(wpBaseUrl, 3, 1, {
 		category: dojoCategoryDetails?.id
 	});
-	const enterprisePreviews = block(getBlogPreviews)('https://wp.sitepen.com', 3, 1, {
+	const enterprisePreviews = block(getBlogPreviews)(wpBaseUrl, 3, 1, {
 		category: enterpriseCategoryDetails?.id
 	});
 
@@ -51,6 +52,17 @@ export const BlogListSidePane = factory(function BlogListSidePane({ middleware: 
 
 	return (
 		<virtual>
+			<div classes={css.searchHolder}>
+				<form action="/blog/search" method="get" classes={css.searchInputWrapper}>
+					<i title="search" classes={[css.searchIcon, 'icon-search']}></i>
+					<input
+						name="term"
+						classes={css.searchInput}
+						type="search"
+						placeholder="Search..."
+					/>
+				</form>
+			</div>
 			<aside classes={css.categoryGroup}>
 				<h3 classes={css.categoryTitle}>#enterprisejs</h3>
 				{enterpriseSummaryItems}
