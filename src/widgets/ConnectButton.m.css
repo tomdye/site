@@ -1,5 +1,5 @@
 .root {
-	color: var(--color-primary-subtle);
+	color: var(--color-text);
 	text-transform: uppercase;
 	background-color: var(--color-text-on-dark);
 	transition: background-color 0.3s ease, color 0.3s ease;
@@ -20,7 +20,7 @@
 
 .root.inverse {
 	background-color: var(--color-primary-subtle);
-	color: var(--color-medium);
+	color: var(--color-dark);
 }
 
 .root.inverse:hover {

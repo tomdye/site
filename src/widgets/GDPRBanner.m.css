@@ -17,7 +17,7 @@
 
 .button {
 	border: none;
-	background-color: #fbb03b;
+	background-color: #c97e09;
 	color: var(--color-text-on-dark);
 	padding: var(--grid-size);
 	margin-left: var(--grid-size);

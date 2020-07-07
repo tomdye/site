@@ -34,7 +34,7 @@ export const BlogListSidePane = factory(function BlogListSidePane({ middleware: 
 				{{
 					title: preview.title,
 					date: preview.date,
-					image: <img src={preview.imageSmall} />
+					image: <img alt="" src={preview.imageSmall} />
 				}}
 			</SmallBlogSummary>
 		);
@@ -55,7 +55,11 @@ export const BlogListSidePane = factory(function BlogListSidePane({ middleware: 
 			<div classes={css.searchHolder}>
 				<form action="/blog/search" method="get" classes={css.searchInputWrapper}>
 					<i title="search" classes={[css.searchIcon, 'icon-search']}></i>
+					<label classes={css.searchLabel} for="term">
+						Search
+					</label>
 					<input
+						id="term"
 						name="term"
 						classes={css.searchInput}
 						type="search"
@@ -74,7 +78,10 @@ export const BlogListSidePane = factory(function BlogListSidePane({ middleware: 
 			<aside classes={css.categoryGroup}>
 				<h3 classes={css.categoryTitle}>#podcast</h3>
 				<a href="https://talkscript.sitepen.com/">
-					<img src="https://wp.sitepen.com/wp-content/uploads//2020/06/logo_TS-wide.svg" />
+					<img
+						alt="talkscript podcast logo"
+						src="https://wp.sitepen.com/wp-content/uploads//2020/06/logo_TS-wide.svg"
+					/>
 				</a>
 			</aside>
 			<aside classes={css.categoryGroup}>

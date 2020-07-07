@@ -52,7 +52,7 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 				{{
 					title: preview.title,
 					date: preview.date,
-					image: <img src={preview.imageSmall} />
+					image: <img alt="" src={preview.imageSmall} />
 				}}
 			</SmallBlogSummary>
 		);

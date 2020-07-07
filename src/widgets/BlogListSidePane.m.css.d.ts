@@ -5,3 +5,4 @@ export const searchHolder: string;
 export const searchInputWrapper: string;
 export const searchIcon: string;
 export const searchInput: string;
+export const searchLabel: string;
