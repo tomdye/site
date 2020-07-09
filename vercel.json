@@ -4,6 +4,93 @@
 		{ "src": "/sitemap.xml", "dest": "/assets/sitemap.xml" },
 		{ "src": "/page-sitemap.xml", "dest": "/assets/page-sitemap.xml" },
 		{ "src": "/robots.txt", "dest": "/assets/robots.txt" },
+		{ "src": "/about/(.*)", "status": 308, "headers": { "Location": "/about-us" } },
+		{ "src": "/jobs*", "status": 308, "headers": { "Location": "/careers" } },
+		{ "src": "/events*", "status": 308, "headers": { "Location": "/" } },
+		{ "src": "/careers/(.*)", "status": 308, "headers": { "Location": "/careers" } },
+		{
+			"src": "/typescript-cheat-sheet$",
+			"status": 308,
+			"headers": { "Location": "https://www.sitepen.com/blog/typescript-cheat-sheet" }
+		},
+		{
+			"src": "/blog/definitive-guide-to-typescript$",
+			"status": 308,
+			"headers": {
+				"Location": "https://www.sitepen.com/blog/update-the-definitive-typescript-guide/"
+			}
+		},
+		{
+			"src": "/blog/build-frameworks-into-the-browser-preserving-the-space-to-iterate/",
+			"status": 308,
+			"headers": {
+				"Location": "https://talkscript.sitepen.com/build-frameworks-into-the-browser-preserving-the-space-to-iterate/"
+			}
+		},
+		{
+			"src": "/blog/episode-(.*)",
+			"status": 308,
+			"headers": { "Location": "https://talkscript.sitepen.com/episode-$1" }
+		},
+		{
+			"src": "/blog/fail-privately-onboarding-made-easy-with-typescript/",
+			"status": 308,
+			"headers": {
+				"Location": "https://talkscript.sitepen.com/fail-privately-onboarding-made-easy-with-typescript/"
+			}
+		},
+		{
+			"src": "/blog/sitepen-podcast-(.*)",
+			"status": 308,
+			"headers": { "Location": "https://talkscript.sitepen.com/sitepen-podcast-$1" }
+		},
+		{
+			"src": "/blog/talkscript-53-single-point-of-failure/",
+			"status": 308,
+			"headers": {
+				"Location": "https://talkscript.sitepen.com/talkscript-53-single-point-of-failure/"
+			}
+		},
+		{
+			"src": "/blog/talkscript-episode-(.*)",
+			"status": 308,
+			"headers": { "Location": "https://talkscript.sitepen.com/talkscript-episode-$1" }
+		},
+		{
+			"src": "/blog/talkscript-podcast-episode-(.*)",
+			"status": 308,
+			"headers": {
+				"Location": "https://talkscript.sitepen.com/talkscript-podcast-episode-$1"
+			}
+		},
+		{
+			"src": "/blog/typescript-back-ends-with-nest/",
+			"status": 308,
+			"headers": {
+				"Location": "https://talkscript.sitepen.com/typescript-back-ends-with-nest/"
+			}
+		},
+		{
+			"src": "/feed/podcast/",
+			"status": 308,
+			"headers": { "Location": "https://talkscript.sitepen.com/feed/podcast/" }
+		},
+		{
+			"src": "/talkscript-podcast-about/",
+			"status": 308,
+			"headers": { "Location": "https://talkscript.sitepen.com/talkscript-podcast-about/" }
+		},
+		{
+			"src": "/talkscript-podcast-episodes/",
+			"status": 308,
+			"headers": { "Location": "https://talkscript.sitepen.com/talkscript-podcast-episodes/" }
+		},
+		{
+			"src": "/talkscript-podcast/(.*)",
+			"status": 308,
+			"headers": { "Location": "https://talkscript.sitepen.com/$1" }
+		},
+		{ "src": "/blog/(.*)", "dest": "/blog/" },
 		{ "src": "/(.*)", "status": 404, "dest": "/error-404" }
 	]
 }
