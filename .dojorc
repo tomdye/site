@@ -16,6 +16,25 @@
 					"exclude": true
 				}
 			]
+		},
+		"pwa": {
+			"manifest": {
+				"name": "sitepen.com",
+				"short_name": "sitepen.com",
+				"description": "sitepen.com",
+				"background_color": "#ffffff",
+				"theme_color": "#5cdbdd",
+				"icons": [
+					{
+						"src": "src/favicon.png",
+						"sizes": [
+							16,
+							192,
+							512
+						]
+					}
+				]
+			}
 		}
 	},
 	"create-app": {}
