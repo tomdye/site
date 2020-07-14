@@ -11,7 +11,12 @@
 		{
 			"src": "/typescript-cheat-sheet$",
 			"status": 308,
-			"headers": { "Location": "https://www.sitepen.com/blog/typescript-cheat-sheet" }
+			"headers": { "Location": "https://www.sitepen.com/blog/typescript-cheat-sheet-2" }
+		},
+		{
+			"src": "/blog/typescript-cheat-sheet$",
+			"status": 308,
+			"headers": { "Location": "https://www.sitepen.com/blog/typescript-cheat-sheet-2" }
 		},
 		{
 			"src": "/blog/definitive-guide-to-typescript$",
@@ -86,9 +91,9 @@
 			"headers": { "Location": "https://talkscript.sitepen.com/talkscript-podcast-episodes/" }
 		},
 		{
-			"src": "/talkscript-podcast/(.*)",
+			"src": "/talkscript-podcast(.*)",
 			"status": 308,
-			"headers": { "Location": "https://talkscript.sitepen.com/$1" }
+			"headers": { "Location": "https://talkscript.sitepen.com$1" }
 		},
 		{ "src": "/blog/(.*)", "dest": "/blog/" },
 		{ "src": "/(.*)", "status": 404, "dest": "/error-404" }
