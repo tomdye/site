@@ -67,3 +67,53 @@
 .post-content pre {
 	font-size: 0.9em;
 }
+
+.post-content .hs-form .hs-form-field {
+	margin-bottom: calc(var(--grid-size) * 2);
+}
+
+.post-content .hs-form label {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	color: var(--color-subheading);
+}
+
+.post-content .hs-form input:not([type='submit']) {
+	margin-top: var(--grid-size);
+	font-family: var(--base-font-family);
+	padding: var(--grid-size) calc(var(--grid-size) * 2);
+	border: 1px solid var(--input-border-color);
+	border-radius: var(--input-border-radius);
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: var(--color-dark);
+	transition: border-color 0.3s ease;
+	outline: none;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.post-content .hs-form input[type='submit'] {
+	border: none;
+	background-color: var(--color-medium);
+	color: var(--color-text-on-dark);
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	padding: calc(var(--grid-size) * 2) calc(var(--grid-size) * 4);
+	border-radius: 100px;
+	font-weight: 600;
+	font-size: 15px;
+	display: inline-block;
+	font-family: var(--heading-font-family);
+	letter-spacing: 2px;
+	line-height: 15px;
+}
+
+.post-content .hs-form input[type='submit']:hover {
+	color: var(--color-text-on-dark);
+	background-color: var(--color-primary-subtle);
+}

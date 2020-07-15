@@ -9,7 +9,7 @@ export interface BlogSummaryProperties {
 
 export interface BlogSummaryChildren {
 	blurb: string;
-	image: RenderResult;
+	image?: RenderResult;
 	title: string;
 	date: string;
 	author: string;
@@ -23,9 +23,11 @@ export const BlogSummary = factory(function BlogSummary({ children, properties }
 
 	return (
 		<article classes={css.root}>
-			<Link to="blogPage" params={{ slugOrPage: slug }} classes={css.imageWrapper}>
-				{image}
-			</Link>
+			{image && (
+				<Link to="blogPage" params={{ slugOrPage: slug }} classes={css.imageWrapper}>
+					{image}
+				</Link>
+			)}
 			<Link to="blogPage" params={{ slugOrPage: slug }}>
 				<h2 classes={css.title} innerHTML={title}></h2>
 			</Link>

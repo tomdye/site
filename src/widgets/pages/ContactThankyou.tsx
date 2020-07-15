@@ -63,11 +63,7 @@ export const ContactThankyou = factory(function ContactThankyou() {
 				</p>
 				<p>
 					In the meantime, check out what we have been discussing on our podcast series{' '}
-					<a
-						href="https://www.sitepen.com/typescript-javascript-podcast/"
-						target="_blank"
-						rel="noopener"
-					>
+					<a href="https://talkscript.sitepen.com" target="_blank" rel="noopener">
 						TalkScript
 					</a>
 					.

@@ -62,6 +62,7 @@
 
 .textarea,
 .input {
+	margin-top: var(--grid-size);
 	font-family: var(--base-font-family);
 	padding: var(--grid-size) calc(var(--grid-size) * 2);
 	border: 1px solid var(--input-border-color);

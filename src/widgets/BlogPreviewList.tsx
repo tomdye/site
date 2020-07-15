@@ -23,7 +23,9 @@ export const BlogPreviewList = factory(function BlogPreviewList({ properties }) 
 								author: preview.author,
 								date: preview.date,
 								blurb: preview.excerpt,
-								image: <img alt={preview.title} src={preview.image} />
+								image: preview.image && (
+									<img alt={preview.title} src={preview.image} />
+								)
 							}}
 						</BlogSummary>
 					</li>
