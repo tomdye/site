@@ -63,7 +63,7 @@ export const SearchResults = factory(function SearchResults({
 				<meta property="og:site_name" content="SitePen" />
 				<meta
 					property="og:image"
-					content="https://www.sitepen.com/wp-content/uploads/2020/01/og_imageV1.jpg"
+					content="https://wp.sitepen.com/wp-content/uploads/2020/01/og_imageV1.jpg"
 				/>
 				<meta property="og:image:width" content="1600" />
 				<meta property="og:image:height" content="900" />
