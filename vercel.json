@@ -9,20 +9,17 @@
 		{ "src": "/events*", "status": 308, "headers": { "Location": "/" } },
 		{ "src": "/careers/(.*)", "status": 308, "headers": { "Location": "/careers" } },
 		{
-			"src": "/typescript-cheat-sheet$",
+			"src": "/typescript-cheat-sheet/?$",
 			"status": 308,
-			"headers": { "Location": "https://www.sitepen.com/blog/typescript-cheat-sheet-2" }
-		},
-		{
-			"src": "/blog/typescript-cheat-sheet$",
-			"status": 308,
-			"headers": { "Location": "https://www.sitepen.com/blog/typescript-cheat-sheet-2" }
+			"headers": {
+				"Location": "/blog/typescript-cheat-sheet"
+			}
 		},
 		{
 			"src": "/blog/definitive-guide-to-typescript$",
 			"status": 308,
 			"headers": {
-				"Location": "https://www.sitepen.com/blog/update-the-definitive-typescript-guide/"
+				"Location": "/blog/update-the-definitive-typescript-guide/"
 			}
 		},
 		{
