@@ -1,5 +1,6 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './BlogListSidePane.m.css';
+import * as commonCss from '../Common.m.css';
 import SmallBlogSummary from './SmallBlogSummary';
 import block from '@dojo/framework/core/middleware/block';
 import getBlogPreviews, { BlogPreview } from '../blocks/wp-blog-previews.block';
@@ -34,7 +35,15 @@ export const BlogListSidePane = factory(function BlogListSidePane({ middleware: 
 				{{
 					title: preview.title,
 					date: preview.date,
-					image: <img alt="" src={preview.imageSmall} />
+					image: (
+						<img
+							classes={commonCss.presetAR}
+							width="120"
+							height="64"
+							alt=""
+							src={preview.imageSmall}
+						/>
+					)
 				}}
 			</SmallBlogSummary>
 		);

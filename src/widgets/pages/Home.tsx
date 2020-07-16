@@ -111,6 +111,8 @@ export const Home = factory(function Home() {
 						blurb: `High engineering costs and stalled projects are common complaints for many companies. Our approach to creating healthy development organizations will quickly help you identify the “why” of these problems and our team will work to get you back to the business of moving efficiently toward your goals.`,
 						image: (
 							<img
+								width="440"
+								height="480"
 								src={challengingImg}
 								classes={css.summaryImage}
 								alt="illustration of challenging"
@@ -124,6 +126,8 @@ export const Home = factory(function Home() {
 						blurb: `You need a cross-functional team to understand your business and partner with you to define and incorporate strategy, design, and technology into all aspects of your product. Allowing for big-picture thinking to inform decisions in even the smallest details of a project creates and nurtures smart, engaged teams who care about delivering high-quality user experiences, as your web app continues to grow and evolve.`,
 						image: (
 							<img
+								width="440"
+								height="440"
 								src={advisementImg}
 								classes={css.summaryImage}
 								alt="illustration of advisement"
@@ -138,6 +142,8 @@ export const Home = factory(function Home() {
 						image: (
 							<img
 								loading="lazy"
+								width="440"
+								height="440"
 								src={confidenceImg}
 								classes={css.summaryImage}
 								alt="illustration of confidence"
@@ -218,7 +224,9 @@ export const Home = factory(function Home() {
 							),
 							image: (
 								<img
-									classes={css.dependImg}
+									classes={[css.dependImg, commonCss.presetAR]}
+									width="550"
+									height="600"
 									loading="lazy"
 									src={dependImg}
 									alt="illustration of dependability"

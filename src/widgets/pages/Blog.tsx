@@ -52,7 +52,15 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 				{{
 					title: preview.title,
 					date: preview.date,
-					image: <img alt="" src={preview.imageSmall} />
+					image: (
+						<img
+							classes={commonCss.presetAR}
+							width="120"
+							height="64"
+							alt=""
+							src={preview.imageSmall}
+						/>
+					)
 				}}
 			</SmallBlogSummary>
 		);
@@ -84,7 +92,13 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 									year: 'numeric'
 								})}`}</span>
 							</div>
-							<img src={post.image} />
+							<img
+								classes={commonCss.presetAR}
+								width="640"
+								height="360"
+								alt=""
+								src={post.image}
+							/>
 							<ul classes={css.categoryList}>
 								{post.categories.map(renderCategoryItem)}
 							</ul>

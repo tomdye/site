@@ -52,3 +52,8 @@
 .sizedSummaryImage {
 	max-height: calc(var(--grid-size) * 33);
 }
+
+.presetAR {
+	height: auto;
+	width: 100%;
+}

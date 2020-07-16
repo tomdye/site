@@ -1,5 +1,6 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import * as css from './BlogPreviewList.m.css';
+import * as commonCss from '../Common.m.css';
 import { BlogSummary } from './BlogSummary';
 import { BlogPreview } from '../blocks/wp-blog-previews.block';
 
@@ -24,7 +25,13 @@ export const BlogPreviewList = factory(function BlogPreviewList({ properties }) 
 								date: preview.date,
 								blurb: preview.excerpt,
 								image: preview.image && (
-									<img alt={preview.title} src={preview.image} />
+									<img
+										classes={commonCss.presetAR}
+										width="640"
+										height="360"
+										alt={preview.title}
+										src={preview.image}
+									/>
 								)
 							}}
 						</BlogSummary>

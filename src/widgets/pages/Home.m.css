@@ -89,7 +89,8 @@
 }
 
 .summaryImage {
-	max-width: 80%;
+	height: auto;
+	width: 80%;
 }
 
 @media (max-width: 768px) {

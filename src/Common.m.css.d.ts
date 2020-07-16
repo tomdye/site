@@ -5,3 +5,4 @@ export const heading: string;
 export const subheading: string;
 export const centered: string;
 export const sizedSummaryImage: string;
+export const presetAR: string;
