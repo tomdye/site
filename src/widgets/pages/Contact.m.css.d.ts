@@ -8,6 +8,8 @@ export const field: string;
 export const submit: string;
 export const label: string;
 export const required: string;
+export const gotcha: string;
+export const error: string;
 export const textarea: string;
 export const input: string;
 export const addressHeading: string;

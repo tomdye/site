@@ -60,6 +60,22 @@
 	color: red;
 }
 
+.gotcha {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+	z-index: -1;
+}
+
+.error {
+	color: red;
+	margin-left: var(--grid-size);
+	margin-top: calc(var(--grid-size) * 2);
+}
+
 .textarea,
 .input {
 	margin-top: var(--grid-size);

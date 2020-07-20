@@ -12,6 +12,10 @@
 					"static": false
 				},
 				{
+					"path": "contact",
+					"static": false
+				},
+				{
 					"path": "rss.xml",
 					"exclude": true
 				}

@@ -2,10 +2,13 @@ import { create, tsx } from '@dojo/framework/core/vdom';
 import { Hero } from '../Hero';
 import * as css from './Contact.m.css';
 import * as commonCss from '../../Common.m.css';
+import icache from '@dojo/framework/core/middleware/icache';
 
-const factory = create();
+const factory = create({ icache });
 
-export const Contact = factory(function Contact() {
+export const Contact = factory(function Contact({ middleware: { icache } }) {
+	const submitError = icache.getOrSet('submitError', false);
+
 	return (
 		<div classes={css.root}>
 			<head>
@@ -55,11 +58,53 @@ export const Contact = factory(function Contact() {
 			</div>
 			<div classes={[commonCss.contentWrapper, css.content]}>
 				<form
-					accept-charset="UTF-8"
-					action="https://forms.hubspot.com/uploads/form/v2/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec"
-					enctype="application/x-www-form-urlencoded"
-					method="POST"
 					classes={css.leading}
+					onsubmit={(event: Event) => {
+						event.stopPropagation();
+						event.preventDefault();
+						icache.set('submitError', false);
+
+						const url =
+							'https://api.hsforms.com/submissions/v3/integration/submit/2059467/2e1a1b5b-27bb-447d-aac4-0b87c1e88fec';
+						const form = event.target as HTMLFormElement;
+
+						if (form['_gotcha'].value) {
+							return false;
+						}
+
+						const { elements } = form;
+						const fields: { name: string; value: string }[] = [];
+						for (let i = 0; i < elements.length; i++) {
+							const field = elements[i] as HTMLInputElement;
+							if (field.name && field.name !== '_gotcha') {
+								fields.push({
+									name: field.name,
+									value: field.value
+								});
+							}
+						}
+						fetch(url, {
+							method: 'post',
+							mode: 'cors',
+							headers: {
+								'Content-Type': 'application/json'
+							},
+							body: JSON.stringify({
+								submittedAt: Date.now(),
+								context: {
+									pageUri: 'www.sitepen.com/contact',
+									pageName: 'Sitepen Website Contact Form'
+								},
+								fields
+							})
+						})
+							.then(() => {
+								window.location.href = '/contact-thank-you';
+							})
+							.catch(() => {
+								icache.set('submitError', true);
+							});
+					}}
 				>
 					<div classes={css.row}>
 						<div classes={css.field}>
@@ -96,6 +141,17 @@ export const Contact = factory(function Contact() {
 						</div>
 					</div>
 					<div classes={css.row}>
+						<label tabindex="-1" aria-hidden classes={css.gotcha}>
+							gotcha label
+							<input
+								tabindex="-1"
+								aria-hidden
+								id="_gotcha"
+								name="_gotcha"
+								type="text"
+								autocomplete="off"
+							/>
+						</label>
 						<div classes={css.field}>
 							<label classes={css.label} for="company">
 								Company Name
@@ -172,6 +228,11 @@ export const Contact = factory(function Contact() {
 						</div>
 					</div>
 					<input type="submit" value="Submit" classes={css.submit} />
+					{submitError && (
+						<p classes={css.error}>
+							Something went wrong with your form submission. Please try again
+						</p>
+					)}
 				</form>
 				<div classes={css.trailing}>
 					<h3 classes={css.addressHeading}>Address</h3>
