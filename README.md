@@ -6,35 +6,25 @@ This project was generated with the [Dojo CLI](https://github.com/dojo/cli) & [D
 
 Run `npm run build` or `dojo build --mode dist` (the `mode` option defaults to `dist`) to create a production build for the project. The built artifacts will be stored in the `output/dist` directory.
 
-## Development Build
+## Local Development server
 
-Run `npm run build:dev` or `dojo build --mode dev` to create a development build for the project. The built artifacts will be stored in the `output/dev` directory.
+The sitepen website builds static webpages for all of sitepens published blogs. Due to this, the initial build process can take upto 10 minutes. In order to reduce this substantially for local development, three files need to be changed.
 
-## Development server
+**src/blocks/wp-blog-previews.block.ts**
+~line 96 - hardcode `totalPages` in the return object to `1`.
 
-Run `npm run dev` or `dojo build --mode dev --watch file --serve` to create a development build and start a development server. By default the server runs on port `9999`, navigate to `http://localhost:9999/`.
+**src/widgets/pages/Blog.tsx**
+~line 41 - change the `<Link classes={css.categoryItem} to="category" params={{ slug }}>` path from `category` to something that doesn't exist. ie. `<Link classes={css.categoryItem} to="nowhere" params={{ slug }}>`
 
-To change the port of the development server use the `--port` option on the `dojo build` command.
+**src/widgets/BlogListSidePane.tsx**
+~line 108 - change the `<Link to="category" params={{ slug: categorySlug }}>` path from `category` to something that doesn't exist. ie. `<Link to="nowhere" params={{ slug: categorySlug }}>`
 
-To create an in memory development build and start a development server with hot reload, switch the `--watch` option to `memory`.
+With these three changes in place, you can run `npm run dev` and view the development server as `localhost:9999`. The build should complete in under a minute with some cavets:
 
-## Running unit tests
+-   Only the first page of blog posts will be fetched and rendered.
+-   Category links will not work
 
-To run units tests in node only use `npm run test` or `dojo test` which uses JIT (just in time) compilation.
-
-To run the unit tests against built bundles, run `npm run test:unit`.
-
-To be re-run the unit tests without needing to re-build the full application each time, first build the app with `--mode unit` and the `--watch` option, `dojo build --mode unit --watch`. Then run `dojo test --config local` to run the unit tests as needed.
-
-The build test artifacts are written to the `output/tests/unit` directory. These tests are located in the `tests/unit` directory.
-
-## Running functional tests
-
-To run the functional tests, run `npm run test:functional`. These tests are located in the `tests/functional` directory.
-
-## Running unit and functional tests together
-
-To run both unit and functional tests as the same time, run `npm run test:all`.
+Please ensure these changes are reversed before you raise a pull request.
 
 ## Further help
 
