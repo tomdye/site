@@ -46,8 +46,10 @@ const pragma = (tag: string, props: any = {}, children?: any[]) =>
 	v(tag, { ...props, key: `key-${counter++}` }, children);
 const pipeline = unified().use(parse);
 
+const wpBlogRegExp = new RegExp('https://wp.sitepen.com/blog', 'g');
 function parseContent(content: string) {
-	const nodes = pipeline.parse(content);
+	const replacedContent = content.replace(wpBlogRegExp, 'https://www.sitepen.com/blog');
+	const nodes = pipeline.parse(replacedContent);
 	const res = selectAll('meta, title', nodes);
 
 	return res.map((node: any) => toH(pragma, node));
