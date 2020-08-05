@@ -141,18 +141,6 @@
 	transform: rotate(45deg);
 }
 
-.menuToggleInput:checked ~ .nav {
-	display: block;
-	z-index: 100;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: calc(var(--grid-size) * 8);
-	background-color: var(--dojo-hero-background);
-	animation: enter 0.25s;
-	animation-timing-function: ease-out;
-}
-
 @keyframes enter {
 	0% {
 		opacity: 0;
@@ -176,5 +164,17 @@
 	}
 	.root .menuToggleLabel {
 		display: block;
+	}
+
+	.menuToggleInput:checked ~ .nav {
+		display: block;
+		z-index: 100;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: calc(var(--grid-size) * 8);
+		background-color: var(--dojo-hero-background);
+		animation: enter 0.25s;
+		animation-timing-function: ease-out;
 	}
 }
