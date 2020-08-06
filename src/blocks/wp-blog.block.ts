@@ -7,6 +7,7 @@ require('prismjs/components/prism-javascript');
 require('prismjs/components/prism-jsx');
 require('prismjs/components/prism-typescript');
 require('prismjs/components/prism-tsx');
+require('prismjs/components/prism-java');
 import { v } from '@dojo/framework/core/vdom';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 const unified = require('unified');
