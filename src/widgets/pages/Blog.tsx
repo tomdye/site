@@ -59,6 +59,7 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 							height="64"
 							alt=""
 							src={preview.imageSmall}
+							loading="lazy"
 						/>
 					)
 				}}
