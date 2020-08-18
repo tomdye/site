@@ -16,6 +16,13 @@
 			}
 		},
 		{
+			"src": "/blog/dynamic-stylesheets-part-1/?$",
+			"status": 308,
+			"headers": {
+				"Location": "/blog/dynamic-stylesheets"
+			}
+		},
+		{
 			"src": "/blog/definitive-guide-to-typescript$",
 			"status": 308,
 			"headers": {
