@@ -15,7 +15,7 @@ export const Contact = factory(function Contact({ middleware: { icache } }) {
 				<title>Contact Us | SitePen</title>
 				<meta
 					name="description"
-					content="Headquartered in Palo Alto, CA, we are located throughout the US and UK. Call us at 650-968-8787 or drop us a note to hello@sitepen.com. We&#039;ll get back to you ASAP."
+					content="With offices throughout the US and UK, we’re available to to chat at your convenience. Call us at 650-968-8787 or drop us a note to hello@sitepen.com."
 				/>
 				<meta name="robots" content="index, follow" />
 				<meta
@@ -32,7 +32,7 @@ export const Contact = factory(function Contact({ middleware: { icache } }) {
 				<meta property="og:title" content="Contact Us | SitePen" />
 				<meta
 					property="og:description"
-					content="Headquartered in Palo Alto, CA, we are located throughout the US and UK. Call us at 650-968-8787 or drop us a note to hello@sitepen.com. We&#039;ll get back to you ASAP."
+					content="With offices throughout the US and UK, we’re available to to chat at your convenience. Call us at 650-968-8787 or drop us a note to hello@sitepen.com."
 				/>
 				<meta property="og:url" content="https://www.sitepen.com/contact/" />
 				<meta property="og:site_name" content="SitePen" />
@@ -98,8 +98,12 @@ export const Contact = factory(function Contact({ middleware: { icache } }) {
 								fields
 							})
 						})
-							.then(() => {
-								window.location.href = '/contact-thank-you';
+							.then((response) => {
+								if (response && response.ok) {
+									window.location.href = '/contact-thank-you';
+								} else {
+									icache.set('submitError', true);
+								}
 							})
 							.catch(() => {
 								icache.set('submitError', true);
@@ -182,6 +186,7 @@ export const Contact = factory(function Contact({ middleware: { icache } }) {
 								type="tel"
 								required
 								autocomplete="tel"
+								minLength="7"
 							/>
 						</div>
 					</div>

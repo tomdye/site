@@ -29,6 +29,7 @@ import { Blog } from './widgets/pages/Blog';
 import { Category } from './widgets/pages/Category';
 import { Series } from './widgets/pages/Series';
 import SearchResults from './widgets/pages/SearchResults';
+import StrategySession from './widgets/pages/StrategySession';
 
 const factory = create();
 
@@ -60,6 +61,9 @@ export const App = factory(function App() {
 						about: <About />,
 						careers: <Careers />,
 						contact: <Contact />,
+						strategySession: ({ queryParams: { slug } }) => (
+							<StrategySession slug={slug} />
+						),
 						contactThankyou: <ContactThankyou />,
 						expertise: <Expertise />,
 						home: <Home />,

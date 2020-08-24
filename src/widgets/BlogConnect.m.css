@@ -1,0 +1,13 @@
+.title {
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 600;
+}
+
+.buttonWrapper {
+	margin-top: calc(var(--grid-size) * 4);
+}
+
+.ctaImage {
+	max-height: 280px;
+}

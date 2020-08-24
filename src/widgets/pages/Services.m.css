@@ -66,34 +66,6 @@
 	line-height: 20px;
 }
 
-.resultsSection .list {
-	display: flex;
-	flex-direction: row;
-}
-
-.resultsSection .item {
-	padding: 0 calc(var(--grid-size) * 3);
-}
-
-.clientLogoWrapper {
-	margin-top: calc(var(--grid-size) * 2);
-	height: calc(var(--grid-size) * 6);
-}
-
-.clientLogoWrapper .clientImg {
-	height: calc(var(--grid-size) * 4);
-}
-
-.builtWith {
-	text-transform: uppercase;
-	font-family: var(--heading-font-family);
-	font-weight: 700;
-	letter-spacing: 1px;
-	line-height: 12px;
-	font-size: 12px;
-	margin: calc(var(--grid-size) * 2) 0;
-}
-
 .heading {
 	margin-top: calc(var(--grid-size) * 12);
 	margin-bottom: calc(var(--grid-size) * 8);
@@ -108,9 +80,6 @@
 }
 
 @media (max-width: 768px) {
-	.root .list {
-		flex-direction: column;
-	}
 	.topSection {
 		flex-direction: column;
 	}

@@ -16,7 +16,7 @@
 .leading {
 	width: 70%;
 	box-sizing: border-box;
-	padding-left: calc(var(--grid-size) * 2);
+	padding-left: var(--grid-size);
 	padding-right: calc(var(--grid-size) * 5);
 }
 
@@ -68,20 +68,6 @@
 
 .previews:last-of-type {
 	border-bottom: 1px solid #adadad;
-}
-
-.root .outroTitle {
-	font-size: 32px;
-	line-height: 42px;
-	font-weight: 600;
-}
-
-.connectButtonWrapper {
-	margin-top: calc(var(--grid-size) * 4);
-}
-
-.ctaImage {
-	max-height: 280px;
 }
 
 .previewHeading {

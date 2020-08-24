@@ -16,6 +16,10 @@
 					"static": false
 				},
 				{
+					"path": "strategy-session",
+					"static": false
+				},
+				{
 					"path": "rss.xml",
 					"exclude": true
 				}

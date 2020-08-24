@@ -5,6 +5,7 @@ import * as commonCss from '../../Common.m.css';
 import { ConnectStrip } from '../ConnectStrip';
 import { Link } from '@dojo/framework/routing/Link';
 import { Summary } from '../Summary';
+import ClientResults from '../ClientResults';
 const elevateIcon = require('../../assets/images/icons/elevate.svg');
 const guideIcon = require('../../assets/images/icons/guide.svg');
 const communicationIcon = require('../../assets/images/icons/communication.svg');
@@ -20,12 +21,6 @@ const approachIcon = require('../../assets/images/icons/approach.svg');
 const technologyIcon = require('../../assets/images/icons/technology.svg');
 const legacyIcon = require('../../assets/images/icons/legacy.svg');
 const deliveryIcon = require('../../assets/images/icons/delivery.svg');
-const fannieLogo = require('../../assets/images/logos/fannie.svg');
-const marriottLogo = require('../../assets/images/logos/marriott.svg');
-const builtLogo = require('../../assets/images/logos/built.png');
-const angularLogo = require('../../assets/images/logos/angular.svg');
-const dojoLogo = require('../../assets/images/logos/dojo.svg');
-const reactLogo = require('../../assets/images/logos/react.svg');
 const completeImg = require('../../assets/images/services/complete.jpg');
 const holisticImg = require('../../assets/images/services/holistic.svg');
 const agileImg = require('../../assets/images/services/agile.svg');
@@ -148,59 +143,7 @@ export const Services = factory(function Services() {
 					</section>
 					<section classes={css.resultsSection}>
 						<h3 classes={css.title}>YOU CAN EXPECT RESULTS</h3>
-						<ul classes={css.list}>
-							<li classes={css.item}>
-								<div classes={css.clientLogoWrapper}>
-									<img
-										loading="lazy"
-										classes={css.clientImg}
-										src={fannieLogo}
-										alt="FannieMae Logo"
-									/>
-								</div>
-								<p>
-									When Fannie Mae needed to launch a mission-critical trading
-									platform with limited resources, they turned to us to provide
-									leadership, design, development, and DevOps improvements.
-								</p>
-								<p classes={css.builtWith}>built with</p>
-								<img loading="lazy" src={angularLogo} alt="Angular Logo" />
-							</li>
-							<li classes={css.item}>
-								<div classes={css.clientLogoWrapper}>
-									<img
-										loading="lazy"
-										classes={css.clientImg}
-										src={marriottLogo}
-										alt="Marriott Logo"
-									/>
-								</div>
-								<p>
-									When Marriott found themselves underperforming and bogged down
-									with technical debt, we provided technical leadership, feature
-									development, and mentoring to optimize application performance.
-								</p>
-								<p classes={css.builtWith}>built with</p>
-								<img loading="lazy" src={dojoLogo} alt="Dojo Logo" />
-							</li>
-							<li classes={css.item}>
-								<div classes={css.clientLogoWrapper}>
-									<img
-										loading="lazy"
-										classes={css.clientImg}
-										src={builtLogo}
-										alt="Built Logo"
-									/>
-								</div>
-								<p>
-									When Built lost their patience with an unstable legacy app, they
-									partnered with us to stabilize the existing legacy application
-									and develop a next-gen application at the same time.
-								</p>
-								<p classes={css.builtWith}>built with</p>
-								<img loading="lazy" src={reactLogo} alt="React Logo" />
-							</li>
-						</ul>
+						<ClientResults />
 					</section>
 				</div>
 			</div>

@@ -13,6 +13,11 @@ const routes: RouteConfig[] = [
 		outlet: 'main'
 	},
 	{
+		id: 'strategySession',
+		path: 'strategy-session?{slug}',
+		outlet: 'main'
+	},
+	{
 		id: 'contactThankyou',
 		path: 'contact-thank-you',
 		outlet: 'main'

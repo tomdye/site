@@ -1,0 +1,38 @@
+.list {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+.item {
+	padding: 0 calc(var(--grid-size) * 3);
+	line-height: 28px;
+}
+
+.clientLogoWrapper {
+	margin-top: calc(var(--grid-size) * 2);
+	height: calc(var(--grid-size) * 6);
+}
+
+.clientLogoWrapper .clientImg {
+	height: calc(var(--grid-size) * 4);
+}
+
+.builtWith {
+	text-transform: uppercase;
+	font-family: var(--heading-font-family);
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 12px;
+	font-size: 12px;
+	margin: calc(var(--grid-size) * 2) 0;
+}
+
+@media (max-width: 768px) {
+	.list {
+		flex-direction: column;
+	}
+	.item {
+		margin-bottom: calc(var(--grid-size) * 8);
+	}
+}

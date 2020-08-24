@@ -7,13 +7,11 @@ import getBlogPreviews, { BlogPreview } from '../../blocks/wp-blog-previews.bloc
 import getCategories from '../../blocks/wp-blog-category.block';
 import { RenderResult } from '@dojo/framework/core/interfaces';
 import { SmallBlogSummary } from '../SmallBlogSummary';
-import { Summary } from '../Summary';
-import { ConnectButton } from '../ConnectButton';
 import { Share } from '../Share';
 import getSeries from '../../blocks/wp-blog-series.block';
 import { Link } from '@dojo/framework/routing/Link';
 import { wpBaseUrl } from '../../config';
-const ctaImg = require('../../assets/images/services/management.jpg');
+import { BlogConnect } from '../BlogConnect';
 
 export interface BlogProperties {
 	slug: string;
@@ -155,36 +153,7 @@ export const Blog = factory(function Blog({ properties, middleware: { block } })
 							)}
 						</div>
 					</section>
-					<Summary smaller reverse>
-						{{
-							title: (
-								<span classes={css.outroTitle}>
-									Learn more about how SitePen can be your partner.
-								</span>
-							),
-							blurb: (
-								<virtual>
-									<p>
-										SitePen is a strategic consultancy committed to achieving
-										technical objectives, solving critical business problems and
-										helping our customers build web applications the right way,
-										the first time.
-									</p>
-									<div classes={css.connectButtonWrapper}>
-										<ConnectButton cta />
-									</div>
-								</virtual>
-							),
-							image: (
-								<img
-									classes={css.ctaImage}
-									loading="lazy"
-									src={ctaImg}
-									alt="Illustration for call to action"
-								/>
-							)
-						}}
-					</Summary>
+					<BlogConnect slug={post.slug} />
 				</div>
 			</div>
 		);
