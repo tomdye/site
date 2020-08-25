@@ -8,11 +8,9 @@ export interface ConnectSessionButtonProperties {
 
 const factory = create().properties<ConnectSessionButtonProperties>();
 
-export const ConnectSessionButton = factory(function ConnectSessionButton({ properties }) {
-	const { slug } = properties();
-
+export const ConnectSessionButton = factory(function ConnectSessionButton() {
 	return (
-		<Link classes={[css.root, css.cta]} to="strategySession" params={{ slug }}>
+		<Link classes={[css.root, css.cta]} to="strategySession">
 			Let's connect
 		</Link>
 	);

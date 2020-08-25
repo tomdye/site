@@ -61,9 +61,7 @@ export const App = factory(function App() {
 						about: <About />,
 						careers: <Careers />,
 						contact: <Contact />,
-						strategySession: ({ queryParams: { slug } }) => (
-							<StrategySession slug={slug} />
-						),
+						strategySession: <StrategySession />,
 						contactThankyou: <ContactThankyou />,
 						expertise: <Expertise />,
 						home: <Home />,

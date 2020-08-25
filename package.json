@@ -2,9 +2,9 @@
 	"name": "sitepen-site",
 	"version": "1.0.0",
 	"scripts": {
-		"dev": "dojo build --mode dev --watch --serve --single-bundle",
-		"build": "dojo build --mode dist --single-bundle",
-		"build:dev": "dojo build --mode dev --sungle-bundle",
+		"dev": "dojo build --mode dev --watch --serve",
+		"build": "dojo build --mode dist",
+		"build:dev": "dojo build --mode dev",
 		"prettier": "prettier --write \"src/**/*.{ts,tsx,css,html}\"",
 		"test": "dojo test",
 		"test:unit": "dojo build --mode unit && dojo test --unit --config local",

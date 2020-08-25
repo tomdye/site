@@ -14,7 +14,7 @@ const routes: RouteConfig[] = [
 	},
 	{
 		id: 'strategySession',
-		path: 'strategy-session?{slug}',
+		path: 'strategy-session',
 		outlet: 'main'
 	},
 	{

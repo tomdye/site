@@ -5,18 +5,10 @@ import icache from '@dojo/framework/core/middleware/icache';
 import ClientResults from '../ClientResults';
 const checkIcon = require('../../assets/images/icons/check.svg');
 
-export interface StrategySessionProperties {
-	slug?: string;
-}
+const factory = create({ icache });
 
-const factory = create({ icache }).properties<StrategySessionProperties>();
-
-export const StrategySession = factory(function StrategySession({
-	middleware: { icache },
-	properties
-}) {
+export const StrategySession = factory(function StrategySession({ middleware: { icache } }) {
 	const submitError = icache.getOrSet('submitError', false);
-	const { slug } = properties();
 
 	return (
 		<div classes={css.root}>
@@ -119,6 +111,14 @@ export const StrategySession = factory(function StrategySession({
 									});
 								}
 							}
+
+							const referrer = document.referrer;
+							const matches = referrer.match(/blog\/(.*)/);
+							let blogSlug = '';
+							if (matches && matches[1]) {
+								blogSlug = matches[1];
+							}
+
 							fetch(url, {
 								method: 'post',
 								mode: 'cors',
@@ -128,10 +128,10 @@ export const StrategySession = factory(function StrategySession({
 								body: JSON.stringify({
 									submittedAt: Date.now(),
 									context: {
-										pageUri: slug
-											? `www.sitepen.com/blog/${slug}`
+										pageUri: blogSlug
+											? `www.sitepen.com/blog/${blogSlug}`
 											: 'www.sitepen.com/strategy-session',
-										pageName: `Sitepen Website Strategy Session - ${slug}`
+										pageName: `Sitepen Website Strategy Session - ${blogSlug}`
 									},
 									fields
 								})

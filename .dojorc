@@ -1,5 +1,8 @@
 {
 	"build-app": {
+		"bundles": {
+			"session": ["src/widgets/pages/StrategySession"]
+		},
 		"build-time-render": {
 			"root": "app",
 			"static": true,
