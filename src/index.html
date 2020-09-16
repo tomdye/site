@@ -71,6 +71,9 @@
 		<div id="app"></div>
 	</body>
 	<script>
+		// disable google analytics when not on sitepen.com
+		window['ga-disable-UA-3242977-2'] = window.location.hostname.indexOf('sitepen.com') < 0;
+
 		// gdpr banner
 		const banner = document.getElementById('gdpr-banner');
 		if (banner) {
